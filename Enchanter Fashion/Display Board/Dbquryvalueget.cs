@@ -27,6 +27,7 @@ namespace Enchanter_Fashion.Display_Board
 
         public void returnvalues(string sql_qury, int counter)
         {
+            //Hello world
             getconnection();
             MySqlCommand mycomnd = new MySqlCommand(sql_qury, con);          
             try
