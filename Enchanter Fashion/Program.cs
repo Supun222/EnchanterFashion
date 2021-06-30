@@ -18,7 +18,8 @@ namespace Enchanter_Fashion
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form1());
             //displaypanel
-            Application.Run(new displaypanel());
+            //Application.Run(new displaypanel());
+            Application.Run(new Form2());
         }
     }
 }
