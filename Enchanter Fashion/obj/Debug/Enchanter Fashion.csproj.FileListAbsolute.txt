@@ -284,3 +284,11 @@ D:\Project\Enchanter Fashion\obj\Debug\Enchanter Fashion.csproj.CoreCompileInput
 D:\Project\Enchanter Fashion\obj\Debug\Enchanter Fashion.csproj.CopyComplete
 D:\Project\Enchanter Fashion\obj\Debug\Enchanter Fashion.exe
 D:\Project\Enchanter Fashion\obj\Debug\Enchanter Fashion.pdb
+D:\Project\Enchanter Fashion\obj\Debug\Enchanter_Fashion.inventory.UserControls.uc_home.resources
+D:\Project\Enchanter Fashion\obj\Debug\Enchanter_Fashion.inventory.UserControls.uc_categories.resources
+D:\Project\Enchanter Fashion\obj\Debug\Enchanter_Fashion.inventory.UserControls.uc_items.resources
+D:\Project\Enchanter Fashion\obj\Debug\Enchanter_Fashion.inventory.form_dashboard.resources
+D:\Project\Enchanter Fashion\obj\Debug\Enchanter_Fashion.inventory.UserControls.uc_orders.resources
+D:\Project\Enchanter Fashion\obj\Debug\Enchanter_Fashion.inventory.UserControls.uc_suppliers.resources
+D:\Project\Enchanter Fashion\obj\Debug\Enchanter_Fashion.inventory.UserControls.uc_invoices.resources
+D:\Project\Enchanter Fashion\obj\Debug\Enchanter_Fashion.inventory.UserControls.uc_users.resources
