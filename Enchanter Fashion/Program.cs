@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Enchanter_Fashion.inventory;
+
 
 namespace Enchanter_Fashion
 {
@@ -19,6 +21,8 @@ namespace Enchanter_Fashion
             //Application.Run(new Form1());
             //displaypanel
             Application.Run(new displaypanel());
+            //Application.Run(new form_dashboard());
+            //Application.Run(new testing());
         }
     }
 }

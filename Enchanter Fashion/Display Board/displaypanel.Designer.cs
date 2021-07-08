@@ -64,8 +64,8 @@ namespace Enchanter_Fashion
             this.background1 = new System.Windows.Forms.PictureBox();
             this.background2 = new System.Windows.Forms.PictureBox();
             this.bunifuTransition1 = new Bunifu.UI.WinForms.BunifuTransition(this.components);
-            this.bunifuTransition2 = new Bunifu.UI.WinForms.BunifuTransition(this.components);
             this.kids1 = new Enchanter_Fashion.Display_Board.kidsbackground();
+            this.bunifuTransition2 = new Bunifu.UI.WinForms.BunifuTransition(this.components);
             this.bunifuPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.background1)).BeginInit();
@@ -615,6 +615,17 @@ namespace Enchanter_Fashion
             animation1.TransparencyCoeff = 0F;
             this.bunifuTransition1.DefaultAnimation = animation1;
             // 
+            // kids1
+            // 
+            this.kids1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("kids1.BackgroundImage")));
+            this.kids1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuTransition1.SetDecoration(this.kids1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.kids1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.kids1.Location = new System.Drawing.Point(0, 0);
+            this.kids1.Name = "kids1";
+            this.kids1.Size = new System.Drawing.Size(624, 977);
+            this.kids1.TabIndex = 0;
+            // 
             // bunifuTransition2
             // 
             this.bunifuTransition2.AnimationType = Bunifu.UI.WinForms.BunifuAnimatorNS.AnimationType.Custom;
@@ -635,17 +646,6 @@ namespace Enchanter_Fashion
             animation2.TimeCoeff = 0F;
             animation2.TransparencyCoeff = 0F;
             this.bunifuTransition2.DefaultAnimation = animation2;
-            // 
-            // kids1
-            // 
-            this.kids1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("kids1.BackgroundImage")));
-            this.kids1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuTransition1.SetDecoration(this.kids1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.kids1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.kids1.Location = new System.Drawing.Point(0, 0);
-            this.kids1.Name = "kids1";
-            this.kids1.Size = new System.Drawing.Size(624, 977);
-            this.kids1.TabIndex = 0;
             // 
             // displaypanel
             // 

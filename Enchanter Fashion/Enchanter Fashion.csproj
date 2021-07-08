@@ -190,6 +190,60 @@
     <Compile Include="Display Board\Shoes.Designer.cs">
       <DependentUpon>Shoes.cs</DependentUpon>
     </Compile>
+    <Compile Include="inventory\form_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inventory\form_dashboard.Designer.cs">
+      <DependentUpon>form_dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\testing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inventory\testing.Designer.cs">
+      <DependentUpon>testing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\UserControls\uc_categories.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inventory\UserControls\uc_categories.Designer.cs">
+      <DependentUpon>uc_categories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\UserControls\uc_home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inventory\UserControls\uc_home.Designer.cs">
+      <DependentUpon>uc_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\UserControls\uc_invoices.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inventory\UserControls\uc_invoices.Designer.cs">
+      <DependentUpon>uc_invoices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\UserControls\uc_items.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inventory\UserControls\uc_items.Designer.cs">
+      <DependentUpon>uc_items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\UserControls\uc_orders.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inventory\UserControls\uc_orders.Designer.cs">
+      <DependentUpon>uc_orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\UserControls\uc_suppliers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inventory\UserControls\uc_suppliers.Designer.cs">
+      <DependentUpon>uc_suppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\UserControls\uc_users.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inventory\UserControls\uc_users.Designer.cs">
+      <DependentUpon>uc_users.cs</DependentUpon>
+    </Compile>
     <Compile Include="Signup and Registration\Login.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -249,6 +303,33 @@
     <EmbeddedResource Include="Display Board\Shoes.resx">
       <DependentUpon>Shoes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="inventory\form_dashboard.resx">
+      <DependentUpon>form_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventory\testing.resx">
+      <DependentUpon>testing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventory\UserControls\uc_categories.resx">
+      <DependentUpon>uc_categories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventory\UserControls\uc_home.resx">
+      <DependentUpon>uc_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventory\UserControls\uc_invoices.resx">
+      <DependentUpon>uc_invoices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventory\UserControls\uc_items.resx">
+      <DependentUpon>uc_items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventory\UserControls\uc_orders.resx">
+      <DependentUpon>uc_orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventory\UserControls\uc_suppliers.resx">
+      <DependentUpon>uc_suppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventory\UserControls\uc_users.resx">
+      <DependentUpon>uc_users.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Signup and Registration\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -273,6 +354,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Signup and Registration\termsnpolicy.resx">
       <DependentUpon>termsnpolicy.cs</DependentUpon>
@@ -299,7 +381,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Errors\" />
-    <Folder Include="Inventory\" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -314,16 +395,16 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Display Board\Images\Kids11.png" />
-    <Content Include="Display Board\Images\Kidsbackground1.png" />
-    <Content Include="Display Board\Images\men11.png" />
-    <Content Include="Display Board\Images\menbackground.png" />
-    <Content Include="Display Board\Images\mens-linen-kurta-16195019548252.png" />
-    <Content Include="Display Board\Images\mens-linen-kurta-16195019567006%282%29.png" />
-    <Content Include="Display Board\Images\nike1.png" />
-    <Content Include="Display Board\Images\shoebackground1.png" />
-    <Content Include="Display Board\Images\womanbckgrnd.png" />
+    <Content Include="Display Board\Images\boy11.png" />
+    <Content Include="Display Board\Images\boy12.png" />
+    <Content Include="Display Board\Images\boy13.png" />
+    <Content Include="Display Board\Images\boy14.png" />
     <Content Include="Display Board\Images\women11.png" />
+    <Content Include="Display Board\Images\women12.png" />
+    <Content Include="Display Board\Images\women21.png" />
+    <Content Include="inventory\icons\icons8_home_24px.png" />
+    <None Include="Resources\icons8_home_24px1.png" />
+    <None Include="Resources\icons8_home_24px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

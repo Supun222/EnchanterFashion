@@ -9,31 +9,36 @@ namespace Enchanter_Fashion.Display_Board
 {
     class Dbquryset
     {
-        string sql_query;
+        string sql_query = null;
+        string count_query = null;
 
-        public String get_query(String catogery)
+        public string get_query(String catogery)
         {
             if (catogery == "men")
             {
-                sql_query = "SELECT  pic_file_name, bkgrnd_file_name FROM display WHERE item_type='men'";
+                sql_query = "SELECT  pic_file_name FROM display WHERE item_type='men'";
+                
             }
             else if (catogery == "women")
             {
-                sql_query= "SELECT pic_file_name, bkgrnd_file_name FROM display WHERE item_type='women'";
+                sql_query= "SELECT pic_file_name FROM display WHERE item_type='women'";
+                
             }
             else if (catogery == "kids")
             {
-                sql_query = "SELECT  pic_file_name, bkgrnd_file_name FROM display WHERE item_type='kids'";
+                sql_query = "SELECT  pic_file_name FROM display WHERE item_type='kids'";
+                
             }
             else if (catogery == "shoes")
             {
-                sql_query = "SELECT  pic_file_name, bkgrnd_file_name FROM display WHERE item_type='shoes'";
+                sql_query = "SELECT  pic_file_name FROM display WHERE item_type='shoes'";
+               
             }
             else
             {
-                sql_query = "SELECT  pic_file_name, bkgrnd_file_name FROM display";
+                sql_query = "SELECT  pic_file_name FROM display";
+                
             }
-          
             return sql_query;
         }
     }

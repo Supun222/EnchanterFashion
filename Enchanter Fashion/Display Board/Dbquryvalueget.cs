@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,9 +14,9 @@ namespace Enchanter_Fashion.Display_Board
         public MySqlConnection con;
         public ArrayList arrayvalues = new ArrayList();
 
-        
-        public string picfilename, backfilename;
-        public int size;
+
+        public string picfilename;
+        public int size=0;
         
 
         public void getconnection()
@@ -35,9 +35,8 @@ namespace Enchanter_Fashion.Display_Board
                 MySqlDataReader dr = mycomnd.ExecuteReader();
                 while (dr.Read())
                 {
-                    arrayvalues.Add(dr.GetString("pic_file_name").ToString());
-                    arrayvalues.Add(dr.GetString("bkgrnd_file_name").ToString());                
-                }
+                    arrayvalues.Add(dr.GetString("pic_file_name").ToString());           
+                }             
             }
             catch(MySqlException exp)
             {
@@ -48,13 +47,25 @@ namespace Enchanter_Fashion.Display_Board
                 MessageBox.Show(exp.Message);
             }
 
-            picfilename = arrayvalues[counter].ToString();
-            backfilename = arrayvalues[counter + 1].ToString();
-            arrayvalues.Clear();
-
-           
-            
-            con.Close();
+            if (counter<=0)
+            {
+                picfilename = arrayvalues[0].ToString();
+                arrayvalues.Clear();
+                counter = 0;
+            }
+            else if (0< counter && counter < arrayvalues.Count)
+            {
+                picfilename = arrayvalues[counter].ToString();
+                Console.WriteLine(size);
+                arrayvalues.Clear();
+            }
+            else // counter>size
+            {
+                picfilename = arrayvalues[arrayvalues.Count-1].ToString();
+                arrayvalues.Clear();
+                counter = arrayvalues.Count + 1;
+            }
+        con.Close();
         }
     }
 }
