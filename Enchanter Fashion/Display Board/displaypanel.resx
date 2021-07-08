@@ -242,6 +242,13 @@
         d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAACAPwAAAAAL
 </value>
   </data>
+  <data name="bunifuSeparator2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAANIAAAAOCAYAAABaZUIWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA1SURBVGhD7dUxDQAwDANB0zV/AM1SBu2Q4U56CJYDAAAA
+        AGzT9kh6y5CkD91fAgAAAACWSAaZ7qdWVVNagQAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAUlJREFUSEvt
@@ -272,6 +279,35 @@
         HeVIDiR4LblJctN4+uKlxLwPd0lukcw9Cc4lNclvWe4kVFqykeBcAsPEhyTH7cDcleClxGAefDoXSjJx
         KuH25Bbdy1mBZDgsnWP+eQsD34NKvyeGhmxZyF7AhSj6AA3GiuSh9JlQAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="bunifuLabel5.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Arial'; font-size: 9.75pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel5.Text" xml:space="preserve">
+    <value>This heavy cotton jersey sweatshirt features the number 
+25, the Creative Director’s lucky number, alongside the
+year 1921, the year of the House’s founding. Ever more 
+thought provoking, ‘Eschatology’, a doctrine that 
+explores the ultimate destiny of humans and the 
+universe, and 'Blind for Love’, an evolution of the 
+original 'L'Aveugle Par Amour,’ are printed on
+the front and back.
+
+1. Blue stone washed heavy cotton jerseywith 
+    "25 Gucci Eschatology Blind for Love 1921" 
+    print
+2. Fixed hood with drawstring closure
+3. Contrast stripes at the sleeve
+4, Ribbed hem and cuffs
+    100% Cotton
+5. Made in Italy
+6. The product shown in this image is a size medium</value>
+  </data>
+  <data name="bunifuLabel2.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Times New Roman'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Times New Roman'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
   <data name="bunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -350,6 +386,15 @@
         a6x1TCPSi9ZHt2utNL1oattYCltFPPC/tFU4eYxPsTFps7Mv6e9mly56ayI3N5guco7ZiQcevcPsxOYX
         vcfseB/SRXqYnfTLsu23gtv1ig8hWgGK4gcEFWX3dlUPyAAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="bunifuLabel8.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Arial'; font-size: 15.75pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(105, 105, 105); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel6.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Arial'; font-size: 15.75pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(105, 105, 105); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel7.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Arial'; font-size: 15.75pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(105, 105, 105); text-align: left; }</value>
   </data>
   <data name="kids1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
