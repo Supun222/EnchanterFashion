@@ -64,8 +64,8 @@ namespace Enchanter_Fashion
             this.background1 = new System.Windows.Forms.PictureBox();
             this.background2 = new System.Windows.Forms.PictureBox();
             this.bunifuTransition1 = new Bunifu.UI.WinForms.BunifuTransition(this.components);
-            this.kids1 = new Enchanter_Fashion.Display_Board.kidsbackground();
             this.bunifuTransition2 = new Bunifu.UI.WinForms.BunifuTransition(this.components);
+            this.kids1 = new Enchanter_Fashion.Display_Board.kidsbackground();
             this.bunifuPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.background1)).BeginInit();
@@ -98,7 +98,7 @@ namespace Enchanter_Fashion
             this.bunifuPanel1.Location = new System.Drawing.Point(19, 12);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(255, 953);
+            this.bunifuPanel1.Size = new System.Drawing.Size(255, 764);
             this.bunifuPanel1.TabIndex = 3;
             // 
             // label3
@@ -122,7 +122,7 @@ namespace Enchanter_Fashion
             this.shoes_btn.FlatAppearance.BorderSize = 0;
             this.shoes_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.shoes_btn.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.shoes_btn.Location = new System.Drawing.Point(36, 697);
+            this.shoes_btn.Location = new System.Drawing.Point(36, 561);
             this.shoes_btn.Name = "shoes_btn";
             this.shoes_btn.Size = new System.Drawing.Size(189, 22);
             this.shoes_btn.TabIndex = 104;
@@ -139,7 +139,7 @@ namespace Enchanter_Fashion
             this.kids_btn.FlatAppearance.BorderSize = 0;
             this.kids_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.kids_btn.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kids_btn.Location = new System.Drawing.Point(36, 586);
+            this.kids_btn.Location = new System.Drawing.Point(36, 485);
             this.kids_btn.Name = "kids_btn";
             this.kids_btn.Size = new System.Drawing.Size(189, 26);
             this.kids_btn.TabIndex = 103;
@@ -156,7 +156,7 @@ namespace Enchanter_Fashion
             this.women_btn.FlatAppearance.BorderSize = 0;
             this.women_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.women_btn.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.women_btn.Location = new System.Drawing.Point(36, 475);
+            this.women_btn.Location = new System.Drawing.Point(36, 410);
             this.women_btn.Name = "women_btn";
             this.women_btn.Size = new System.Drawing.Size(189, 25);
             this.women_btn.TabIndex = 102;
@@ -173,7 +173,7 @@ namespace Enchanter_Fashion
             this.men_btn.FlatAppearance.BorderSize = 0;
             this.men_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.men_btn.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.men_btn.Location = new System.Drawing.Point(36, 364);
+            this.men_btn.Location = new System.Drawing.Point(36, 336);
             this.men_btn.Name = "men_btn";
             this.men_btn.Size = new System.Drawing.Size(189, 24);
             this.men_btn.TabIndex = 101;
@@ -220,7 +220,7 @@ namespace Enchanter_Fashion
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(200, 892);
+            this.button3.Location = new System.Drawing.Point(200, 713);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(26, 29);
             this.button3.TabIndex = 95;
@@ -235,7 +235,7 @@ namespace Enchanter_Fashion
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(104, 892);
+            this.button4.Location = new System.Drawing.Point(104, 713);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(37, 29);
             this.button4.TabIndex = 94;
@@ -250,7 +250,7 @@ namespace Enchanter_Fashion
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(26, 892);
+            this.button5.Location = new System.Drawing.Point(26, 713);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(28, 29);
             this.button5.TabIndex = 93;
@@ -264,7 +264,7 @@ namespace Enchanter_Fashion
             this.bunifuTransition1.SetDecoration(this.label9, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.bunifuTransition2.SetDecoration(this.label9, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.label9.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(30, 824);
+            this.label9.Location = new System.Drawing.Point(30, 645);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(77, 13);
             this.label9.TabIndex = 8;
@@ -302,9 +302,9 @@ namespace Enchanter_Fashion
             this.panel1.Controls.Add(this.bunifuButton1);
             this.bunifuTransition2.SetDecoration(this.panel1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.panel1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.panel1.Location = new System.Drawing.Point(986, 83);
+            this.panel1.Location = new System.Drawing.Point(864, 83);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(397, 617);
+            this.panel1.Size = new System.Drawing.Size(360, 512);
             this.panel1.TabIndex = 4;
             // 
             // bunifuButton1
@@ -356,7 +356,7 @@ namespace Enchanter_Fashion
             this.bunifuButton1.IdleIconLeftImage = null;
             this.bunifuButton1.IdleIconRightImage = null;
             this.bunifuButton1.IndicateFocus = false;
-            this.bunifuButton1.Location = new System.Drawing.Point(33, 564);
+            this.bunifuButton1.Location = new System.Drawing.Point(104, 460);
             this.bunifuButton1.Name = "bunifuButton1";
             this.bunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.OnDisabledState.BorderRadius = 3;
@@ -408,7 +408,7 @@ namespace Enchanter_Fashion
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(1019, 792);
+            this.button1.Location = new System.Drawing.Point(993, 677);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(33, 32);
             this.button1.TabIndex = 5;
@@ -424,7 +424,7 @@ namespace Enchanter_Fashion
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(1019, 848);
+            this.button2.Location = new System.Drawing.Point(898, 677);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(33, 32);
             this.button2.TabIndex = 6;
@@ -439,13 +439,13 @@ namespace Enchanter_Fashion
             this.bunifuSeparator1.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
             this.bunifuTransition2.SetDecoration(this.bunifuSeparator1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.bunifuSeparator1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuSeparator1.LineColor = System.Drawing.Color.Silver;
+            this.bunifuSeparator1.LineColor = System.Drawing.Color.DimGray;
             this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
-            this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(984, 830);
+            this.bunifuSeparator1.LineThickness = 3;
+            this.bunifuSeparator1.Location = new System.Drawing.Point(955, 657);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
-            this.bunifuSeparator1.Size = new System.Drawing.Size(109, 14);
+            this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Vertical;
+            this.bunifuSeparator1.Size = new System.Drawing.Size(14, 73);
             this.bunifuSeparator1.TabIndex = 7;
             // 
             // button6
@@ -456,7 +456,7 @@ namespace Enchanter_Fashion
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(1349, 12);
+            this.button6.Location = new System.Drawing.Point(1189, 12);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(34, 29);
             this.button6.TabIndex = 96;
@@ -492,7 +492,7 @@ namespace Enchanter_Fashion
             this.bunifuTextBox1.IconRight = null;
             this.bunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox1.Lines = new string[0];
-            this.bunifuTextBox1.Location = new System.Drawing.Point(1155, 12);
+            this.bunifuTextBox1.Location = new System.Drawing.Point(995, 12);
             this.bunifuTextBox1.MaxLength = 32767;
             this.bunifuTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBox1.Modified = false;
@@ -548,7 +548,7 @@ namespace Enchanter_Fashion
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.Location = new System.Drawing.Point(1060, 12);
+            this.button7.Location = new System.Drawing.Point(900, 12);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(33, 29);
             this.button7.TabIndex = 97;
@@ -563,7 +563,7 @@ namespace Enchanter_Fashion
             this.button8.FlatAppearance.BorderSize = 0;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.Location = new System.Drawing.Point(1109, 12);
+            this.button8.Location = new System.Drawing.Point(949, 12);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(31, 29);
             this.button8.TabIndex = 98;
@@ -574,9 +574,9 @@ namespace Enchanter_Fashion
             // 
             this.bunifuTransition1.SetDecoration(this.background1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.bunifuTransition2.SetDecoration(this.background1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.background1.Location = new System.Drawing.Point(318, 0);
+            this.background1.Location = new System.Drawing.Point(313, 12);
             this.background1.Name = "background1";
-            this.background1.Size = new System.Drawing.Size(624, 977);
+            this.background1.Size = new System.Drawing.Size(516, 764);
             this.background1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.background1.TabIndex = 102;
             this.background1.TabStop = false;
@@ -587,9 +587,9 @@ namespace Enchanter_Fashion
             this.background2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuTransition1.SetDecoration(this.background2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.bunifuTransition2.SetDecoration(this.background2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.background2.Location = new System.Drawing.Point(318, 0);
+            this.background2.Location = new System.Drawing.Point(313, 12);
             this.background2.Name = "background2";
-            this.background2.Size = new System.Drawing.Size(624, 977);
+            this.background2.Size = new System.Drawing.Size(516, 764);
             this.background2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.background2.TabIndex = 103;
             this.background2.TabStop = false;
@@ -615,17 +615,6 @@ namespace Enchanter_Fashion
             animation1.TransparencyCoeff = 0F;
             this.bunifuTransition1.DefaultAnimation = animation1;
             // 
-            // kids1
-            // 
-            this.kids1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("kids1.BackgroundImage")));
-            this.kids1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuTransition1.SetDecoration(this.kids1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.kids1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.kids1.Location = new System.Drawing.Point(0, 0);
-            this.kids1.Name = "kids1";
-            this.kids1.Size = new System.Drawing.Size(624, 977);
-            this.kids1.TabIndex = 0;
-            // 
             // bunifuTransition2
             // 
             this.bunifuTransition2.AnimationType = Bunifu.UI.WinForms.BunifuAnimatorNS.AnimationType.Custom;
@@ -647,12 +636,23 @@ namespace Enchanter_Fashion
             animation2.TransparencyCoeff = 0F;
             this.bunifuTransition2.DefaultAnimation = animation2;
             // 
+            // kids1
+            // 
+            this.kids1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("kids1.BackgroundImage")));
+            this.kids1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuTransition1.SetDecoration(this.kids1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.kids1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.kids1.Location = new System.Drawing.Point(0, 0);
+            this.kids1.Name = "kids1";
+            this.kids1.Size = new System.Drawing.Size(624, 977);
+            this.kids1.TabIndex = 0;
+            // 
             // displaypanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1408, 977);
+            this.ClientSize = new System.Drawing.Size(1248, 790);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.bunifuTextBox1);
