@@ -280,10 +280,10 @@
         KuH25Bbdy1mBZDgsnWP+eQsD34NKvyeGhmxZyF7AhSj6AA3GiuSh9JlQAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuLabel5.BaseStylesheet" xml:space="preserve">
+  <data name="descptnlbl.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Arial'; font-size: 9.75pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
-  <data name="bunifuLabel5.Text" xml:space="preserve">
+  <data name="descptnlbl.Text" xml:space="preserve">
     <value>This heavy cotton jersey sweatshirt features the number 
 25, the Creative Director’s lucky number, alongside the
 year 1921, the year of the House’s founding. Ever more 
@@ -303,7 +303,7 @@ the front and back.
 5. Made in Italy
 6. The product shown in this image is a size medium</value>
   </data>
-  <data name="bunifuLabel2.BaseStylesheet" xml:space="preserve">
+  <data name="drstyplbl.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Times New Roman'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
   <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
@@ -387,10 +387,10 @@ the front and back.
         vcfseB/SRXqYnfTLsu23gtv1ig8hWgGK4gcEFWX3dlUPyAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuLabel8.BaseStylesheet" xml:space="preserve">
+  <data name="currntlbl.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Arial'; font-size: 15.75pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(105, 105, 105); text-align: left; }</value>
   </data>
-  <data name="bunifuLabel6.BaseStylesheet" xml:space="preserve">
+  <data name="totllbl.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Arial'; font-size: 15.75pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(105, 105, 105); text-align: left; }</value>
   </data>
   <data name="bunifuLabel7.BaseStylesheet" xml:space="preserve">

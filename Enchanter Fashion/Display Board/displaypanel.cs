@@ -275,7 +275,7 @@ namespace Enchanter_Fashion
         {
             sideunderline_bar.Height = kids_btn.Height;
             sideunderline_bar.Top = kids_btn.Top;
-
+            button1_Click(null, null);
         }
     }
 }
