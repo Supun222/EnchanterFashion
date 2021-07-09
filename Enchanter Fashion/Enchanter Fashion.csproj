@@ -178,12 +178,14 @@
     <Compile Include="Display Board\kidsbackground.Designer.cs">
       <DependentUpon>kidsbackground.cs</DependentUpon>
     </Compile>
+    <Compile Include="Display Board\Linkedlist.cs" />
     <Compile Include="Display Board\menbackground.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Display Board\menbackground.Designer.cs">
       <DependentUpon>menbackground.cs</DependentUpon>
     </Compile>
+    <Compile Include="Display Board\Node.cs" />
     <Compile Include="Display Board\Shoes.cs">
       <SubType>UserControl</SubType>
     </Compile>

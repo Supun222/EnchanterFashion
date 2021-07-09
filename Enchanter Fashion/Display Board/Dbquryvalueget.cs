@@ -13,8 +13,6 @@ namespace Enchanter_Fashion.Display_Board
     {
         public MySqlConnection con;
         public ArrayList arrayvalues = new ArrayList();
-
-
         public string picfilename;
         public int size=0;
         
@@ -27,6 +25,9 @@ namespace Enchanter_Fashion.Display_Board
         public void returnvalues(string sql_qury, int counter)
         {
             //Supun
+            Node temp = new Node();
+            Linkedlist mylist = new Linkedlist();
+            Node current = new Node();
             getconnection();
             MySqlCommand mycomnd = new MySqlCommand(sql_qury, con);          
             try
@@ -45,11 +46,9 @@ namespace Enchanter_Fashion.Display_Board
                     }
                     else
                     {
-
                         current = mylist.head;
                         while (current.next != null)
                         {
-                            current.next = mylist.head.next;
                             current = current.next;
                         }
                         temp.picname = dr.GetString("pic_file_name").ToString();
@@ -67,26 +66,11 @@ namespace Enchanter_Fashion.Display_Board
             {
                 MessageBox.Show(exp.Message);
             }
-
-            if (counter<=0)
-            {
-                picfilename = arrayvalues[0].ToString();
-                arrayvalues.Clear();
-                counter = 0;
-            }
-            else if (0< counter && counter < arrayvalues.Count)
-            {
-                picfilename = arrayvalues[counter].ToString();
-                Console.WriteLine(size);
-                arrayvalues.Clear();
-            }
-            else // counter>size
-            {
-                picfilename = arrayvalues[arrayvalues.Count-1].ToString();
-                arrayvalues.Clear();
-                counter = arrayvalues.Count + 1;
-            }
-        con.Close();
+            current = mylist.head;
+            picfilename = current.picname;
+            Console.WriteLine(current.picname);
+            current = current.next;
+            con.Close();
         }
     }
 }

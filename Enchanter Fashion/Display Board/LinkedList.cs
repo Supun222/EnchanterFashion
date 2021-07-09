@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace Enchanter_Fashion.Display_Board
 {
-    class LinkedList
+    class Linkedlist
     {
         public Node head;
-        //contructor to create an empty LinkedList
-        public LinkedList()
+        public Linkedlist()
         {
             head = null;
         }

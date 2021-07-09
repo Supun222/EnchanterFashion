@@ -482,7 +482,6 @@ D:\Projrct\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.xml
 D:\Projrct\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
 D:\Projrct\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
 D:\Projrct\Enchanter Fashion\bin\Debug\MySql.Data.xml
-D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter Fashion.csproj.AssemblyReference.cache
 D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Display_Board.kidsbackground.resources
 D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter_Fashion.menbackground.resources
 D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Display_Board.Shoes.resources
@@ -510,3 +509,4 @@ D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter Fashion.csproj.CoreCompileInput
 D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter Fashion.csproj.CopyComplete
 D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter Fashion.exe
 D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter Fashion.pdb
+D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter Fashion.csproj.AssemblyReference.cache

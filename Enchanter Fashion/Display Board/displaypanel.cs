@@ -108,14 +108,11 @@ namespace Enchanter_Fashion
                 }
                 getvalue.returnvalues(setqury.get_query("shoes"), slidecounter);
             }
-            Console.WriteLine(getvalue.picfilename);
-            background2.Image = Image.FromFile(filedirectory + getvalue.picfilename);
+            //nsole.WriteLine(getvalue.picfilename);
+            //ckground2.Image = Image.FromFile(filedirectory + getvalue.picfilename);
             BunifuTransition transition1 = new BunifuTransition();
             //transition1.ShowSync(background1, false, BunifuAnimatorNS.Animation.HorizSlide);
             // transition1.HideSync(background1, false, BunifuAnimatorNS.Animation.HorizSlide);
-            background1.Controls.Add(background2);
-            background2.Location = new Point(0, 0);        
-            background2.BackColor = Color.Transparent;
             BunifuTransition transition2 = new BunifuTransition();
             
             //transition2.HideSync(background2, false, BunifuAnimatorNS.Animation.HorizBlind);
@@ -199,15 +196,7 @@ namespace Enchanter_Fashion
                 }
                 getvalue.returnvalues(setqury.get_query("shoes"), slidecounter);
             }
-            Console.WriteLine(getvalue.picfilename);
-            //background2.Image = Image.FromFile(filedirectory + getvalue.picfilename);
-            background2.BackgroundImage = Image.FromFile(filedirectory + getvalue.picfilename);
             BunifuTransition transition1 = new BunifuTransition();
-            //transition1.ShowSync(background1, false, BunifuAnimatorNS.Animation.HorizSlide);
-            // transition1.HideSync(background1, false, BunifuAnimatorNS.Animation.HorizSlide);
-            //background1.Controls.Add(background2);
-            //background2.Location = new Point(0, 0);
-            background2.BackColor = Color.Transparent;
             BunifuTransition transition2 = new BunifuTransition();
         }
 
