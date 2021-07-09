@@ -35,7 +35,28 @@ namespace Enchanter_Fashion.Display_Board
                 MySqlDataReader dr = mycomnd.ExecuteReader();
                 while (dr.Read())
                 {
-                    arrayvalues.Add(dr.GetString("pic_file_name").ToString());           
+                    arrayvalues.Add(dr.GetString("pic_file_name").ToString());
+                    if (mylist.head == null)
+                    {
+                        temp.picname = dr.GetString("pic_file_name").ToString();
+                        temp.next = null;
+                        temp.prev = null;
+                        mylist.head = temp;
+                    }
+                    else
+                    {
+
+                        current = mylist.head;
+                        while (current.next != null)
+                        {
+                            current.next = mylist.head.next;
+                            current = current.next;
+                        }
+                        temp.picname = dr.GetString("pic_file_name").ToString();
+                        temp.next = null;
+                        temp.prev = current.next;
+                        current.next = mylist.head;
+                    }
                 }             
             }
             catch(MySqlException exp)
