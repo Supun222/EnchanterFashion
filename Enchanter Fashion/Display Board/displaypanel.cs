@@ -26,7 +26,8 @@ namespace Enchanter_Fashion
         int slidecounter = 0;    
         bool isallbtnclicked = true; bool ismenbutnclicked = true; bool iskidsbtnclicked = true;
         bool iswomanbtnclicked = true; bool isshoesbutnclicked = true;
-        string filedirectory = @"D:\UOK MIT\project\Enchanter Fashion\Display Board\Images\";
+        string filedirectory = @"D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\project\Enchanter Fashion\Display Board\Images\";
+        //theruni
 
         private void button1_Click(object sender, EventArgs e)
         {        
