@@ -18,7 +18,6 @@ namespace Enchanter_Fashion.Display_Board
         public string picfilename;
         public int size=0;
         
-
         public void getconnection()
         {
             String host = "datasource=localhost;port=3306;database=enchanterfashion;username=root;password=";
@@ -27,6 +26,7 @@ namespace Enchanter_Fashion.Display_Board
 
         public void returnvalues(string sql_qury, int counter)
         {
+            //Supun
             getconnection();
             MySqlCommand mycomnd = new MySqlCommand(sql_qury, con);          
             try
