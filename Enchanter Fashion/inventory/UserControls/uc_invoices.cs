@@ -16,5 +16,10 @@ namespace Enchanter_Fashion.inventory.UserControls
         {
             InitializeComponent();
         }
+
+        private void bunifuLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
