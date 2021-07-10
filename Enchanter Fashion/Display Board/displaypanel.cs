@@ -32,7 +32,6 @@ namespace Enchanter_Fashion
         private void button1_Click(object sender, EventArgs e)
         {       
             //Supun
-            Console.WriteLine("Hellow there");
             if (sideunderline_bar.Height == all_btn.Height)
             {
                 ismenbutnclicked = true; iswomanbtnclicked = true;
