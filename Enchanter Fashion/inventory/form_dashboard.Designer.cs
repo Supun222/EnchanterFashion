@@ -50,6 +50,9 @@ namespace Enchanter_Fashion.inventory
             this.btnitem = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btncat = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnhome = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.uc_users1 = new Enchanter_Fashion.inventory.UserControls.uc_users();
+            this.uc_categories1 = new Enchanter_Fashion.inventory.UserControls.uc_categories();
+            this.uc_home1 = new Enchanter_Fashion.inventory.UserControls.uc_home();
             this.bunifuPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -775,13 +778,34 @@ namespace Enchanter_Fashion.inventory
             this.btnhome.UseDefaultRadiusAndThickness = true;
             this.btnhome.Click += new System.EventHandler(this.btnhome_Click);
             // 
+            // uc_users1
+            // 
+            this.uc_users1.BackColor = System.Drawing.Color.MistyRose;
+            resources.ApplyResources(this.uc_users1, "uc_users1");
+            this.uc_users1.Name = "uc_users1";
+            // 
+            // uc_categories1
+            // 
+            this.uc_categories1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.uc_categories1, "uc_categories1");
+            this.uc_categories1.Name = "uc_categories1";
+            // 
+            // uc_home1
+            // 
+            this.uc_home1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            resources.ApplyResources(this.uc_home1, "uc_home1");
+            this.uc_home1.Name = "uc_home1";
+            // 
             // form_dashboard
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(226)))), ((int)(((byte)(222)))));
+            this.Controls.Add(this.uc_home1);
             this.Controls.Add(this.panelControls);
             this.Controls.Add(this.bunifuPanel1);
+            this.Controls.Add(this.uc_users1);
+            this.Controls.Add(this.uc_categories1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "form_dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -803,5 +827,8 @@ namespace Enchanter_Fashion.inventory
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnsup;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnitem;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btncat;
+        private UserControls.uc_categories uc_categories1;
+        private UserControls.uc_home uc_home1;
+        private UserControls.uc_users uc_users1;
     }
 }

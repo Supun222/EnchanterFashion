@@ -40,14 +40,21 @@ namespace Enchanter_Fashion.inventory
 
         private void btnhome_Click(object sender, EventArgs e)
         {
-            uc_home uch = new uc_home();
-            AddControlsToPanel(uch);
+            //uc_home uch = new uc_home();
+            //AddControlsToPanel(uch);
+            uc_home1.BringToFront();
+            uc_categories1.SendToBack();
+            uc_users1.SendToBack();
         }
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
-            uc_categories uch = new uc_categories();
-            AddControlsToPanel(uch);
+            //uc_categories uch = new uc_categories();
+            ///AddControlsToPanel(uch);
+            ///uc_home1.BringToFront();
+            uc_home1.SendToBack();
+            uc_categories1.BringToFront();
+            uc_users1.SendToBack();
         }
 
         private void bunifuButton2_Click(object sender, EventArgs e)
@@ -75,8 +82,11 @@ namespace Enchanter_Fashion.inventory
 
         private void btnuser_Click(object sender, EventArgs e)
         {
-            uc_users uch = new uc_users();
-            AddControlsToPanel(uch);
+            //uc_users uch = new uc_users();
+            //AddControlsToPanel(uch);
+            uc_home1.SendToBack();
+            uc_categories1.SendToBack();
+            uc_users1.BringToFront();
         }
 
         private void btnorder_Click(object sender, EventArgs e)

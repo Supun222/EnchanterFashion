@@ -130,52 +130,43 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1000, 662</value>
   </data>
+  <data name="uc_home1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt, style=Bold</value>
+  </data>
+  <data name="uc_home1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>196, 117</value>
+  </data>
+  <data name="uc_home1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>789, 485</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="uc_home1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;uc_home1.Name" xml:space="preserve">
+    <value>uc_home1</value>
+  </data>
+  <data name="&gt;&gt;uc_home1.Type" xml:space="preserve">
+    <value>Enchanter_Fashion.inventory.UserControls.uc_home, Enchanter Fashion, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;uc_home1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;uc_home1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="panelControls.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAsAAAAHbCAYAAADF1iwqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAnbSURBVHhe7dwhjttQAEXRwIGFhYWFA7uEWUJhYOHAgbOL
-        wi5r4MDCwiI7/Y6/VEVVFxDfc6QnS/4Jv7ISnwAAIO9yuTyOncdezczMzMzucOd1Xb/MvP2/7UPLsryN
-        LwAAwN0bbftzNO7TzN1bW/zOzwEAwNGcZ/buxo2HUcfv+xkAABzLaN1f4/Jx5q+nvwAAHN9o3q8zf68B
-        /DzvAwDAUb3O/L3+BGL7pxwAAByZAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECK
-        AAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhg
-        AABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYA
-        IEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABS
-        BDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUA
-        AwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAA
-        ACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQ
-        IoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkC
-        GACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoAB
-        AEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACA
-        FAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgR
-        wAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEM
-        AECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAA
-        pAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECK
-        AAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhg
-        AABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYA
-        IEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABS
-        BDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUA
-        AwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAA
-        ACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQ
-        IoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkC
-        GACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoAB
-        AEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACA
-        FAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgR
-        wAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEM
-        AECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAA
-        pAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECK
-        AAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhg
-        AABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYA
-        IEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABS
-        BDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUA
-        AwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAA
-        ACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQ
-        IoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkC
-        GACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoAB
-        AEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACA
-        FAEMAECKAAYAIEUAAwCQIoABAEgRwAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgR
-        wAAApAhgAABSBDAAACkCGACAFAEMAECKAAYAIEUAAwCQIoABAEgRwAAApNwE8Mt+DwAADutvAK/r+jRv
-        AgDAIY3m/Tbz9/oE+MOyLL/3IwAAOKTPM393WxHPAwAAOJRlWb7P7L01zl48CQYA4EhG3/4Yl4eZvP8a
-        h5/WdX0e1+3NEGZmZmZm97rtRQ+PM3MBAKDodPoD3q0zI9hMrUUAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAsAAAAA4CAYAAADzcU6yAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAdtJREFUeF7t3CFOA0EYhuFKJBKJRFZyBI6ArERWVvYWSI6FRCKRqJnyb3cS0hAO
+        0PmeJ/myyU7r32za3QAAQLzT6bSt7WpHMzMzM7Mr3K73/jjy9n/Lh1pr7/UFAAC4etW2n9W4TyN3Ly3x
+        Oz4HAACz2Y3sXdWNm6rjj/UMAADmUq37VZe7kb+e/gIAML9q3ueRv+cA3o/7AAAwq+PI3/NPIJZ/ygEA
+        wMwEMAAAUQQwAABRBDAAAFEEMAAAUQQwAABRBDAAAFEEMAAAUQQwAABRBDAAAFEEMAAAUQQwAABRBDAA
+        AFEEMAAAUQQwAABRBDAAAFEEMAAAUQQwAABRBDAAAFEEMAAAUQQwAABRBDAAAFEEMAAAUQQwAABRBDAA
+        AFEEMAAAUQQwAABRBDAAAFEEMAAAUQQwAABRBDAAAFEEMAAAUQQwAABRBDAAAFEEMAAAUQQwAABRBDAA
+        AFEEMAAAUQQwAABRBDAAAFEEMAAAUQQwAABRLgL4sN4DAIBp/QZw7/1p3AQAgClV876M/D0/Ab5trX2v
+        RwAAMKWHkb+rpYjHAQAATKW19jqy91KdHTwJBgBgJtW3b3W5Gcn7Vx3e9973dV3eDGFmZmZmdq1bXvSw
+        HZkLAACJNpsfoUnSh5d5uggAAAAASUVORK5CYII=
 </value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
@@ -183,7 +174,7 @@
     <value>Stretch</value>
   </data>
   <data name="panelControls.Location" type="System.Drawing.Point, System.Drawing">
-    <value>219, 108</value>
+    <value>216, 30</value>
   </data>
   <data name="panelControls.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -192,9 +183,8 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="panelControls.Size" type="System.Drawing.Size, System.Drawing">
-    <value>704, 475</value>
+    <value>704, 56</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="panelControls.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
@@ -208,39 +198,39 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panelControls.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="bunifuPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        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
 </value>
   </data>
   <data name="bunifuPanel1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
@@ -652,10 +642,55 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bunifuPanel1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="uc_users1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>196, 117</value>
+  </data>
+  <data name="uc_users1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="uc_users1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>789, 485</value>
+  </data>
+  <data name="uc_users1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;uc_users1.Name" xml:space="preserve">
+    <value>uc_users1</value>
+  </data>
+  <data name="&gt;&gt;uc_users1.Type" xml:space="preserve">
+    <value>Enchanter_Fashion.inventory.UserControls.uc_users, Enchanter Fashion, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;uc_users1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;uc_users1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="uc_categories1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>196, 117</value>
+  </data>
+  <data name="uc_categories1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="uc_categories1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>789, 485</value>
+  </data>
+  <data name="uc_categories1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;uc_categories1.Name" xml:space="preserve">
+    <value>uc_categories1</value>
+  </data>
+  <data name="&gt;&gt;uc_categories1.Type" xml:space="preserve">
+    <value>Enchanter_Fashion.inventory.UserControls.uc_categories, Enchanter Fashion, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;uc_categories1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;uc_categories1.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
