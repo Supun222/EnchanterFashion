@@ -33,11 +33,12 @@ namespace Enchanter_Fashion.inventory.UserControls
             // 
             // uc_suppliers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackColor = System.Drawing.Color.White;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "uc_suppliers";
-            this.Size = new System.Drawing.Size(1078, 727);
+            this.Size = new System.Drawing.Size(759, 614);
             this.ResumeLayout(false);
 
         }

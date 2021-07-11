@@ -50,6 +50,9 @@ namespace Enchanter_Fashion.inventory
             this.btnitem = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btncat = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnhome = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.uc_home1 = new Enchanter_Fashion.inventory.UserControls.uc_home();
+            this.uc_users1 = new Enchanter_Fashion.inventory.UserControls.uc_users();
+            this.uc_categories1 = new Enchanter_Fashion.inventory.UserControls.uc_categories();
             this.bunifuPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -127,7 +130,7 @@ namespace Enchanter_Fashion.inventory
             this.btnexit.IconRightPadding = new System.Windows.Forms.Padding(3);
             this.btnexit.IconSize = 25;
             this.btnexit.IdleBorderColor = System.Drawing.SystemColors.Control;
-            this.btnexit.IdleBorderRadius = 38;
+            this.btnexit.IdleBorderRadius = 60;
             this.btnexit.IdleBorderThickness = 1;
             this.btnexit.IdleFillColor = System.Drawing.Color.Silver;
             this.btnexit.IdleIconLeftImage = global::Enchanter_Fashion.Properties.Resources.icons8_home_24px;
@@ -213,7 +216,7 @@ namespace Enchanter_Fashion.inventory
             this.btnuser.IconRightPadding = new System.Windows.Forms.Padding(3);
             this.btnuser.IconSize = 25;
             this.btnuser.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.btnuser.IdleBorderRadius = 38;
+            this.btnuser.IdleBorderRadius = 60;
             this.btnuser.IdleBorderThickness = 1;
             this.btnuser.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.btnuser.IdleIconLeftImage = global::Enchanter_Fashion.Properties.Resources.icons8_home_24px;
@@ -299,7 +302,7 @@ namespace Enchanter_Fashion.inventory
             this.btninv.IconRightPadding = new System.Windows.Forms.Padding(3);
             this.btninv.IconSize = 25;
             this.btninv.IdleBorderColor = System.Drawing.SystemColors.Control;
-            this.btninv.IdleBorderRadius = 38;
+            this.btninv.IdleBorderRadius = 60;
             this.btninv.IdleBorderThickness = 1;
             this.btninv.IdleFillColor = System.Drawing.Color.Silver;
             this.btninv.IdleIconLeftImage = global::Enchanter_Fashion.Properties.Resources.icons8_home_24px;
@@ -385,7 +388,7 @@ namespace Enchanter_Fashion.inventory
             this.btnorder.IconRightPadding = new System.Windows.Forms.Padding(3);
             this.btnorder.IconSize = 25;
             this.btnorder.IdleBorderColor = System.Drawing.SystemColors.Control;
-            this.btnorder.IdleBorderRadius = 38;
+            this.btnorder.IdleBorderRadius = 60;
             this.btnorder.IdleBorderThickness = 1;
             this.btnorder.IdleFillColor = System.Drawing.Color.Silver;
             this.btnorder.IdleIconLeftImage = global::Enchanter_Fashion.Properties.Resources.icons8_home_24px;
@@ -471,7 +474,7 @@ namespace Enchanter_Fashion.inventory
             this.btnsup.IconRightPadding = new System.Windows.Forms.Padding(3);
             this.btnsup.IconSize = 25;
             this.btnsup.IdleBorderColor = System.Drawing.SystemColors.Control;
-            this.btnsup.IdleBorderRadius = 38;
+            this.btnsup.IdleBorderRadius = 60;
             this.btnsup.IdleBorderThickness = 1;
             this.btnsup.IdleFillColor = System.Drawing.Color.Silver;
             this.btnsup.IdleIconLeftImage = global::Enchanter_Fashion.Properties.Resources.icons8_home_24px;
@@ -557,7 +560,7 @@ namespace Enchanter_Fashion.inventory
             this.btnitem.IconRightPadding = new System.Windows.Forms.Padding(3);
             this.btnitem.IconSize = 25;
             this.btnitem.IdleBorderColor = System.Drawing.SystemColors.Control;
-            this.btnitem.IdleBorderRadius = 38;
+            this.btnitem.IdleBorderRadius = 60;
             this.btnitem.IdleBorderThickness = 1;
             this.btnitem.IdleFillColor = System.Drawing.Color.Silver;
             this.btnitem.IdleIconLeftImage = global::Enchanter_Fashion.Properties.Resources.icons8_home_24px;
@@ -643,7 +646,7 @@ namespace Enchanter_Fashion.inventory
             this.btncat.IconRightPadding = new System.Windows.Forms.Padding(3);
             this.btncat.IconSize = 25;
             this.btncat.IdleBorderColor = System.Drawing.SystemColors.Control;
-            this.btncat.IdleBorderRadius = 38;
+            this.btncat.IdleBorderRadius = 60;
             this.btncat.IdleBorderThickness = 1;
             this.btncat.IdleFillColor = System.Drawing.Color.Silver;
             this.btncat.IdleIconLeftImage = global::Enchanter_Fashion.Properties.Resources.icons8_home_24px;
@@ -729,7 +732,7 @@ namespace Enchanter_Fashion.inventory
             this.btnhome.IconRightPadding = new System.Windows.Forms.Padding(3);
             this.btnhome.IconSize = 25;
             this.btnhome.IdleBorderColor = System.Drawing.SystemColors.Control;
-            this.btnhome.IdleBorderRadius = 38;
+            this.btnhome.IdleBorderRadius = 60;
             this.btnhome.IdleBorderThickness = 1;
             this.btnhome.IdleFillColor = System.Drawing.Color.Silver;
             this.btnhome.IdleIconLeftImage = global::Enchanter_Fashion.Properties.Resources.icons8_home_24px;
@@ -775,13 +778,34 @@ namespace Enchanter_Fashion.inventory
             this.btnhome.UseDefaultRadiusAndThickness = true;
             this.btnhome.Click += new System.EventHandler(this.btnhome_Click);
             // 
+            // uc_home1
+            // 
+            this.uc_home1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            resources.ApplyResources(this.uc_home1, "uc_home1");
+            this.uc_home1.Name = "uc_home1";
+            // 
+            // uc_users1
+            // 
+            this.uc_users1.BackColor = System.Drawing.Color.MistyRose;
+            resources.ApplyResources(this.uc_users1, "uc_users1");
+            this.uc_users1.Name = "uc_users1";
+            // 
+            // uc_categories1
+            // 
+            this.uc_categories1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.uc_categories1, "uc_categories1");
+            this.uc_categories1.Name = "uc_categories1";
+            // 
             // form_dashboard
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(226)))), ((int)(((byte)(222)))));
+            this.Controls.Add(this.uc_home1);
             this.Controls.Add(this.panelControls);
             this.Controls.Add(this.bunifuPanel1);
+            this.Controls.Add(this.uc_users1);
+            this.Controls.Add(this.uc_categories1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "form_dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -803,5 +827,8 @@ namespace Enchanter_Fashion.inventory
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnsup;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnitem;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btncat;
+        private UserControls.uc_categories uc_categories1;
+        private UserControls.uc_home uc_home1;
+        private UserControls.uc_users uc_users1;
     }
 }

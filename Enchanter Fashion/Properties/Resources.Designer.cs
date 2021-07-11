@@ -63,6 +63,16 @@ namespace Enchanter_Fashion.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_checkout_30px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_checkout_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_home_24px {
             get {
                 object obj = ResourceManager.GetObject("icons8_home_24px", resourceCulture);
@@ -76,6 +86,66 @@ namespace Enchanter_Fashion.Properties {
         internal static System.Drawing.Bitmap icons8_home_24px1 {
             get {
                 object obj = ResourceManager.GetObject("icons8_home_24px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_invoice_16px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_invoice_16px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_logout_rounded_up_26px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_logout_rounded_up_26px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_search_24px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_search_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_sorting_16px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_sorting_16px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_truck_24px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_truck_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_user_24px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_user_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
