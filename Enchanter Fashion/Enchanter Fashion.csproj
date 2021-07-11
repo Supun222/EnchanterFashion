@@ -406,6 +406,13 @@
     <Content Include="Display Board\Images\women12.png" />
     <Content Include="Display Board\Images\women21.png" />
     <Content Include="inventory\icons\icons8_home_24px.png" />
+    <None Include="Resources\icons8_search_24px.png" />
+    <None Include="Resources\icons8_truck_24px.png" />
+    <None Include="Resources\icons8_sorting_16px.png" />
+    <None Include="Resources\icons8_logout_rounded_up_26px.png" />
+    <None Include="Resources\icons8_invoice_16px.png" />
+    <None Include="Resources\icons8_checkout_30px.png" />
+    <None Include="Resources\icons8_user_24px.png" />
     <None Include="Resources\icons8_home_24px1.png" />
     <None Include="Resources\icons8_home_24px.png" />
   </ItemGroup>
