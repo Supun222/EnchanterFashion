@@ -12,28 +12,27 @@ namespace Enchanter_Fashion.Display_Board
 {
     class Dbquryvalueget
     {
-        public MySqlConnection con;
         public ArrayList arrayvalues = new ArrayList();
         public string picfilename;
-        public int size = 0;
+        public int lastelmnt;
 
         public void returnvalues(string sql_qury, int counter)
         {
             //Supun
-            MySqlConnection conn = DBConection.getconnection();
             
-            //LinkedList L = new LinkedList();
-            MySqlCommand mycomnd = new MySqlCommand(sql_qury, conn);
             try
             {
-               
-                    
-                MySqlDataReader dr = mycomnd.ExecuteReader();
+                MySqlConnection conn = DBConection.getconnection();
+                //MySqlConnection conn = new MySqlConnection();
+                //LinkedList L = new LinkedList();
+                //MySqlCommand mycomnd = new MySqlCommand(sql_qury, conn);
+                MySqlCommand myCommand = new MySqlCommand(sql_qury, conn);
+                conn.Open();
+                MySqlDataReader dr = myCommand.ExecuteReader();
                 //bool first = true;
                 while (dr.Read())
                 {
-                    
-                    
+                    arrayvalues.Add(dr.GetString("pic_file_name").ToString());
                     /*
                     if (first == true)
                     {
@@ -43,8 +42,9 @@ namespace Enchanter_Fashion.Display_Board
                     else
                     {
                         L.Add(dr.GetString("pic_file_name").ToString());
-                    }*/
-                }                
+                    }*/                 
+                }
+             
             }
             catch (MySqlException exp)
             {
@@ -52,9 +52,25 @@ namespace Enchanter_Fashion.Display_Board
             }
             catch (Exception exp)
             {
-                MessageBox.Show(exp.Message);
+                //MessageBox.Show(exp.Message);
+                Console.WriteLine("hello");
             }
 
+            Console.WriteLine((String)arrayvalues[counter]);
+            
+            if (counter>=0 && counter < arrayvalues.Count)
+            {
+                picfilename = (String)arrayvalues[counter];
+            }
+            else if (counter < 0)
+            {
+                picfilename = (String)arrayvalues[0];
+            }
+            else if(counter>=arrayvalues.Count)
+            {
+                lastelmnt = arrayvalues.Count - 1;
+                picfilename = (String)arrayvalues[lastelmnt];
+            }
             
             /*
             foreach (Node item in L)
@@ -62,7 +78,7 @@ namespace Enchanter_Fashion.Display_Board
                Console.WriteLine(item.Data);
             }*/
 
-            con.Close();          
+              
         }
 
         

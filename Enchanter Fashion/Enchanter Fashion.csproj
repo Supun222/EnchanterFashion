@@ -247,6 +247,18 @@
     <Compile Include="inventory\UserControls\uc_users.Designer.cs">
       <DependentUpon>uc_users.cs</DependentUpon>
     </Compile>
+    <Compile Include="Massage\DisplayandInventorymsg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Massage\DisplayandInventorymsg.Designer.cs">
+      <DependentUpon>DisplayandInventorymsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Massage\DIMassage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Massage\DIMassage.Designer.cs">
+      <DependentUpon>DIMassage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Signup and Registration\Login.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -333,6 +345,12 @@
     <EmbeddedResource Include="inventory\UserControls\uc_users.resx">
       <DependentUpon>uc_users.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Massage\DisplayandInventorymsg.resx">
+      <DependentUpon>DisplayandInventorymsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Massage\DIMassage.resx">
+      <DependentUpon>DIMassage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Signup and Registration\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -405,6 +423,9 @@
     <Content Include="Display Board\Images\women11.png" />
     <Content Include="Display Board\Images\women12.png" />
     <Content Include="Display Board\Images\women21.png" />
+    <Content Include="Icons\icons8_delete_20px_1.png" />
+    <Content Include="Icons\icons8_horizontal_line_20px.png" />
+    <Content Include="Icons\icons8_macos_minimize_24px.png" />
     <Content Include="inventory\icons\icons8_home_24px.png" />
     <None Include="Resources\icons8_search_24px.png" />
     <None Include="Resources\icons8_truck_24px.png" />

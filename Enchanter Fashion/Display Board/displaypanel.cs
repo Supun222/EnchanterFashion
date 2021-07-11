@@ -26,7 +26,7 @@ namespace Enchanter_Fashion
         int slidecounter = 0;    
         bool isallbtnclicked = true; bool ismenbutnclicked = true; bool iskidsbtnclicked = true;
         bool iswomanbtnclicked = true; bool isshoesbutnclicked = true;
-        string filedirectory = @"D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\project\Enchanter Fashion\Display Board\Images\";
+        string filedirectory = @"D:\Projrct\Enchanter Fashion\Display Board\Images\";
         //theruni
 
         private void button1_Click(object sender, EventArgs e)
@@ -40,13 +40,13 @@ namespace Enchanter_Fashion
                 {
                     slidecounter = 0;
                     isallbtnclicked = false;
-                    getvalue.returnvalues(setqury.get_query("all"), slidecounter);
+                    
                 }
                 else
                 {
                     slidecounter = slidecounter + 1;
                 }
-                
+                getvalue.returnvalues(setqury.get_query("all"), slidecounter);
             }
             else if (sideunderline_bar.Height == men_btn.Height)
             {
@@ -56,13 +56,13 @@ namespace Enchanter_Fashion
                 {
                     slidecounter = 0;
                     ismenbutnclicked = false;
-                    getvalue.returnvalues(setqury.get_query("men"), slidecounter);
+                    
                 }
                 else
                 {
                     slidecounter = slidecounter + 1;
                 }
-                
+               getvalue.returnvalues(setqury.get_query("men"), slidecounter);
             }
             else if (sideunderline_bar.Height == women_btn.Height)
             { 
@@ -72,14 +72,14 @@ namespace Enchanter_Fashion
                 {
                     slidecounter = 0;
                     iswomanbtnclicked = false;
-                    getvalue.returnvalues(setqury.get_query("women"), slidecounter);
+                    
                 }
                 else
                 {
                     slidecounter = slidecounter + 1;
                     
                 }
-                
+                getvalue.returnvalues(setqury.get_query("women"), slidecounter);
             }
             else if (sideunderline_bar.Height == kids_btn.Height)
             {
@@ -89,13 +89,13 @@ namespace Enchanter_Fashion
                 {
                     slidecounter = 0;
                     iskidsbtnclicked = false;
-                    getvalue.returnvalues(setqury.get_query("kids"), slidecounter);
+                    
                 }
                 else
                 {
                     slidecounter = slidecounter + 1;
                 }
-                
+                getvalue.returnvalues(setqury.get_query("kids"), slidecounter);
             }
             else
             {
@@ -105,16 +105,17 @@ namespace Enchanter_Fashion
                 {
                     slidecounter = 0;
                     isshoesbutnclicked = false;
-                    getvalue.returnvalues(setqury.get_query("shoes"), slidecounter);
+                    
                 }
                 else
                 {
                     slidecounter = slidecounter + 1;
                 }
-                
+                getvalue.returnvalues(setqury.get_query("shoes"), slidecounter);
             }
+
             //nsole.WriteLine(getvalue.picfilename);
-            //ckground2.Image = Image.FromFile(filedirectory + getvalue.picfilename);
+            background2.Image = Image.FromFile(filedirectory + getvalue.picfilename);
             BunifuTransition transition1 = new BunifuTransition();
             //transition1.ShowSync(background1, false, BunifuAnimatorNS.Animation.HorizSlide);
             // transition1.HideSync(background1, false, BunifuAnimatorNS.Animation.HorizSlide);
@@ -272,6 +273,13 @@ namespace Enchanter_Fashion
             sideunderline_bar.Height = kids_btn.Height;
             sideunderline_bar.Top = kids_btn.Top;
             button1_Click(null, null);
+        }
+
+        private void displaylogout_btn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form1 sgn = new Form1();
+            sgn.ShowDialog();
         }
     }
 }

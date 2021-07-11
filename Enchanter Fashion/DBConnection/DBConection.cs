@@ -14,7 +14,7 @@ namespace Enchanter_Fashion.DBConnection
         {
             MySqlConnection con;
             String host = "datasource=localhost;port=3306;database=enchanterfashion;username=root;password=";
-            con = new MySqlConnection(host);          
+            con = new MySqlConnection(host);
             return con;
         }
 

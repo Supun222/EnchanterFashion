@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using Enchanter_Fashion.Massage;
 
 namespace Enchanter_Fashion
 {
@@ -47,7 +48,9 @@ namespace Enchanter_Fashion
             //assigning methods of register panel 2 usercontrol
             regpanel2.reg2next_btn.Click += reg2nxt_btn_click;
             regpanel2.reg2back_btn.Click += reg2back_btn_click;
-            regpanel2.reg2sgn_lbl.Click += reg2sgn_lbl_click;       
+            regpanel2.reg2sgn_lbl.Click += reg2sgn_lbl_click;
+
+            login.Loginbtn.Click += login_Click;
         }
         
         private void Form1_Paint(object sender, PaintEventArgs e)
@@ -138,6 +141,13 @@ namespace Enchanter_Fashion
             {
                 this.Close(); 
             } 
+        }
+
+        private void login_Click(object sender, EventArgs e)
+        {
+            DIMassage msg = new DIMassage();
+            msg.ShowDialog();
+            this.Close();
         }
     }
 

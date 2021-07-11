@@ -509,7 +509,6 @@ D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter Fashion.csproj.CoreCompileInput
 D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter Fashion.csproj.CopyComplete
 D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter Fashion.exe
 D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter Fashion.pdb
-D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter Fashion.csproj.AssemblyReference.cache
 D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-2\Enchanter Fashion\bin\Debug\Enchanter Fashion.exe.config
 D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-2\Enchanter Fashion\bin\Debug\Enchanter Fashion.exe
 D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-2\Enchanter Fashion\bin\Debug\Enchanter Fashion.pdb
@@ -606,3 +605,6 @@ D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-2\Enc
 D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-2\Enchanter Fashion\obj\Debug\Enchanter Fashion.exe
 D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-2\Enchanter Fashion\obj\Debug\Enchanter Fashion.pdb
 D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-2\Enchanter Fashion\obj\Debug\Enchanter Fashion.csproj.AssemblyReference.cache
+D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter Fashion.csproj.AssemblyReference.cache
+D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Massage.DisplayandInventorymsg.resources
+D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Massage.DIMassage.resources
