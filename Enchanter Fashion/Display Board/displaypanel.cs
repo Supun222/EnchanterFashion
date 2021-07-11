@@ -40,12 +40,13 @@ namespace Enchanter_Fashion
                 {
                     slidecounter = 0;
                     isallbtnclicked = false;
+                    getvalue.returnvalues(setqury.get_query("all"), slidecounter);
                 }
                 else
                 {
                     slidecounter = slidecounter + 1;
                 }
-                getvalue.returnvalues(setqury.get_query("all"), slidecounter);              
+                
             }
             else if (sideunderline_bar.Height == men_btn.Height)
             {
@@ -55,12 +56,13 @@ namespace Enchanter_Fashion
                 {
                     slidecounter = 0;
                     ismenbutnclicked = false;
+                    getvalue.returnvalues(setqury.get_query("men"), slidecounter);
                 }
                 else
                 {
                     slidecounter = slidecounter + 1;
                 }
-                getvalue.returnvalues(setqury.get_query("men"), slidecounter);
+                
             }
             else if (sideunderline_bar.Height == women_btn.Height)
             { 
@@ -70,12 +72,14 @@ namespace Enchanter_Fashion
                 {
                     slidecounter = 0;
                     iswomanbtnclicked = false;
+                    getvalue.returnvalues(setqury.get_query("women"), slidecounter);
                 }
                 else
                 {
                     slidecounter = slidecounter + 1;
+                    
                 }
-                getvalue.returnvalues(setqury.get_query("women"), slidecounter);
+                
             }
             else if (sideunderline_bar.Height == kids_btn.Height)
             {
@@ -85,12 +89,13 @@ namespace Enchanter_Fashion
                 {
                     slidecounter = 0;
                     iskidsbtnclicked = false;
+                    getvalue.returnvalues(setqury.get_query("kids"), slidecounter);
                 }
                 else
                 {
                     slidecounter = slidecounter + 1;
                 }
-                getvalue.returnvalues(setqury.get_query("kids"), slidecounter);
+                
             }
             else
             {
@@ -100,12 +105,13 @@ namespace Enchanter_Fashion
                 {
                     slidecounter = 0;
                     isshoesbutnclicked = false;
+                    getvalue.returnvalues(setqury.get_query("shoes"), slidecounter);
                 }
                 else
                 {
                     slidecounter = slidecounter + 1;
                 }
-                getvalue.returnvalues(setqury.get_query("shoes"), slidecounter);
+                
             }
             //nsole.WriteLine(getvalue.picfilename);
             //ckground2.Image = Image.FromFile(filedirectory + getvalue.picfilename);

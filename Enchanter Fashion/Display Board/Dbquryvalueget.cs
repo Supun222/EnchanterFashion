@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using Enchanter_Fashion.DBConnection;
 using MySql.Data.MySqlClient;
 
 namespace Enchanter_Fashion.Display_Board
@@ -14,51 +15,36 @@ namespace Enchanter_Fashion.Display_Board
         public MySqlConnection con;
         public ArrayList arrayvalues = new ArrayList();
         public string picfilename;
-        public int size=0;
-        
-        public void getconnection()
-        {
-            String host = "datasource=localhost;port=3306;database=enchanterfashion;username=root;password=";
-            con = new MySqlConnection(host);
-        }
+        public int size = 0;
 
         public void returnvalues(string sql_qury, int counter)
         {
             //Supun
+            MySqlConnection conn = DBConection.getconnection();
             
-            Linkedlist mylist = new Linkedlist();
-            Node current = new Node();
-            Node curent = new Node();
-            getconnection();
-            MySqlCommand mycomnd = new MySqlCommand(sql_qury, con);
+            //LinkedList L = new LinkedList();
+            MySqlCommand mycomnd = new MySqlCommand(sql_qury, conn);
             try
             {
-                con.Open();
+               
+                    
                 MySqlDataReader dr = mycomnd.ExecuteReader();
-
+                //bool first = true;
                 while (dr.Read())
                 {
-                    ///*
-                    if (mylist.head == null)
+                    
+                    
+                    /*
+                    if (first == true)
                     {
-                        Node temp = new Node();
-                        temp.picname = dr.GetString("pic_file_name").ToString();
-                        temp.next = null;
-                        temp.prev = null;
-                        mylist.head = temp;
+                        L.AddFirst(dr.GetString("pic_file_name").ToString());
+                        first = false;
                     }
                     else
                     {
-                        current = mylist.head;                  
-                        Node temp = new Node();
-                        temp.picname = dr.GetString("pic_file_name").ToString();
-                        temp.next = null;
-                        temp.prev = current.next;
-                        current = current.next;
-                        //rrent.next = mylist.head.prev;
-                    }//*/
-                }
-                
+                        L.Add(dr.GetString("pic_file_name").ToString());
+                    }*/
+                }                
             }
             catch (MySqlException exp)
             {
@@ -69,18 +55,16 @@ namespace Enchanter_Fashion.Display_Board
                 MessageBox.Show(exp.Message);
             }
 
-            curent = mylist.head;
             
-            Console.WriteLine(curent.picname);
-            curent = curent.next;
-            
-            //de ct = new Node();
-            // = mylist.head;
-            //picfilename = current.picname;
-            //Console.WriteLine(mylist.head.picname);
-            //nsole.WriteLine(ct.next.picname);
-            // = ct.next;
-            con.Close();
+            /*
+            foreach (Node item in L)
+            {
+               Console.WriteLine(item.Data);
+            }*/
+
+            con.Close();          
         }
+
+        
     }
 }

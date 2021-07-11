@@ -170,6 +170,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBConnection\DBConection.cs" />
     <Compile Include="Display Board\Dbquryset.cs" />
     <Compile Include="Display Board\Dbquryvalueget.cs" />
     <Compile Include="Display Board\kidsbackground.cs">
@@ -178,7 +179,7 @@
     <Compile Include="Display Board\kidsbackground.Designer.cs">
       <DependentUpon>kidsbackground.cs</DependentUpon>
     </Compile>
-    <Compile Include="Display Board\Linkedlist.cs" />
+    <Compile Include="Display Board\LinkedList.cs" />
     <Compile Include="Display Board\menbackground.cs">
       <SubType>UserControl</SubType>
     </Compile>
