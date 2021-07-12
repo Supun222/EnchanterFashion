@@ -32,16 +32,18 @@ namespace Enchanter_Fashion.Massage
 
         private void loginmenubtn_click(object sender, EventArgs e)
         {
+            this.Hide();
             displaypanel ds = new displaypanel();
-            ds.ShowDialog();
-            this.Close();
+            this.Closed += (s, args) => this.Close();
+            ds.Show();
         }
 
         private void inventymenubytton_click(object sender, EventArgs e)
         {
+            this.Hide();
             testing invn = new testing();
-            invn.ShowDialog();
-            this.Close();
+            this.Closed += (s, args) => this.Close();
+            invn.Show();
         }
     }
 }

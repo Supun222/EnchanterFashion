@@ -277,9 +277,10 @@ namespace Enchanter_Fashion
 
         private void displaylogout_btn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             Form1 sgn = new Form1();
-            sgn.ShowDialog();
+            this.Closed += (s, args) => this.Close();
+            sgn.Show();
         }
     }
 }

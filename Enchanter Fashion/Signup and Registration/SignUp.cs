@@ -145,9 +145,10 @@ namespace Enchanter_Fashion
 
         private void login_Click(object sender, EventArgs e)
         {
+            this.Hide();
             DIMassage msg = new DIMassage();
-            msg.ShowDialog();
-            this.Close();
+            this.Closed += (s, args) => this.Close();
+            msg.Show();          
         }
     }
 
