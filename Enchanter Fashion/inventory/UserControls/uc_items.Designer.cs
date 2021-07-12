@@ -127,14 +127,13 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuDataGridView1.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.bunifuDataGridView1.HeaderBgColor = System.Drawing.Color.Empty;
             this.bunifuDataGridView1.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.Location = new System.Drawing.Point(4, 280);
-            this.bunifuDataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuDataGridView1.Location = new System.Drawing.Point(3, 182);
             this.bunifuDataGridView1.Name = "bunifuDataGridView1";
             this.bunifuDataGridView1.RowHeadersVisible = false;
             this.bunifuDataGridView1.RowHeadersWidth = 62;
             this.bunifuDataGridView1.RowTemplate.Height = 40;
             this.bunifuDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuDataGridView1.Size = new System.Drawing.Size(626, 278);
+            this.bunifuDataGridView1.Size = new System.Drawing.Size(417, 181);
             this.bunifuDataGridView1.TabIndex = 1;
             this.bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
@@ -185,8 +184,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuButton3.IdleIconLeftImage = null;
             this.bunifuButton3.IdleIconRightImage = null;
             this.bunifuButton3.IndicateFocus = false;
-            this.bunifuButton3.Location = new System.Drawing.Point(412, 212);
-            this.bunifuButton3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuButton3.Location = new System.Drawing.Point(275, 138);
             this.bunifuButton3.Name = "bunifuButton3";
             this.bunifuButton3.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton3.OnDisabledState.BorderRadius = 1;
@@ -220,7 +218,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuButton3.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton3.OnPressedState.IconLeftImage = null;
             this.bunifuButton3.OnPressedState.IconRightImage = null;
-            this.bunifuButton3.Size = new System.Drawing.Size(138, 46);
+            this.bunifuButton3.Size = new System.Drawing.Size(92, 30);
             this.bunifuButton3.TabIndex = 2;
             this.bunifuButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton3.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -275,8 +273,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuButton2.IdleIconLeftImage = null;
             this.bunifuButton2.IdleIconRightImage = null;
             this.bunifuButton2.IndicateFocus = false;
-            this.bunifuButton2.Location = new System.Drawing.Point(244, 212);
-            this.bunifuButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuButton2.Location = new System.Drawing.Point(163, 138);
             this.bunifuButton2.Name = "bunifuButton2";
             this.bunifuButton2.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton2.OnDisabledState.BorderRadius = 1;
@@ -310,7 +307,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuButton2.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton2.OnPressedState.IconLeftImage = null;
             this.bunifuButton2.OnPressedState.IconRightImage = null;
-            this.bunifuButton2.Size = new System.Drawing.Size(138, 46);
+            this.bunifuButton2.Size = new System.Drawing.Size(92, 30);
             this.bunifuButton2.TabIndex = 2;
             this.bunifuButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton2.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -365,8 +362,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuButton4.IdleIconLeftImage = global::Enchanter_Fashion.Properties.Resources.icons8_search_24px;
             this.bunifuButton4.IdleIconRightImage = null;
             this.bunifuButton4.IndicateFocus = false;
-            this.bunifuButton4.Location = new System.Drawing.Point(252, 48);
-            this.bunifuButton4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuButton4.Location = new System.Drawing.Point(168, 31);
             this.bunifuButton4.Name = "bunifuButton4";
             this.bunifuButton4.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton4.OnDisabledState.BorderRadius = 1;
@@ -400,9 +396,9 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuButton4.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton4.OnPressedState.IconLeftImage = null;
             this.bunifuButton4.OnPressedState.IconRightImage = null;
-            this.bunifuButton4.Size = new System.Drawing.Size(45, 46);
+            this.bunifuButton4.Size = new System.Drawing.Size(30, 30);
             this.bunifuButton4.TabIndex = 2;
-            this.bunifuButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuButton4.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.bunifuButton4.TextMarginLeft = 0;
             this.bunifuButton4.TextPadding = new System.Windows.Forms.Padding(0);
@@ -455,8 +451,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuButton1.IdleIconLeftImage = null;
             this.bunifuButton1.IdleIconRightImage = null;
             this.bunifuButton1.IndicateFocus = false;
-            this.bunifuButton1.Location = new System.Drawing.Point(74, 212);
-            this.bunifuButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuButton1.Location = new System.Drawing.Point(49, 138);
             this.bunifuButton1.Name = "bunifuButton1";
             this.bunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.OnDisabledState.BorderRadius = 1;
@@ -490,7 +485,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuButton1.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton1.OnPressedState.IconLeftImage = null;
             this.bunifuButton1.OnPressedState.IconRightImage = null;
-            this.bunifuButton1.Size = new System.Drawing.Size(138, 46);
+            this.bunifuButton1.Size = new System.Drawing.Size(92, 30);
             this.bunifuButton1.TabIndex = 2;
             this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -525,10 +520,9 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuTextBox5.IconRight = null;
             this.bunifuTextBox5.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox5.Lines = new string[0];
-            this.bunifuTextBox5.Location = new System.Drawing.Point(447, 145);
-            this.bunifuTextBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuTextBox5.Location = new System.Drawing.Point(298, 94);
             this.bunifuTextBox5.MaxLength = 32767;
-            this.bunifuTextBox5.MinimumSize = new System.Drawing.Size(2, 2);
+            this.bunifuTextBox5.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBox5.Modified = false;
             this.bunifuTextBox5.Multiline = false;
             this.bunifuTextBox5.Name = "bunifuTextBox5";
@@ -552,7 +546,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBox5.OnIdleState = stateProperties4;
-            this.bunifuTextBox5.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuTextBox5.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.bunifuTextBox5.PasswordChar = '\0';
             this.bunifuTextBox5.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.bunifuTextBox5.PlaceholderText = "Enter text";
@@ -562,7 +556,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuTextBox5.SelectionLength = 0;
             this.bunifuTextBox5.SelectionStart = 0;
             this.bunifuTextBox5.ShortcutsEnabled = true;
-            this.bunifuTextBox5.Size = new System.Drawing.Size(183, 42);
+            this.bunifuTextBox5.Size = new System.Drawing.Size(122, 27);
             this.bunifuTextBox5.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.bunifuTextBox5.TabIndex = 0;
             this.bunifuTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -600,10 +594,9 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuTextBox4.IconRight = null;
             this.bunifuTextBox4.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox4.Lines = new string[0];
-            this.bunifuTextBox4.Location = new System.Drawing.Point(225, 145);
-            this.bunifuTextBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuTextBox4.Location = new System.Drawing.Point(150, 94);
             this.bunifuTextBox4.MaxLength = 32767;
-            this.bunifuTextBox4.MinimumSize = new System.Drawing.Size(2, 2);
+            this.bunifuTextBox4.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBox4.Modified = false;
             this.bunifuTextBox4.Multiline = false;
             this.bunifuTextBox4.Name = "bunifuTextBox4";
@@ -627,7 +620,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBox4.OnIdleState = stateProperties8;
-            this.bunifuTextBox4.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuTextBox4.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.bunifuTextBox4.PasswordChar = '\0';
             this.bunifuTextBox4.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.bunifuTextBox4.PlaceholderText = "Enter text";
@@ -637,7 +630,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuTextBox4.SelectionLength = 0;
             this.bunifuTextBox4.SelectionStart = 0;
             this.bunifuTextBox4.ShortcutsEnabled = true;
-            this.bunifuTextBox4.Size = new System.Drawing.Size(183, 42);
+            this.bunifuTextBox4.Size = new System.Drawing.Size(122, 27);
             this.bunifuTextBox4.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.bunifuTextBox4.TabIndex = 0;
             this.bunifuTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -675,10 +668,9 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuTextBox3.IconRight = null;
             this.bunifuTextBox3.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox3.Lines = new string[0];
-            this.bunifuTextBox3.Location = new System.Drawing.Point(4, 145);
-            this.bunifuTextBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuTextBox3.Location = new System.Drawing.Point(3, 94);
             this.bunifuTextBox3.MaxLength = 32767;
-            this.bunifuTextBox3.MinimumSize = new System.Drawing.Size(2, 2);
+            this.bunifuTextBox3.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBox3.Modified = false;
             this.bunifuTextBox3.Multiline = false;
             this.bunifuTextBox3.Name = "bunifuTextBox3";
@@ -702,7 +694,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBox3.OnIdleState = stateProperties12;
-            this.bunifuTextBox3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuTextBox3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.bunifuTextBox3.PasswordChar = '\0';
             this.bunifuTextBox3.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.bunifuTextBox3.PlaceholderText = "Enter text";
@@ -712,7 +704,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuTextBox3.SelectionLength = 0;
             this.bunifuTextBox3.SelectionStart = 0;
             this.bunifuTextBox3.ShortcutsEnabled = true;
-            this.bunifuTextBox3.Size = new System.Drawing.Size(183, 42);
+            this.bunifuTextBox3.Size = new System.Drawing.Size(122, 27);
             this.bunifuTextBox3.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.bunifuTextBox3.TabIndex = 0;
             this.bunifuTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -750,10 +742,9 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuTextBox2.IconRight = null;
             this.bunifuTextBox2.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox2.Lines = new string[0];
-            this.bunifuTextBox2.Location = new System.Drawing.Point(369, 51);
-            this.bunifuTextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuTextBox2.Location = new System.Drawing.Point(246, 33);
             this.bunifuTextBox2.MaxLength = 32767;
-            this.bunifuTextBox2.MinimumSize = new System.Drawing.Size(2, 2);
+            this.bunifuTextBox2.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBox2.Modified = false;
             this.bunifuTextBox2.Multiline = false;
             this.bunifuTextBox2.Name = "bunifuTextBox2";
@@ -777,7 +768,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBox2.OnIdleState = stateProperties16;
-            this.bunifuTextBox2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuTextBox2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.bunifuTextBox2.PasswordChar = '\0';
             this.bunifuTextBox2.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.bunifuTextBox2.PlaceholderText = "Enter text";
@@ -787,7 +778,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuTextBox2.SelectionLength = 0;
             this.bunifuTextBox2.SelectionStart = 0;
             this.bunifuTextBox2.ShortcutsEnabled = true;
-            this.bunifuTextBox2.Size = new System.Drawing.Size(183, 42);
+            this.bunifuTextBox2.Size = new System.Drawing.Size(122, 27);
             this.bunifuTextBox2.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.bunifuTextBox2.TabIndex = 0;
             this.bunifuTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -825,10 +816,9 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuTextBox1.IconRight = null;
             this.bunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox1.Lines = new string[0];
-            this.bunifuTextBox1.Location = new System.Drawing.Point(58, 51);
-            this.bunifuTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuTextBox1.Location = new System.Drawing.Point(39, 33);
             this.bunifuTextBox1.MaxLength = 32767;
-            this.bunifuTextBox1.MinimumSize = new System.Drawing.Size(2, 2);
+            this.bunifuTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBox1.Modified = false;
             this.bunifuTextBox1.Multiline = false;
             this.bunifuTextBox1.Name = "bunifuTextBox1";
@@ -852,7 +842,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             stateProperties20.ForeColor = System.Drawing.Color.Empty;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBox1.OnIdleState = stateProperties20;
-            this.bunifuTextBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuTextBox1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.bunifuTextBox1.PasswordChar = '\0';
             this.bunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.bunifuTextBox1.PlaceholderText = "Enter text";
@@ -862,7 +852,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuTextBox1.SelectionLength = 0;
             this.bunifuTextBox1.SelectionStart = 0;
             this.bunifuTextBox1.ShortcutsEnabled = true;
-            this.bunifuTextBox1.Size = new System.Drawing.Size(183, 42);
+            this.bunifuTextBox1.Size = new System.Drawing.Size(122, 27);
             this.bunifuTextBox1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.bunifuTextBox1.TabIndex = 0;
             this.bunifuTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -920,8 +910,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuButton5.IdleIconLeftImage = global::Enchanter_Fashion.Properties.Resources.icons8_search_24px;
             this.bunifuButton5.IdleIconRightImage = null;
             this.bunifuButton5.IndicateFocus = false;
-            this.bunifuButton5.Location = new System.Drawing.Point(561, 48);
-            this.bunifuButton5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuButton5.Location = new System.Drawing.Point(374, 31);
             this.bunifuButton5.Name = "bunifuButton5";
             this.bunifuButton5.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton5.OnDisabledState.BorderRadius = 1;
@@ -955,7 +944,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuButton5.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton5.OnPressedState.IconLeftImage = null;
             this.bunifuButton5.OnPressedState.IconRightImage = null;
-            this.bunifuButton5.Size = new System.Drawing.Size(45, 46);
+            this.bunifuButton5.Size = new System.Drawing.Size(30, 30);
             this.bunifuButton5.TabIndex = 2;
             this.bunifuButton5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton5.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -970,11 +959,10 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel1.Location = new System.Drawing.Point(64, 26);
-            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuLabel1.Location = new System.Drawing.Point(43, 17);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(59, 25);
+            this.bunifuLabel1.Size = new System.Drawing.Size(38, 15);
             this.bunifuLabel1.TabIndex = 3;
             this.bunifuLabel1.Text = "Item ID";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -986,11 +974,10 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuLabel2.AutoEllipsis = false;
             this.bunifuLabel2.CursorType = null;
             this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel2.Location = new System.Drawing.Point(375, 26);
-            this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuLabel2.Location = new System.Drawing.Point(250, 17);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(88, 25);
+            this.bunifuLabel2.Size = new System.Drawing.Size(59, 15);
             this.bunifuLabel2.TabIndex = 3;
             this.bunifuLabel2.Text = "Item Name";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1002,11 +989,10 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuLabel3.AutoEllipsis = false;
             this.bunifuLabel3.CursorType = null;
             this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel3.Location = new System.Drawing.Point(10, 120);
-            this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuLabel3.Location = new System.Drawing.Point(7, 78);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(68, 25);
+            this.bunifuLabel3.Size = new System.Drawing.Size(46, 15);
             this.bunifuLabel3.TabIndex = 3;
             this.bunifuLabel3.Text = "Quantity";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1018,11 +1004,10 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuLabel4.AutoEllipsis = false;
             this.bunifuLabel4.CursorType = null;
             this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel4.Location = new System.Drawing.Point(230, 120);
-            this.bunifuLabel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuLabel4.Location = new System.Drawing.Point(153, 78);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(74, 25);
+            this.bunifuLabel4.Size = new System.Drawing.Size(51, 15);
             this.bunifuLabel4.TabIndex = 3;
             this.bunifuLabel4.Text = "Unit Price";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1034,11 +1019,10 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuLabel5.AutoEllipsis = false;
             this.bunifuLabel5.CursorType = null;
             this.bunifuLabel5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel5.Location = new System.Drawing.Point(453, 120);
-            this.bunifuLabel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuLabel5.Location = new System.Drawing.Point(302, 78);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel5.Size = new System.Drawing.Size(55, 25);
+            this.bunifuLabel5.Size = new System.Drawing.Size(38, 15);
             this.bunifuLabel5.TabIndex = 3;
             this.bunifuLabel5.Text = "Bill No.";
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1046,7 +1030,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             // 
             // uc_items
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.bunifuLabel2);
@@ -1065,8 +1049,9 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.Controls.Add(this.bunifuTextBox3);
             this.Controls.Add(this.bunifuTextBox2);
             this.Controls.Add(this.bunifuTextBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "uc_items";
-            this.Size = new System.Drawing.Size(1138, 945);
+            this.Size = new System.Drawing.Size(759, 614);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

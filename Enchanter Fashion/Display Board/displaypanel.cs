@@ -202,6 +202,7 @@ namespace Enchanter_Fashion
                 }
                 getvalue.returnvalues(setqury.get_query("shoes"), slidecounter);
             }
+            background2.Image = Image.FromFile(filedirectory + getvalue.picfilename);
             BunifuTransition transition1 = new BunifuTransition();
             BunifuTransition transition2 = new BunifuTransition();
         }

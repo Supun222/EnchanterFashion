@@ -50,8 +50,6 @@ namespace Enchanter_Fashion.inventory
 
             uc_home uch = new uc_home();
             AddControlsToPanel(uch);
-
-
         }
 
         private void btnsales_Click(object sender, EventArgs e)

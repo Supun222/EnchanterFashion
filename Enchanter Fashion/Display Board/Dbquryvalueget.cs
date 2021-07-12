@@ -12,14 +12,13 @@ namespace Enchanter_Fashion.Display_Board
 {
     class Dbquryvalueget
     {
-        public ArrayList arrayvalues = new ArrayList();
+        
         public string picfilename;
         public int lastelmnt;
-
         public void returnvalues(string sql_qury, int counter)
         {
             //Supun
-            
+            ArrayList arrayvalues = new ArrayList();
             try
             {
                 MySqlConnection conn = DBConection.getconnection();
@@ -44,7 +43,7 @@ namespace Enchanter_Fashion.Display_Board
                         L.Add(dr.GetString("pic_file_name").ToString());
                     }*/                 
                 }
-             
+                conn.Close(); 
             }
             catch (MySqlException exp)
             {
@@ -56,21 +55,22 @@ namespace Enchanter_Fashion.Display_Board
                 Console.WriteLine("hello");
             }
 
-            Console.WriteLine((String)arrayvalues[counter]);
+            //Console.WriteLine(arrayvalues[counter]);
             
             if (counter>=0 && counter < arrayvalues.Count)
             {
-                picfilename = (String)arrayvalues[counter];
+                picfilename = arrayvalues[counter].ToString();
             }
             else if (counter < 0)
             {
-                picfilename = (String)arrayvalues[0];
+                picfilename = arrayvalues[0].ToString();
             }
             else if(counter>=arrayvalues.Count)
             {
                 lastelmnt = arrayvalues.Count - 1;
-                picfilename = (String)arrayvalues[lastelmnt];
+                picfilename = arrayvalues[lastelmnt].ToString();
             }
+            arrayvalues.Clear();
             
             /*
             foreach (Node item in L)
