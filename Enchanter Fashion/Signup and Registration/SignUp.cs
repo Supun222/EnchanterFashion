@@ -36,6 +36,7 @@ namespace Enchanter_Fashion
             
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 40, 40));
+
             //set all usercontrolls appearance at the begining 
             login.BringToFront();
             regpanel1.SendToBack();

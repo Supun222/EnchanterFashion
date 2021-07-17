@@ -39,8 +39,7 @@ namespace Enchanter_Fashion
                 if (isallbtnclicked == true)
                 {
                     slidecounter = 0;
-                    isallbtnclicked = false;
-                    
+                    isallbtnclicked = false;                  
                 }
                 else
                 {
@@ -55,8 +54,7 @@ namespace Enchanter_Fashion
                 if (ismenbutnclicked == true)
                 {
                     slidecounter = 0;
-                    ismenbutnclicked = false;
-                    
+                    ismenbutnclicked = false;                  
                 }
                 else
                 {
@@ -71,8 +69,7 @@ namespace Enchanter_Fashion
                 if (iswomanbtnclicked == true)
                 {
                     slidecounter = 0;
-                    iswomanbtnclicked = false;
-                    
+                    iswomanbtnclicked = false;                   
                 }
                 else
                 {

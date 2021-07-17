@@ -19,7 +19,7 @@ namespace Enchanter_Fashion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
+            //hellow
             Application.Run(new Form1());
             //displaypanel
             //Application.Run(new displaypanel());

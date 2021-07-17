@@ -15,6 +15,15 @@ namespace Enchanter_Fashion
         public Regpanel1()
         {
             InitializeComponent();
+            // Set to no text.
+            regpswd.Text = "";
+            regcnfrmpswd.Text = "";
+            // The password character is an asterisk.
+            regpswd.PasswordChar = '*';
+            regcnfrmpswd.PasswordChar = '*';
+            // The control will allow no more than 14 characters.
+            regpswd.MaxLength = 14;
+            regcnfrmpswd.MaxLength = 14;
         }
 
         

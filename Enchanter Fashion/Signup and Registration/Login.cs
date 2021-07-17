@@ -15,6 +15,10 @@ namespace Enchanter_Fashion
         public Login()
         {
             InitializeComponent();
+            // Set to no text.
+            lgnpswd.Text = "";
+            // The password character is an asterisk.
+            lgnpswd.PasswordChar = '*';
         }
 
         private void lgsnup_btn_Click(object sender, EventArgs e)

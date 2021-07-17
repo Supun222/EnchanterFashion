@@ -16,28 +16,23 @@ namespace Enchanter_Fashion.Display_Board
         {
             if (catogery == "men")
             {
-                sql_query = "SELECT  pic_file_name FROM display WHERE item_type='men'";
-                
+                sql_query = "SELECT  pic_file_name FROM display WHERE item_type='men'";             
             }
             else if (catogery == "women")
             {
-                sql_query= "SELECT pic_file_name FROM display WHERE item_type='women'";
-                
+                sql_query= "SELECT pic_file_name FROM display WHERE item_type='women'";               
             }
             else if (catogery == "kids")
             {
-                sql_query = "SELECT  pic_file_name FROM display WHERE item_type='kids'";
-                
+                sql_query = "SELECT  pic_file_name FROM display WHERE item_type='kids'";               
             }
             else if (catogery == "shoes")
             {
-                sql_query = "SELECT  pic_file_name FROM display WHERE item_type='shoes'";
-               
+                sql_query = "SELECT  pic_file_name FROM display WHERE item_type='shoes'";               
             }
             else
             {
-                sql_query = "SELECT  pic_file_name FROM display";
-                
+                sql_query = "SELECT  pic_file_name FROM display";              
             }
             return sql_query;
         }
