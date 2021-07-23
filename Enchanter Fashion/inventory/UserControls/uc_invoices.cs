@@ -15,6 +15,7 @@ namespace Enchanter_Fashion.inventory.UserControls
         public uc_invoices()
         {
             InitializeComponent();
+            //bunifuButton6.TextAlign = ContentAlignment.TopCenter;
         }
     }
 }

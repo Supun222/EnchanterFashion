@@ -427,6 +427,7 @@
     <Content Include="Icons\icons8_horizontal_line_20px.png" />
     <Content Include="Icons\icons8_macos_minimize_24px.png" />
     <Content Include="inventory\icons\icons8_home_24px.png" />
+    <None Include="Resources\icons8_search_24px1.png" />
     <None Include="Resources\icons8_search_24px.png" />
     <None Include="Resources\icons8_truck_24px.png" />
     <None Include="Resources\icons8_sorting_16px.png" />
