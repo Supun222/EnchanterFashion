@@ -102,6 +102,7 @@ namespace Enchanter_Fashion.Display_Board
         public void claerarraylist()
         {
             arrayvalues.Clear();
+            slide = -1;
         }
     }
 }
