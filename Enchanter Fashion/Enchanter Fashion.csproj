@@ -259,6 +259,12 @@
     <Compile Include="Massage\DIMassage.Designer.cs">
       <DependentUpon>DIMassage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Massage\filenotfound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Massage\filenotfound.Designer.cs">
+      <DependentUpon>filenotfound.cs</DependentUpon>
+    </Compile>
     <Compile Include="Signup and Registration\Login.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -350,6 +356,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Massage\DIMassage.resx">
       <DependentUpon>DIMassage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Massage\filenotfound.resx">
+      <DependentUpon>filenotfound.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Signup and Registration\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
