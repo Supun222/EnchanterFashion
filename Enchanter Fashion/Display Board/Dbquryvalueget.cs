@@ -12,13 +12,14 @@ namespace Enchanter_Fashion.Display_Board
 {
     class Dbquryvalueget
     {
-        
         public string picfilename;
-        public int lastelmnt;
-        public void returnvalues(string sql_qury, int counter)
+        private int slide = -1;
+        ArrayList arrayvalues = new ArrayList();
+
+        public void settingsvalues(string sql_qury)
         {
             //Supun
-            ArrayList arrayvalues = new ArrayList();
+            
             try
             {
                 MySqlConnection conn = DBConection.getconnection();
@@ -52,35 +53,55 @@ namespace Enchanter_Fashion.Display_Board
             catch (Exception exp)
             {
                 //MessageBox.Show(exp.Message);
-                Console.WriteLine("hello");
-            }
-
-            //Console.WriteLine(arrayvalues[counter]);
-            
-            if (counter>=0 && counter < arrayvalues.Count)
-            {
-                picfilename = arrayvalues[counter].ToString();
-            }
-            else if (counter < 0)
-            {
-                picfilename = arrayvalues[0].ToString();
-            }
-            else if(counter>=arrayvalues.Count)
-            {
-                lastelmnt = arrayvalues.Count - 1;
-                picfilename = arrayvalues[lastelmnt].ToString();
-            }
-            arrayvalues.Clear();
-            
+                Console.WriteLine("hello"); 
+            }        
             /*
             foreach (Node item in L)
             {
                Console.WriteLine(item.Data);
-            }*/
-
-              
+            }*/           
+        } 
+        
+        public void returnnextvalues()
+        {
+            if (slide >= arrayvalues.Count - 1 )
+            {
+                slide = arrayvalues.Count - 1;
+                picfilename = arrayvalues[slide].ToString();
+                //Console.WriteLine(slide);
+                //Console.WriteLine(arrayvalues[slide].ToString()); 
+            }
+            else
+            {
+                slide = slide + 1;
+                picfilename = arrayvalues[slide].ToString();
+                //Console.WriteLine(slide);
+                //Console.WriteLine(arrayvalues[slide].ToString());           
+            }
         }
 
-        
+        public void returnpreviuosvalues()
+        {
+            if (slide <= 0 )
+            {
+                slide = 0;
+                picfilename = arrayvalues[0].ToString();
+                //Console.WriteLine(slide);
+                //Console.WriteLine(arrayvalues[0].ToString());
+            }
+            else
+            {
+                slide = slide - 1;
+                picfilename = arrayvalues[slide].ToString();
+                //Console.WriteLine(slide);
+                //Console.WriteLine(arrayvalues[slide].ToString());                         
+            }
+            
+        }
+
+        public void claerarraylist()
+        {
+            arrayvalues.Clear();
+        }
     }
 }

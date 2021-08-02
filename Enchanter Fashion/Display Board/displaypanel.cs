@@ -22,8 +22,7 @@ namespace Enchanter_Fashion
         }
 
         Dbquryset setqury = new Dbquryset();
-        Dbquryvalueget getvalue = new Dbquryvalueget();
-        int slidecounter = 0;    
+        Dbquryvalueget getvalue = new Dbquryvalueget();    
         bool isallbtnclicked = true; bool ismenbutnclicked = true; bool iskidsbtnclicked = true;
         bool iswomanbtnclicked = true; bool isshoesbutnclicked = true;
         string filedirectory = @"D:\Projrct\Enchanter Fashion\Display Board\Images\";
@@ -38,14 +37,16 @@ namespace Enchanter_Fashion
                 isshoesbutnclicked = true; iskidsbtnclicked = true;
                 if (isallbtnclicked == true)
                 {
-                    slidecounter = 0;
+                    getvalue.claerarraylist();
+                    getvalue.settingsvalues(setqury.get_query("all"));
+                    getvalue.returnnextvalues();
                     isallbtnclicked = false;                  
                 }
                 else
                 {
-                    slidecounter = slidecounter + 1;
+                    getvalue.returnnextvalues();
                 }
-                getvalue.returnvalues(setqury.get_query("all"), slidecounter);
+              
             }
             else if (sideunderline_bar.Height == men_btn.Height)
             {
@@ -53,14 +54,16 @@ namespace Enchanter_Fashion
                 isshoesbutnclicked = true; iskidsbtnclicked = true;
                 if (ismenbutnclicked == true)
                 {
-                    slidecounter = 0;
+                    getvalue.claerarraylist();
+                    getvalue.settingsvalues(setqury.get_query("men"));
+                    getvalue.returnnextvalues();
                     ismenbutnclicked = false;                  
                 }
                 else
                 {
-                    slidecounter = slidecounter + 1;
+                    getvalue.returnnextvalues();
                 }
-               getvalue.returnvalues(setqury.get_query("men"), slidecounter);
+                
             }
             else if (sideunderline_bar.Height == women_btn.Height)
             { 
@@ -68,15 +71,16 @@ namespace Enchanter_Fashion
                 isshoesbutnclicked = true; iskidsbtnclicked = true;
                 if (iswomanbtnclicked == true)
                 {
-                    slidecounter = 0;
+                    getvalue.claerarraylist();
+                    getvalue.settingsvalues(setqury.get_query("women"));
+                    getvalue.returnnextvalues();
                     iswomanbtnclicked = false;                   
                 }
                 else
                 {
-                    slidecounter = slidecounter + 1;
-                    
+                    getvalue.returnnextvalues();
                 }
-                getvalue.returnvalues(setqury.get_query("women"), slidecounter);
+                
             }
             else if (sideunderline_bar.Height == kids_btn.Height)
             {
@@ -84,15 +88,17 @@ namespace Enchanter_Fashion
                 isshoesbutnclicked = true;
                 if (iskidsbtnclicked == true)
                 {
-                    slidecounter = 0;
+                    getvalue.claerarraylist();
+                    getvalue.settingsvalues(setqury.get_query("kids"));
+                    getvalue.returnnextvalues();
                     iskidsbtnclicked = false;
                     
                 }
                 else
                 {
-                    slidecounter = slidecounter + 1;
+                    getvalue.returnnextvalues();
                 }
-                getvalue.returnvalues(setqury.get_query("kids"), slidecounter);
+                
             }
             else
             {
@@ -100,24 +106,26 @@ namespace Enchanter_Fashion
                 iskidsbtnclicked = true;
                 if (isshoesbutnclicked == true)
                 {
-                    slidecounter = 0;
+                    getvalue.claerarraylist();
+                    getvalue.settingsvalues(setqury.get_query("shoes"));
+                    getvalue.returnnextvalues();
                     isshoesbutnclicked = false;
                     
                 }
                 else
                 {
-                    slidecounter = slidecounter + 1;
-                }
-                getvalue.returnvalues(setqury.get_query("shoes"), slidecounter);
+                    getvalue.returnnextvalues();
+                }          
             }
 
             //nsole.WriteLine(getvalue.picfilename);
             background2.Image = Image.FromFile(filedirectory + getvalue.picfilename);
-            BunifuTransition transition1 = new BunifuTransition();
-            //transition1.ShowSync(background1, false, BunifuAnimatorNS.Animation.HorizSlide);
+            //bunifuTransition1.HideSync(background2);
+            //bunifuTransition1.ShowSync(background2);
+
             // transition1.HideSync(background1, false, BunifuAnimatorNS.Animation.HorizSlide);
-            BunifuTransition transition2 = new BunifuTransition();
-            
+            //BunifuTransition transition2 = new BunifuTransition();
+
             //transition2.HideSync(background2, false, BunifuAnimatorNS.Animation.HorizBlind);
             //transition2.ShowSync(background2, false, BunifuAnimatorNS.Animation.HorizBlind);
         }
@@ -130,14 +138,15 @@ namespace Enchanter_Fashion
                 isshoesbutnclicked = true; iskidsbtnclicked = true;
                 if (isallbtnclicked == true)
                 {
-                    slidecounter = 0;
+                    getvalue.claerarraylist();
+                    getvalue.settingsvalues(setqury.get_query("all"));
+                    getvalue.returnpreviuosvalues();
                     isallbtnclicked = false;
                 }
                 else
                 {
-                    slidecounter = slidecounter - 1;
-                }
-                getvalue.returnvalues(setqury.get_query("all"), slidecounter);
+                    getvalue.returnpreviuosvalues();
+                }              
             }
             else if (sideunderline_bar.Height == men_btn.Height)
             {
@@ -145,14 +154,15 @@ namespace Enchanter_Fashion
                 isshoesbutnclicked = true; iskidsbtnclicked = true;
                 if (ismenbutnclicked == true)
                 {
-                    slidecounter = 0;
+                    getvalue.claerarraylist();
+                    getvalue.settingsvalues(setqury.get_query("men"));
+                    getvalue.returnpreviuosvalues();
                     ismenbutnclicked = false;
                 }
                 else
                 {
-                    slidecounter = slidecounter - 1;
-                }
-                getvalue.returnvalues(setqury.get_query("men"), slidecounter);
+                    getvalue.returnpreviuosvalues();
+                }              
             }
             else if (sideunderline_bar.Height == women_btn.Height)
             {
@@ -160,14 +170,15 @@ namespace Enchanter_Fashion
                 isshoesbutnclicked = true; iskidsbtnclicked = true;
                 if (iswomanbtnclicked == true)
                 {
-                    slidecounter = 0;
+                    getvalue.claerarraylist();
+                    getvalue.settingsvalues(setqury.get_query("women"));
+                    getvalue.returnpreviuosvalues();
                     iswomanbtnclicked = false;
                 }
                 else
                 {
-                    slidecounter = slidecounter - 1;
-                }
-                getvalue.returnvalues(setqury.get_query("women"), slidecounter);
+                    getvalue.returnpreviuosvalues();
+                }             
             }
             else if (sideunderline_bar.Height == kids_btn.Height)
             {
@@ -175,14 +186,15 @@ namespace Enchanter_Fashion
                 isshoesbutnclicked = true;
                 if (iskidsbtnclicked == true)
                 {
-                    slidecounter = 0;
+                    getvalue.claerarraylist();
+                    getvalue.settingsvalues(setqury.get_query("kids"));
+                    getvalue.returnpreviuosvalues();
                     iskidsbtnclicked = false;
                 }
                 else
                 {
-                    slidecounter = slidecounter - 1;
-                }
-                getvalue.returnvalues(setqury.get_query("kids"), slidecounter);
+                    getvalue.returnpreviuosvalues();
+                }        
             }
             else
             {
@@ -190,14 +202,15 @@ namespace Enchanter_Fashion
                 iskidsbtnclicked = true;
                 if (isshoesbutnclicked == true)
                 {
-                    slidecounter = 0;
+                    getvalue.claerarraylist();
+                    getvalue.settingsvalues(setqury.get_query("shoes"));
+                    getvalue.returnpreviuosvalues();
                     isshoesbutnclicked = false;
                 }
                 else
                 {
-                    slidecounter = slidecounter - 1;
+                    getvalue.returnpreviuosvalues();
                 }
-                getvalue.returnvalues(setqury.get_query("shoes"), slidecounter);
             }
             background2.Image = Image.FromFile(filedirectory + getvalue.picfilename);
             BunifuTransition transition1 = new BunifuTransition();
