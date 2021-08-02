@@ -123,6 +123,16 @@ namespace Enchanter_Fashion.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_search_24px1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_search_24px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_sorting_16px {
             get {
                 object obj = ResourceManager.GetObject("icons8_sorting_16px", resourceCulture);

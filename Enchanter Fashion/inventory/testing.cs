@@ -112,7 +112,7 @@ namespace Enchanter_Fashion.inventory
               uc_invoices1.SendToBack();
               uc_categories1.SendToBack();*/
 
-            uc_orders uch = new uc_orders();
+            uc_suppliers uch = new uc_suppliers();
             AddControlsToPanel(uch);
 
         }

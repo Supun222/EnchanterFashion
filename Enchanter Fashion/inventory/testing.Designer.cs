@@ -40,19 +40,19 @@ namespace Enchanter_Fashion.inventory
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panelControls = new Bunifu.UI.WinForms.BunifuPanel();
-            this.uc_categories2 = new Enchanter_Fashion.inventory.UserControls.uc_categories();
-            this.uc_invoices2 = new Enchanter_Fashion.inventory.UserControls.uc_invoices();
-            this.uc_users1 = new Enchanter_Fashion.inventory.UserControls.uc_users();
-            this.uc_invoices1 = new Enchanter_Fashion.inventory.UserControls.uc_invoices();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.btnsales = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnsup = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btncat = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.uc_categories1 = new Enchanter_Fashion.inventory.UserControls.uc_categories();
             this.btnexit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnusers = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btninvo = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.uc_categories2 = new Enchanter_Fashion.inventory.UserControls.uc_categories();
+            this.uc_invoices2 = new Enchanter_Fashion.inventory.UserControls.uc_invoices();
+            this.uc_users1 = new Enchanter_Fashion.inventory.UserControls.uc_users();
+            this.uc_invoices1 = new Enchanter_Fashion.inventory.UserControls.uc_invoices();
+            this.uc_categories1 = new Enchanter_Fashion.inventory.UserControls.uc_categories();
             this.panelControls.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -80,38 +80,6 @@ namespace Enchanter_Fashion.inventory
             this.panelControls.ShowBorders = true;
             this.panelControls.Size = new System.Drawing.Size(759, 614);
             this.panelControls.TabIndex = 1;
-            // 
-            // uc_categories2
-            // 
-            this.uc_categories2.BackColor = System.Drawing.Color.White;
-            this.uc_categories2.Location = new System.Drawing.Point(1700, 178);
-            this.uc_categories2.Name = "uc_categories2";
-            this.uc_categories2.Size = new System.Drawing.Size(14375, 9994);
-            this.uc_categories2.TabIndex = 7;
-            // 
-            // uc_invoices2
-            // 
-            this.uc_invoices2.BackColor = System.Drawing.Color.White;
-            this.uc_invoices2.Location = new System.Drawing.Point(1312, 34);
-            this.uc_invoices2.Name = "uc_invoices2";
-            this.uc_invoices2.Size = new System.Drawing.Size(14755, 10138);
-            this.uc_invoices2.TabIndex = 6;
-            // 
-            // uc_users1
-            // 
-            this.uc_users1.BackColor = System.Drawing.Color.White;
-            this.uc_users1.Location = new System.Drawing.Point(925, 55);
-            this.uc_users1.Name = "uc_users1";
-            this.uc_users1.Size = new System.Drawing.Size(15138, 10364);
-            this.uc_users1.TabIndex = 5;
-            // 
-            // uc_invoices1
-            // 
-            this.uc_invoices1.BackColor = System.Drawing.Color.PapayaWhip;
-            this.uc_invoices1.Location = new System.Drawing.Point(-603, -18919);
-            this.uc_invoices1.Name = "uc_invoices1";
-            this.uc_invoices1.Size = new System.Drawing.Size(26078, 17199);
-            this.uc_invoices1.TabIndex = 3;
             // 
             // bunifuPanel1
             // 
@@ -330,7 +298,7 @@ namespace Enchanter_Fashion.inventory
             this.btncat.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(196)))), ((int)(((byte)(196)))));
             this.btncat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btncat.BackgroundImage")));
             this.btncat.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btncat.ButtonText = "Categories";
+            this.btncat.ButtonText = "Items";
             this.btncat.ButtonTextMarginLeft = 0;
             this.btncat.ColorContrastOnClick = 45;
             this.btncat.ColorContrastOnHover = 45;
@@ -405,14 +373,6 @@ namespace Enchanter_Fashion.inventory
             this.btncat.TextPadding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btncat.UseDefaultRadiusAndThickness = true;
             this.btncat.Click += new System.EventHandler(this.btncat_Click);
-            // 
-            // uc_categories1
-            // 
-            this.uc_categories1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.uc_categories1.Location = new System.Drawing.Point(4075, -23063);
-            this.uc_categories1.Name = "uc_categories1";
-            this.uc_categories1.Size = new System.Drawing.Size(26063, 17199);
-            this.uc_categories1.TabIndex = 2;
             // 
             // btnexit
             // 
@@ -773,6 +733,51 @@ namespace Enchanter_Fashion.inventory
             this.bunifuButton1.TextPadding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.bunifuButton1.UseDefaultRadiusAndThickness = true;
             this.bunifuButton1.Click += new System.EventHandler(this.bunifuButton1_Click);
+            // 
+            // uc_categories2
+            // 
+            this.uc_categories2.BackColor = System.Drawing.Color.White;
+            this.uc_categories2.Location = new System.Drawing.Point(4113, 400);
+            this.uc_categories2.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.uc_categories2.Name = "uc_categories2";
+            this.uc_categories2.Size = new System.Drawing.Size(34784, 22486);
+            this.uc_categories2.TabIndex = 7;
+            // 
+            // uc_invoices2
+            // 
+            this.uc_invoices2.BackColor = System.Drawing.Color.White;
+            this.uc_invoices2.Location = new System.Drawing.Point(3175, 76);
+            this.uc_invoices2.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.uc_invoices2.Name = "uc_invoices2";
+            this.uc_invoices2.Size = new System.Drawing.Size(35703, 22810);
+            this.uc_invoices2.TabIndex = 6;
+            // 
+            // uc_users1
+            // 
+            this.uc_users1.BackColor = System.Drawing.Color.White;
+            this.uc_users1.Location = new System.Drawing.Point(2238, 123);
+            this.uc_users1.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.uc_users1.Name = "uc_users1";
+            this.uc_users1.Size = new System.Drawing.Size(36630, 23319);
+            this.uc_users1.TabIndex = 5;
+            // 
+            // uc_invoices1
+            // 
+            this.uc_invoices1.BackColor = System.Drawing.Color.PapayaWhip;
+            this.uc_invoices1.Location = new System.Drawing.Point(-1459, -32768);
+            this.uc_invoices1.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.uc_invoices1.Name = "uc_invoices1";
+            this.uc_invoices1.Size = new System.Drawing.Size(63103, 38697);
+            this.uc_invoices1.TabIndex = 3;
+            // 
+            // uc_categories1
+            // 
+            this.uc_categories1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.uc_categories1.Location = new System.Drawing.Point(9861, -32768);
+            this.uc_categories1.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.uc_categories1.Name = "uc_categories1";
+            this.uc_categories1.Size = new System.Drawing.Size(63065, 38697);
+            this.uc_categories1.TabIndex = 2;
             // 
             // testing
             // 
