@@ -1,4 +1,4 @@
-﻿ using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,19 +6,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using Enchanter_Fashion.DBConnection;
+using Enchanter_Fashion.Massage;
 using MySql.Data.MySqlClient;
 
 namespace Enchanter_Fashion.Display_Board
 {
     class Dbquryvalueget
     {
-        
         public string picfilename;
-        public int lastelmnt;
-        public void returnvalues(string sql_qury, int counter)
+        private int slide = -1;
+        public int totalslides;
+        public int cuurentslide;
+        ArrayList arrayvalues = new ArrayList();
+
+        public void settingsvalues(string sql_qury)
         {
             //Supun
-            ArrayList arrayvalues = new ArrayList();
+
             try
             {
                 MySqlConnection conn = DBConection.getconnection();
@@ -41,9 +45,10 @@ namespace Enchanter_Fashion.Display_Board
                     else
                     {
                         L.Add(dr.GetString("pic_file_name").ToString());
-                    }*/                 
+                    }*/
                 }
-                conn.Close(); 
+                totalslides = arrayvalues.Count;
+                conn.Close();
             }
             catch (MySqlException exp)
             {
@@ -54,33 +59,71 @@ namespace Enchanter_Fashion.Display_Board
                 //MessageBox.Show(exp.Message);
                 Console.WriteLine("hello");
             }
-
-            //Console.WriteLine(arrayvalues[counter]);
-            
-            if (counter>=0 && counter < arrayvalues.Count)
-            {
-                picfilename = arrayvalues[counter].ToString();
-            }
-            else if (counter < 0)
-            {
-                picfilename = arrayvalues[0].ToString();
-            }
-            else if(counter>=arrayvalues.Count)
-            {
-                lastelmnt = arrayvalues.Count - 1;
-                picfilename = arrayvalues[lastelmnt].ToString();
-            }
-            arrayvalues.Clear();
-            
             /*
             foreach (Node item in L)
             {
                Console.WriteLine(item.Data);
             }*/
-
-              
         }
 
-        
+        public void returnnextvalues()
+        {
+            try
+            {
+                if (slide >= arrayvalues.Count - 1)
+                {
+                    slide = arrayvalues.Count - 1;
+                    picfilename = arrayvalues[slide].ToString();
+                    //Console.WriteLine(slide);
+                    //Console.WriteLine(arrayvalues[slide].ToString()); 
+                }
+                else
+                {
+                    slide = slide + 1;
+                    picfilename = arrayvalues[slide].ToString();
+                    //Console.WriteLine(slide);
+                    //Console.WriteLine(arrayvalues[slide].ToString());           
+                }
+                cuurentslide = slide;
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                filenotfound fillmissing = new filenotfound();
+                fillmissing.Show();
+            }
+        }
+
+        public void returnpreviuosvalues()
+        {
+            try
+            {
+                if (slide <= 0)
+                {
+                    slide = 0;
+                    picfilename = arrayvalues[0].ToString();
+                    //Console.WriteLine(slide);
+                    //Console.WriteLine(arrayvalues[0].ToString());
+                }
+                else
+                {
+                    slide = slide - 1;
+                    picfilename = arrayvalues[slide].ToString();
+                    //Console.WriteLine(slide);
+                    //Console.WriteLine(arrayvalues[slide].ToString());                         
+                }
+                cuurentslide = slide;
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                filenotfound fillmissing = new filenotfound();
+                fillmissing.Show();
+            }           
+        }
+
+        public void claerarraylist()
+        {
+            arrayvalues.Clear();
+            slide = -1;
+        }
     }
 }

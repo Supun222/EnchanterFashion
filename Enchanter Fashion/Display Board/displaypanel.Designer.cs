@@ -37,7 +37,6 @@ namespace Enchanter_Fashion
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuAnimatorNS.Animation animation1 = new Bunifu.UI.WinForms.BunifuAnimatorNS.Animation();
-            Bunifu.UI.WinForms.BunifuAnimatorNS.Animation animation2 = new Bunifu.UI.WinForms.BunifuAnimatorNS.Animation();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -67,18 +66,17 @@ namespace Enchanter_Fashion
             this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.background1 = new System.Windows.Forms.PictureBox();
-            this.background2 = new System.Windows.Forms.PictureBox();
-            this.bunifuTransition1 = new Bunifu.UI.WinForms.BunifuTransition(this.components);
             this.currntlbl = new Bunifu.UI.WinForms.BunifuLabel();
             this.totllbl = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuTransition2 = new Bunifu.UI.WinForms.BunifuTransition(this.components);
+            this.bunifuTransition1 = new Bunifu.UI.WinForms.BunifuTransition(this.components);
+            this.background2 = new System.Windows.Forms.PictureBox();
+            this.background1 = new System.Windows.Forms.PictureBox();
             this.kids1 = new Enchanter_Fashion.Display_Board.kidsbackground();
             this.bunifuPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.background1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.background2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.background1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuPanel1
@@ -103,7 +101,6 @@ namespace Enchanter_Fashion
             this.bunifuPanel1.Controls.Add(this.button4);
             this.bunifuPanel1.Controls.Add(this.button5);
             this.bunifuPanel1.Controls.Add(this.label9);
-            this.bunifuTransition2.SetDecoration(this.bunifuPanel1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.bunifuPanel1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.bunifuPanel1.Location = new System.Drawing.Point(19, 12);
             this.bunifuPanel1.Name = "bunifuPanel1";
@@ -116,7 +113,6 @@ namespace Enchanter_Fashion
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuTransition1.SetDecoration(this.label1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(20, 31);
             this.label1.Name = "label1";
@@ -129,7 +125,6 @@ namespace Enchanter_Fashion
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuTransition1.SetDecoration(this.label2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.label2.Font = new System.Drawing.Font("Red Hat Text", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(57, 54);
             this.label2.Name = "label2";
@@ -143,7 +138,6 @@ namespace Enchanter_Fashion
             this.bunifuSeparator2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator2.BackgroundImage")));
             this.bunifuSeparator2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuSeparator2.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
-            this.bunifuTransition2.SetDecoration(this.bunifuSeparator2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.bunifuSeparator2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.bunifuSeparator2.LineColor = System.Drawing.Color.DimGray;
             this.bunifuSeparator2.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
@@ -159,7 +153,6 @@ namespace Enchanter_Fashion
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.bunifuTransition1.SetDecoration(this.label3, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label3, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.label3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(23, 170);
             this.label3.Name = "label3";
@@ -171,7 +164,6 @@ namespace Enchanter_Fashion
             // 
             this.shoes_btn.BackColor = System.Drawing.Color.Transparent;
             this.bunifuTransition1.SetDecoration(this.shoes_btn, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.shoes_btn, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.shoes_btn.FlatAppearance.BorderSize = 0;
             this.shoes_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.shoes_btn.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -188,7 +180,6 @@ namespace Enchanter_Fashion
             // 
             this.kids_btn.BackColor = System.Drawing.Color.Transparent;
             this.bunifuTransition1.SetDecoration(this.kids_btn, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.kids_btn, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.kids_btn.FlatAppearance.BorderSize = 0;
             this.kids_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.kids_btn.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -205,7 +196,6 @@ namespace Enchanter_Fashion
             // 
             this.women_btn.BackColor = System.Drawing.Color.Transparent;
             this.bunifuTransition1.SetDecoration(this.women_btn, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.women_btn, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.women_btn.FlatAppearance.BorderSize = 0;
             this.women_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.women_btn.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -222,7 +212,6 @@ namespace Enchanter_Fashion
             // 
             this.men_btn.BackColor = System.Drawing.Color.Transparent;
             this.bunifuTransition1.SetDecoration(this.men_btn, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.men_btn, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.men_btn.FlatAppearance.BorderSize = 0;
             this.men_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.men_btn.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -240,7 +229,6 @@ namespace Enchanter_Fashion
             // 
             this.all_btn.BackColor = System.Drawing.Color.Transparent;
             this.bunifuTransition1.SetDecoration(this.all_btn, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.all_btn, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.all_btn.FlatAppearance.BorderSize = 0;
             this.all_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.all_btn.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -258,7 +246,6 @@ namespace Enchanter_Fashion
             // sideunderline_bar
             // 
             this.sideunderline_bar.BackColor = System.Drawing.SystemColors.MenuText;
-            this.bunifuTransition2.SetDecoration(this.sideunderline_bar, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.sideunderline_bar, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.sideunderline_bar.Location = new System.Drawing.Point(25, 250);
             this.sideunderline_bar.Name = "sideunderline_bar";
@@ -269,7 +256,6 @@ namespace Enchanter_Fashion
             // 
             this.button3.BackColor = System.Drawing.Color.Transparent;
             this.bunifuTransition1.SetDecoration(this.button3, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.button3, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
@@ -284,7 +270,6 @@ namespace Enchanter_Fashion
             // 
             this.button4.BackColor = System.Drawing.Color.Transparent;
             this.bunifuTransition1.SetDecoration(this.button4, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.button4, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
@@ -299,7 +284,6 @@ namespace Enchanter_Fashion
             // 
             this.button5.BackColor = System.Drawing.Color.Transparent;
             this.bunifuTransition1.SetDecoration(this.button5, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.button5, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
@@ -315,7 +299,6 @@ namespace Enchanter_Fashion
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.bunifuTransition1.SetDecoration(this.label9, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label9, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.label9.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(32, 639);
             this.label9.Name = "label9";
@@ -332,7 +315,6 @@ namespace Enchanter_Fashion
             this.panel1.Controls.Add(this.drstyplbl);
             this.panel1.Controls.Add(this.bunifuLabel1);
             this.panel1.Controls.Add(this.bunifuButton1);
-            this.bunifuTransition2.SetDecoration(this.panel1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.panel1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.panel1.Location = new System.Drawing.Point(864, 83);
             this.panel1.Name = "panel1";
@@ -345,7 +327,6 @@ namespace Enchanter_Fashion
             this.descptnlbl.AutoEllipsis = false;
             this.descptnlbl.CursorType = null;
             this.bunifuTransition1.SetDecoration(this.descptnlbl, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.descptnlbl, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.descptnlbl.Font = new System.Drawing.Font("Arial", 9.75F);
             this.descptnlbl.Location = new System.Drawing.Point(21, 153);
             this.descptnlbl.Name = "descptnlbl";
@@ -362,7 +343,6 @@ namespace Enchanter_Fashion
             this.prclbl.AutoEllipsis = false;
             this.prclbl.CursorType = null;
             this.bunifuTransition1.SetDecoration(this.prclbl, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.prclbl, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.prclbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.prclbl.Location = new System.Drawing.Point(21, 118);
             this.prclbl.Name = "prclbl";
@@ -379,7 +359,6 @@ namespace Enchanter_Fashion
             this.iteamnmlbl.AutoEllipsis = false;
             this.iteamnmlbl.CursorType = null;
             this.bunifuTransition1.SetDecoration(this.iteamnmlbl, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.iteamnmlbl, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.iteamnmlbl.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iteamnmlbl.Location = new System.Drawing.Point(21, 62);
             this.iteamnmlbl.Name = "iteamnmlbl";
@@ -397,7 +376,6 @@ namespace Enchanter_Fashion
             this.drstyplbl.Cursor = System.Windows.Forms.Cursors.Default;
             this.drstyplbl.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuTransition1.SetDecoration(this.drstyplbl, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.drstyplbl, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.drstyplbl.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.drstyplbl.Location = new System.Drawing.Point(119, 21);
             this.drstyplbl.Name = "drstyplbl";
@@ -415,7 +393,6 @@ namespace Enchanter_Fashion
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuTransition1.SetDecoration(this.bunifuLabel1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.bunifuLabel1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.bunifuLabel1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel1.Location = new System.Drawing.Point(21, 19);
             this.bunifuLabel1.Name = "bunifuLabel1";
@@ -450,7 +427,6 @@ namespace Enchanter_Fashion
             borderEdges1.TopLeft = true;
             borderEdges1.TopRight = true;
             this.bunifuButton1.CustomizableEdges = borderEdges1;
-            this.bunifuTransition2.SetDecoration(this.bunifuButton1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.bunifuButton1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.bunifuButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -522,7 +498,6 @@ namespace Enchanter_Fashion
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.bunifuTransition1.SetDecoration(this.button1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.button1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
@@ -538,7 +513,6 @@ namespace Enchanter_Fashion
             // 
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuTransition1.SetDecoration(this.button2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.button2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
@@ -556,7 +530,6 @@ namespace Enchanter_Fashion
             this.bunifuSeparator1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator1.BackgroundImage")));
             this.bunifuSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuSeparator1.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
-            this.bunifuTransition2.SetDecoration(this.bunifuSeparator1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.bunifuSeparator1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.bunifuSeparator1.LineColor = System.Drawing.Color.DimGray;
             this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
@@ -571,7 +544,6 @@ namespace Enchanter_Fashion
             // 
             this.displaylogout_btn.BackColor = System.Drawing.Color.Transparent;
             this.bunifuTransition1.SetDecoration(this.displaylogout_btn, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.displaylogout_btn, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.displaylogout_btn.FlatAppearance.BorderSize = 0;
             this.displaylogout_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.displaylogout_btn.Image = ((System.Drawing.Image)(resources.GetObject("displaylogout_btn.Image")));
@@ -601,7 +573,6 @@ namespace Enchanter_Fashion
             this.bunifuTextBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.bunifuTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTransition1.SetDecoration(this.bunifuTextBox1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.bunifuTextBox1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.bunifuTextBox1.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
             this.bunifuTextBox1.DefaultText = "";
             this.bunifuTextBox1.FillColor = System.Drawing.Color.White;
@@ -664,7 +635,6 @@ namespace Enchanter_Fashion
             // 
             this.button7.BackColor = System.Drawing.Color.Transparent;
             this.bunifuTransition1.SetDecoration(this.button7, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.button7, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
@@ -679,7 +649,6 @@ namespace Enchanter_Fashion
             // 
             this.button8.BackColor = System.Drawing.Color.Transparent;
             this.bunifuTransition1.SetDecoration(this.button8, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.button8, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.button8.FlatAppearance.BorderSize = 0;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
@@ -690,33 +659,60 @@ namespace Enchanter_Fashion
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button8.UseVisualStyleBackColor = false;
             // 
-            // background1
+            // currntlbl
             // 
-            this.bunifuTransition1.SetDecoration(this.background1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.background1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.background1.Location = new System.Drawing.Point(313, 12);
-            this.background1.Name = "background1";
-            this.background1.Size = new System.Drawing.Size(516, 764);
-            this.background1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.background1.TabIndex = 102;
-            this.background1.TabStop = false;
+            this.currntlbl.AllowParentOverrides = false;
+            this.currntlbl.AutoEllipsis = false;
+            this.currntlbl.CursorType = null;
+            this.bunifuTransition1.SetDecoration(this.currntlbl, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.currntlbl.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currntlbl.ForeColor = System.Drawing.Color.DimGray;
+            this.currntlbl.Location = new System.Drawing.Point(1013, 675);
+            this.currntlbl.Name = "currntlbl";
+            this.currntlbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.currntlbl.Size = new System.Drawing.Size(24, 24);
+            this.currntlbl.TabIndex = 8;
+            this.currntlbl.Text = "01";
+            this.currntlbl.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.currntlbl.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // background2
+            // totllbl
             // 
-            this.background2.BackColor = System.Drawing.Color.Transparent;
-            this.background2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuTransition1.SetDecoration(this.background2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.background2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.background2.Location = new System.Drawing.Point(313, 12);
-            this.background2.Name = "background2";
-            this.background2.Size = new System.Drawing.Size(516, 764);
-            this.background2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.background2.TabIndex = 103;
-            this.background2.TabStop = false;
+            this.totllbl.AllowParentOverrides = false;
+            this.totllbl.AutoEllipsis = false;
+            this.totllbl.CursorType = null;
+            this.bunifuTransition1.SetDecoration(this.totllbl, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.totllbl.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totllbl.ForeColor = System.Drawing.Color.DimGray;
+            this.totllbl.Location = new System.Drawing.Point(1052, 675);
+            this.totllbl.Name = "totllbl";
+            this.totllbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.totllbl.Size = new System.Drawing.Size(24, 24);
+            this.totllbl.TabIndex = 104;
+            this.totllbl.Text = "10";
+            this.totllbl.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.totllbl.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel7
+            // 
+            this.bunifuLabel7.AllowParentOverrides = false;
+            this.bunifuLabel7.AutoEllipsis = false;
+            this.bunifuLabel7.CursorType = null;
+            this.bunifuTransition1.SetDecoration(this.bunifuLabel7, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuLabel7.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel7.ForeColor = System.Drawing.Color.DimGray;
+            this.bunifuLabel7.Location = new System.Drawing.Point(1041, 675);
+            this.bunifuLabel7.Name = "bunifuLabel7";
+            this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel7.Size = new System.Drawing.Size(6, 24);
+            this.bunifuLabel7.TabIndex = 105;
+            this.bunifuLabel7.Text = "/";
+            this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuTransition1
             // 
-            this.bunifuTransition1.AnimationType = Bunifu.UI.WinForms.BunifuAnimatorNS.AnimationType.Custom;
+            this.bunifuTransition1.AnimationType = Bunifu.UI.WinForms.BunifuAnimatorNS.AnimationType.HorizSlide;
             this.bunifuTransition1.Cursor = null;
             animation1.AnimateOnlyDifferences = true;
             animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
@@ -735,87 +731,33 @@ namespace Enchanter_Fashion
             animation1.TransparencyCoeff = 0F;
             this.bunifuTransition1.DefaultAnimation = animation1;
             // 
-            // currntlbl
+            // background2
             // 
-            this.currntlbl.AllowParentOverrides = false;
-            this.currntlbl.AutoEllipsis = false;
-            this.currntlbl.CursorType = null;
-            this.bunifuTransition1.SetDecoration(this.currntlbl, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.currntlbl, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.currntlbl.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currntlbl.ForeColor = System.Drawing.Color.DimGray;
-            this.currntlbl.Location = new System.Drawing.Point(1013, 675);
-            this.currntlbl.Name = "currntlbl";
-            this.currntlbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.currntlbl.Size = new System.Drawing.Size(24, 24);
-            this.currntlbl.TabIndex = 8;
-            this.currntlbl.Text = "01";
-            this.currntlbl.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.currntlbl.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.background2.BackColor = System.Drawing.Color.Transparent;
+            this.background2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuTransition1.SetDecoration(this.background2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.background2.Location = new System.Drawing.Point(313, 12);
+            this.background2.Name = "background2";
+            this.background2.Size = new System.Drawing.Size(516, 764);
+            this.background2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.background2.TabIndex = 103;
+            this.background2.TabStop = false;
             // 
-            // totllbl
+            // background1
             // 
-            this.totllbl.AllowParentOverrides = false;
-            this.totllbl.AutoEllipsis = false;
-            this.totllbl.CursorType = null;
-            this.bunifuTransition1.SetDecoration(this.totllbl, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.totllbl, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.totllbl.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totllbl.ForeColor = System.Drawing.Color.DimGray;
-            this.totllbl.Location = new System.Drawing.Point(1052, 675);
-            this.totllbl.Name = "totllbl";
-            this.totllbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.totllbl.Size = new System.Drawing.Size(24, 24);
-            this.totllbl.TabIndex = 104;
-            this.totllbl.Text = "10";
-            this.totllbl.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.totllbl.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuLabel7
-            // 
-            this.bunifuLabel7.AllowParentOverrides = false;
-            this.bunifuLabel7.AutoEllipsis = false;
-            this.bunifuLabel7.CursorType = null;
-            this.bunifuTransition1.SetDecoration(this.bunifuLabel7, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.bunifuLabel7, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuLabel7.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel7.ForeColor = System.Drawing.Color.DimGray;
-            this.bunifuLabel7.Location = new System.Drawing.Point(1041, 675);
-            this.bunifuLabel7.Name = "bunifuLabel7";
-            this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel7.Size = new System.Drawing.Size(6, 24);
-            this.bunifuLabel7.TabIndex = 105;
-            this.bunifuLabel7.Text = "/";
-            this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuTransition2
-            // 
-            this.bunifuTransition2.AnimationType = Bunifu.UI.WinForms.BunifuAnimatorNS.AnimationType.Custom;
-            this.bunifuTransition2.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.bunifuTransition2.DefaultAnimation = animation2;
+            this.bunifuTransition1.SetDecoration(this.background1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.background1.Location = new System.Drawing.Point(313, 12);
+            this.background1.Name = "background1";
+            this.background1.Size = new System.Drawing.Size(516, 764);
+            this.background1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.background1.TabIndex = 102;
+            this.background1.TabStop = false;
             // 
             // kids1
             // 
             this.kids1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("kids1.BackgroundImage")));
             this.kids1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuTransition1.SetDecoration(this.kids1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.kids1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.kids1.Location = new System.Drawing.Point(0, 0);
             this.kids1.Name = "kids1";
             this.kids1.Size = new System.Drawing.Size(624, 977);
@@ -841,7 +783,6 @@ namespace Enchanter_Fashion
             this.Controls.Add(this.bunifuPanel1);
             this.Controls.Add(this.background2);
             this.Controls.Add(this.background1);
-            this.bunifuTransition2.SetDecoration(this, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -852,8 +793,8 @@ namespace Enchanter_Fashion
             this.bunifuPanel1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.background1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.background2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.background1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -884,10 +825,6 @@ namespace Enchanter_Fashion
         private System.Windows.Forms.Button all_btn;
         private System.Windows.Forms.Panel sideunderline_bar;
         private Display_Board.kidsbackground kids1;
-        private System.Windows.Forms.PictureBox background1;
-        private System.Windows.Forms.PictureBox background2;
-        private Bunifu.UI.WinForms.BunifuTransition bunifuTransition1;
-        private Bunifu.UI.WinForms.BunifuTransition bunifuTransition2;
         private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator2;
         private Bunifu.UI.WinForms.BunifuLabel descptnlbl;
         private Bunifu.UI.WinForms.BunifuLabel prclbl;
@@ -897,5 +834,8 @@ namespace Enchanter_Fashion
         private Bunifu.UI.WinForms.BunifuLabel currntlbl;
         private Bunifu.UI.WinForms.BunifuLabel totllbl;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel7;
+        public Bunifu.UI.WinForms.BunifuTransition bunifuTransition1;
+        public System.Windows.Forms.PictureBox background2;
+        private System.Windows.Forms.PictureBox background1;
     }
 }
