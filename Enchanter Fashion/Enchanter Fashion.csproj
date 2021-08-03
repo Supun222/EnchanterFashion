@@ -212,6 +212,8 @@
     <Compile Include="inventory\testing.Designer.cs">
       <DependentUpon>testing.cs</DependentUpon>
     </Compile>
+    <Compile Include="inventory\UserControls\dbSetSuppliers.cs" />
+    <Compile Include="inventory\UserControls\dbSetUsers.cs" />
     <Compile Include="inventory\UserControls\uc_categories.cs">
       <SubType>UserControl</SubType>
     </Compile>

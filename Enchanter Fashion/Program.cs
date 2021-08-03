@@ -25,7 +25,7 @@ namespace Enchanter_Fashion
             //displaypanel
             //Application.Run(new displaypanel());
             //Application.Run(new form_dashboard());
-            //Application.Run(new testing());
+            Application.Run(new testing());
             //Application.Run(new DIMassage());
             Application.Run(new addarrivals());
         }
