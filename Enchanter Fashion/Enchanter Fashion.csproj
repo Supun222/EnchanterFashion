@@ -171,6 +171,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBConnection\DBConection.cs" />
+    <Compile Include="Display Board\addarrivals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Display Board\addarrivals.Designer.cs">
+      <DependentUpon>addarrivals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display Board\addnewarriavles.cs" />
     <Compile Include="Display Board\Dbquryset.cs" />
     <Compile Include="Display Board\Dbquryvalueget.cs" />
     <Compile Include="Display Board\kidsbackground.cs">
@@ -315,6 +322,9 @@
     <Compile Include="Display Board\womanbackground1.Designer.cs">
       <DependentUpon>womanbackground1.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Display Board\addarrivals.resx">
+      <DependentUpon>addarrivals.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Display Board\kidsbackground.resx">
       <DependentUpon>kidsbackground.cs</DependentUpon>
     </EmbeddedResource>
