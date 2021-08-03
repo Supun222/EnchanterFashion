@@ -16,5 +16,16 @@ namespace Enchanter_Fashion.inventory.UserControls
         {
             InitializeComponent();
         }
+
+        private void bunifuLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void saveBtn_Click(object sender, EventArgs e)
+        {
+            dbSetSuppliers saveItems = new dbSetSuppliers();
+            saveItems.insertData(companyNameTb.Text, addressTb.Text, telephoneTb.Text);
+        }
     }
 }
