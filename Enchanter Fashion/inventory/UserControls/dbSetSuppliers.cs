@@ -60,11 +60,33 @@ namespace Enchanter_Fashion.inventory.UserControls
                 {
                 }
                 conn.Close();
-
-
-
             }
             catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void editData(string id,string name, string address, string phone)
+        {
+            sql_query = "UPDATE suppliers SET sup_name = '" + name + "',sup_city = '" + address + "',sup_mobile = '" + phone + "' WHERE sup_id = '" + id + "' ;";
+            try
+            {
+                MySqlConnection conn = DBConection.getconnection();
+                //sql_query = "UPDATE suppliers SET sup_name = '" + name + "',sup_city = '" + address + "',sup_mobile = '" + phone + "' WHERE sup_id = '"+id+"' ;";
+
+                MySqlCommand myCommand = new MySqlCommand(sql_query,conn);
+                MySqlDataReader myReader;
+                conn.Open();
+                myReader = myCommand.ExecuteReader();
+                MessageBox.Show("Data Updated");
+                while (myReader.Read())
+                {
+
+                }
+                conn.Close();
+            }
+            catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
