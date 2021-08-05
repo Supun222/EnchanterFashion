@@ -81,12 +81,14 @@ namespace Enchanter_Fashion.Display_Board
                     {
                         if (addingdetails.checkitemnameindisplay(item_name.Text) ==  false)
                         {
+                            displaypanel display = new displaypanel();
                             string itmname, flname, dsptn;
                             itmname = item_name.Text;
                             flname = filename.Text;
                             dsptn = descrption_txt.Text;
                             addingdetails.updatingdisplay(itmname, flname, dsptn);
-                            File.Copy(picturefilepath, Path.Combine(@"D:\Projrct\Enchanter Fashion\Display Board\Images\", Path.GetFileName(picturefilepath)), true);
+                            File.Copy(picturefilepath, Path.Combine( display.filedirectory , Path.GetFileName(picturefilepath)), true);
+                            display.Close();
                             if (MessageBox.Show("New item has added successfuly to the display.", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.Yes)
                             {
                                 this.Close();
@@ -165,15 +167,18 @@ namespace Enchanter_Fashion.Display_Board
             if (MessageBox.Show("Do you want to delete the item?", "Enchanter Fashion", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 string picnumber, filename, filepath;
+                displaypanel display = new displaypanel();
                 int rowindex = displaytable.CurrentCell.RowIndex;
                 DataGridViewRow row = displaytable.Rows[rowindex];
                 picnumber = row.Cells[0].Value.ToString();
-                filename = row.Cells[2].Value.ToString();
+                filename = row.Cells[1].Value.ToString();
                 Console.WriteLine(filename);
                 displaytable.Rows.RemoveAt(rowindex);
                 int number = Int16.Parse(picnumber);
-                filepath = @"D:\Projrct\Enchanter Fashion\Display Board\Images\women11.png";
-                /*if (File.Exists(filepath))
+                deletingpic(number);
+                filepath = display.filedirectory + filename;
+                Console.WriteLine(filepath);
+                if (File.Exists(filepath))
                 {
                     File.Delete(filepath);
                     MessageBox.Show("File Deleted");
@@ -181,7 +186,7 @@ namespace Enchanter_Fashion.Display_Board
                 else
                 {
                     MessageBox.Show("File Not Exists");
-                }*/
+                }
             }
 
         }

@@ -103,7 +103,7 @@ namespace Enchanter_Fashion
             }
             else
             {
-                if (Regex.IsMatch(regpanel1.reg1_username_txt.Text, @"^[!#$%%^&*()?/<>.,'""]+$") == true || Regex.IsMatch(regpanel1.reg1_email_txt.Text, @"^[!#$%%^&*()?/<>.,'""]+$") == true || Regex.IsMatch(regpanel1.reg1_paswd_txt.Text, @"^[!#$%%^&*()?/<>.,'""]+$") == true)
+                if (Regex.IsMatch(regpanel1.reg1_username_txt.Text, @"^[!#$%%^&*()?/<>.,'""]+$") == true || Regex.IsMatch(regpanel1.reg1_email_txt.Text, @"^[!#$%%^&*()?/<>.,'""]+$") == true || Regex.IsMatch(regpanel1.reg1_paswd_txt.Text, @"^[()?/<>.,'""]+$") == true)
                 {
                     if (MessageBox.Show("Please use only letters without numbers of any spcial charactors", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
                     {
@@ -112,6 +112,7 @@ namespace Enchanter_Fashion
                 }
                 else
                 {
+
                     regpanel2.BringToFront();
                 }
                 
@@ -132,9 +133,34 @@ namespace Enchanter_Fashion
             }
         }
 
-        private void reg2nxt_btn_click(object sender, EventArgs e)
+        private void reg2nxt_btn_click(object sender, EventArgs e )
         {
-            new Termsandpolycies().Visible = true;
+            if (regpanel2.fullname_txt.Text == "")
+            {
+                if (MessageBox.Show("Please enter a username", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
+                {
+
+                }
+            }
+            else if (regpanel2.phonnumber_txt.Text == "")
+            {
+                if (MessageBox.Show("Please enter a username", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
+                {
+
+                }
+            }
+            else if (regpanel2.bookname.Text == "" || regpanel2.schoolname.Text == "")
+            {
+                if (MessageBox.Show("Please answer to the questions", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
+                {
+
+                }
+            }          
+            else
+            {
+                new Termsandpolycies().Visible = true;
+            }
+            
         }
 
         private void reg2back_btn_click(object sender, EventArgs e)

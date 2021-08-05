@@ -8,9 +8,27 @@ using System.Threading.Tasks;
 
 namespace Enchanter_Fashion.Signup_and_Registration
 {
-    class databasecrudoperations
+    public class databasecrudoperations
     {
-        public string username;
+        public string username, newusername, email, name, phonenumber, gender, bookname, schoolname, password;
+
+        public databasecrudoperations()
+        {
+
+        }
+
+        databasecrudoperations(string newusername, string email, string password)
+        {
+            this.newusername = newusername;
+            this.email = email;
+            this.password = password;
+        }
+
+        databasecrudoperations(string name, string phonenumber, string bookname, string schoolname, string gender)
+        {
+            //this
+        }
+
 
         public bool checklogin(string username, string password)
         {

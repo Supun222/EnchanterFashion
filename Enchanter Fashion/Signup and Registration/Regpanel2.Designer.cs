@@ -467,12 +467,8 @@ namespace Enchanter_Fashion
         }
 
         #endregion
-
-        private System.Windows.Forms.RadioButton female_radio;
-        private System.Windows.Forms.RadioButton male_radio;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
-        private MaterialSkin.Controls.MaterialSingleLineTextField phonnumber_txt;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
@@ -483,9 +479,12 @@ namespace Enchanter_Fashion
         public System.Windows.Forms.Label reg2sgn_lbl;
         public MaterialSkin.Controls.MaterialFlatButton reg2back_btn;
         public MaterialSkin.Controls.MaterialFlatButton reg2next_btn;
-        private Bunifu.UI.WinForms.BunifuTextBox schoolname;
-        private Bunifu.UI.WinForms.BunifuTextBox bookname;
-        private MaterialSkin.Controls.MaterialSingleLineTextField fullname_txt;
         private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.RadioButton female_radio;
+        public System.Windows.Forms.RadioButton male_radio;
+        public MaterialSkin.Controls.MaterialSingleLineTextField phonnumber_txt;
+        public Bunifu.UI.WinForms.BunifuTextBox schoolname;
+        public Bunifu.UI.WinForms.BunifuTextBox bookname;
+        public MaterialSkin.Controls.MaterialSingleLineTextField fullname_txt;
     }
 }
