@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,16 +17,19 @@ namespace Enchanter_Fashion
         {
             InitializeComponent();
             // Set to no text.
-            regpswd.Text = "";
-            regcnfrmpswd.Text = "";
+            reg1_paswd_txt.Text = "";
+            reg1_cmpaswd_txt.Text = "";
             // The password character is an asterisk.
-            regpswd.PasswordChar = '*';
-            regcnfrmpswd.PasswordChar = '*';
+            reg1_paswd_txt.PasswordChar = '*';
+            reg1_cmpaswd_txt.PasswordChar = '*';
             // The control will allow no more than 14 characters.
-            regpswd.MaxLength = 14;
-            regcnfrmpswd.MaxLength = 14;
+            reg1_paswd_txt.MaxLength = 14;
+            reg1_cmpaswd_txt.MaxLength = 14;
         }
 
-        
+        private void reg1nxt_btn_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

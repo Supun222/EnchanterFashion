@@ -16,5 +16,10 @@ namespace Enchanter_Fashion
         {
             InitializeComponent();
         }
+
+        private void reg2next_btn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

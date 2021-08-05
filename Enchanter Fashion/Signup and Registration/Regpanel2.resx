@@ -149,4 +149,20 @@
         KuH25Bbdy1mBZDgsnWP+eQsD34NKvyeGhmxZyF7AhSj6AA3GiuSh9JlQAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="schoolname.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAANYAAAAZCAYAAABNXdBPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACDSURBVHhe7dOxCcAwEATB778qCZXhMlyAzYMSx/JlM3DJ
+        5VtAyFrrGmM8Zna2bmlnVdUHcK5b2lkJC/4iLAgQFgQICwKEBQHCggBhQYCwIEBYECAsCBAWBAgLAoQF
+        AcKCAGFBgLAgQFgQICwIEBYECAsCPmHNOe8+zOxs3dLOCvhX1QtxyI/VbWIYyAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="bookname.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAANYAAAAZCAYAAABNXdBPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACDSURBVHhe7dOxCcAwEATB778qCZXhMlyAzYMSx/JlM3DJ
+        5VtAyFrrGmM8Zna2bmlnVdUHcK5b2lkJC/4iLAgQFgQICwKEBQHCggBhQYCwIEBYECAsCBAWBAgLAoQF
+        AcKCAGFBgLAgQFgQICwIEBYECAsCPmHNOe8+zOxs3dLOCvhX1QtxyI/VbWIYyAAAAABJRU5ErkJggg==
+</value>
+  </data>
 </root>

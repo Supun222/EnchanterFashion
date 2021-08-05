@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.IO;
 using Enchanter_Fashion.Massage;
 using Enchanter_Fashion.Signup_and_Registration;
+using System.Text.RegularExpressions;
 
 namespace Enchanter_Fashion
 {
@@ -79,7 +80,56 @@ namespace Enchanter_Fashion
 
         private void reg1nxt_btn_click(object sender, EventArgs e)
         {
-            regpanel2.BringToFront();
+            if (regpanel1.reg1_username_txt.Text == "")
+            {
+                if (MessageBox.Show("Please enter a username", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
+                {
+
+                }
+            }
+            else if (regpanel1.reg1_email_txt.Text == "")
+            {
+                if (MessageBox.Show("Please enter an email", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
+                {
+
+                }
+            }
+            else if (regpanel1.reg1_paswd_txt.Text == "")
+            {
+                if (MessageBox.Show("Please enter the username or email", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
+                {
+
+                }
+            }
+            else
+            {
+                if (Regex.IsMatch(regpanel1.reg1_username_txt.Text, @"^[!#$%%^&*()?/<>.,'""]+$") == true || Regex.IsMatch(regpanel1.reg1_email_txt.Text, @"^[!#$%%^&*()?/<>.,'""]+$") == true || Regex.IsMatch(regpanel1.reg1_paswd_txt.Text, @"^[!#$%%^&*()?/<>.,'""]+$") == true)
+                {
+                    if (MessageBox.Show("Please use only letters without numbers of any spcial charactors", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
+                    {
+
+                    }
+                }
+                else
+                {
+                    regpanel2.BringToFront();
+                }
+                
+            }
+            
+        }
+
+        bool IsValidEmail(string email)
+        {
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return addr.Address == email;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         private void reg2nxt_btn_click(object sender, EventArgs e)
@@ -155,14 +205,14 @@ namespace Enchanter_Fashion
             {
                 if (MessageBox.Show("Please enter the username or email", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
                 {
-                    this.Close();
+                    
                 }
             }
             else if( password == "")
             {
                 if (MessageBox.Show("Please enter the password", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
                 {
-                    this.Close();
+                    
                 }
             }
             else
@@ -180,17 +230,10 @@ namespace Enchanter_Fashion
                 {
                     if (MessageBox.Show("Username or password is incorrect. please try again", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
                     {
-                        this.Close();
+                        
                     }
                 }
-            }
-
-
-            /*
-            this.Hide();
-            DIMassage msg = new DIMassage();
-            this.Closed += (s, args) => this.Close();
-            msg.Show();*/          
+            }         
         }
     }
 

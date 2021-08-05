@@ -30,7 +30,7 @@ namespace Enchanter_Fashion
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Regpanel1));
-            this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.reg1_username_txt = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label2 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.reg1sgn_lbl = new System.Windows.Forms.Label();
@@ -38,33 +38,33 @@ namespace Enchanter_Fashion
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.reg1nxt_btn = new MaterialSkin.Controls.MaterialFlatButton();
-            this.regcnfrmpswd = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.reg1_cmpaswd_txt = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label6 = new System.Windows.Forms.Label();
-            this.regpswd = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.reg1_paswd_txt = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label5 = new System.Windows.Forms.Label();
-            this.regemailtxt = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.reg1_email_txt = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // materialSingleLineTextField1
+            // reg1_username_txt
             // 
-            this.materialSingleLineTextField1.Depth = 0;
-            this.materialSingleLineTextField1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(5)))), ((int)(((byte)(179)))), ((int)(((byte)(132)))));
-            this.materialSingleLineTextField1.Hint = "";
-            this.materialSingleLineTextField1.Location = new System.Drawing.Point(54, 88);
-            this.materialSingleLineTextField1.MaxLength = 32767;
-            this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
-            this.materialSingleLineTextField1.PasswordChar = '\0';
-            this.materialSingleLineTextField1.SelectedText = "";
-            this.materialSingleLineTextField1.SelectionLength = 0;
-            this.materialSingleLineTextField1.SelectionStart = 0;
-            this.materialSingleLineTextField1.Size = new System.Drawing.Size(213, 23);
-            this.materialSingleLineTextField1.TabIndex = 84;
-            this.materialSingleLineTextField1.TabStop = false;
-            this.materialSingleLineTextField1.UseSystemPasswordChar = false;
+            this.reg1_username_txt.Depth = 0;
+            this.reg1_username_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(5)))), ((int)(((byte)(179)))), ((int)(((byte)(132)))));
+            this.reg1_username_txt.Hint = "";
+            this.reg1_username_txt.Location = new System.Drawing.Point(54, 88);
+            this.reg1_username_txt.MaxLength = 32767;
+            this.reg1_username_txt.MouseState = MaterialSkin.MouseState.HOVER;
+            this.reg1_username_txt.Name = "reg1_username_txt";
+            this.reg1_username_txt.PasswordChar = '\0';
+            this.reg1_username_txt.SelectedText = "";
+            this.reg1_username_txt.SelectionLength = 0;
+            this.reg1_username_txt.SelectionStart = 0;
+            this.reg1_username_txt.Size = new System.Drawing.Size(213, 23);
+            this.reg1_username_txt.TabIndex = 84;
+            this.reg1_username_txt.TabStop = false;
+            this.reg1_username_txt.UseSystemPasswordChar = false;
             // 
             // label2
             // 
@@ -156,24 +156,25 @@ namespace Enchanter_Fashion
             this.reg1nxt_btn.TabIndex = 77;
             this.reg1nxt_btn.Text = "Next";
             this.reg1nxt_btn.UseVisualStyleBackColor = false;
+            this.reg1nxt_btn.Click += new System.EventHandler(this.reg1nxt_btn_Click);
             // 
-            // regcnfrmpswd
+            // reg1_cmpaswd_txt
             // 
-            this.regcnfrmpswd.Depth = 0;
-            this.regcnfrmpswd.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.regcnfrmpswd.Hint = "";
-            this.regcnfrmpswd.Location = new System.Drawing.Point(55, 253);
-            this.regcnfrmpswd.MaxLength = 32767;
-            this.regcnfrmpswd.MouseState = MaterialSkin.MouseState.HOVER;
-            this.regcnfrmpswd.Name = "regcnfrmpswd";
-            this.regcnfrmpswd.PasswordChar = '\0';
-            this.regcnfrmpswd.SelectedText = "";
-            this.regcnfrmpswd.SelectionLength = 0;
-            this.regcnfrmpswd.SelectionStart = 0;
-            this.regcnfrmpswd.Size = new System.Drawing.Size(213, 23);
-            this.regcnfrmpswd.TabIndex = 76;
-            this.regcnfrmpswd.TabStop = false;
-            this.regcnfrmpswd.UseSystemPasswordChar = false;
+            this.reg1_cmpaswd_txt.Depth = 0;
+            this.reg1_cmpaswd_txt.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.reg1_cmpaswd_txt.Hint = "";
+            this.reg1_cmpaswd_txt.Location = new System.Drawing.Point(55, 253);
+            this.reg1_cmpaswd_txt.MaxLength = 32767;
+            this.reg1_cmpaswd_txt.MouseState = MaterialSkin.MouseState.HOVER;
+            this.reg1_cmpaswd_txt.Name = "reg1_cmpaswd_txt";
+            this.reg1_cmpaswd_txt.PasswordChar = '\0';
+            this.reg1_cmpaswd_txt.SelectedText = "";
+            this.reg1_cmpaswd_txt.SelectionLength = 0;
+            this.reg1_cmpaswd_txt.SelectionStart = 0;
+            this.reg1_cmpaswd_txt.Size = new System.Drawing.Size(213, 23);
+            this.reg1_cmpaswd_txt.TabIndex = 76;
+            this.reg1_cmpaswd_txt.TabStop = false;
+            this.reg1_cmpaswd_txt.UseSystemPasswordChar = false;
             // 
             // label6
             // 
@@ -187,23 +188,23 @@ namespace Enchanter_Fashion
             this.label6.TabIndex = 75;
             this.label6.Text = "Already have an account ?";
             // 
-            // regpswd
+            // reg1_paswd_txt
             // 
-            this.regpswd.Depth = 0;
-            this.regpswd.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.regpswd.Hint = "";
-            this.regpswd.Location = new System.Drawing.Point(54, 198);
-            this.regpswd.MaxLength = 32767;
-            this.regpswd.MouseState = MaterialSkin.MouseState.HOVER;
-            this.regpswd.Name = "regpswd";
-            this.regpswd.PasswordChar = '\0';
-            this.regpswd.SelectedText = "";
-            this.regpswd.SelectionLength = 0;
-            this.regpswd.SelectionStart = 0;
-            this.regpswd.Size = new System.Drawing.Size(213, 23);
-            this.regpswd.TabIndex = 74;
-            this.regpswd.TabStop = false;
-            this.regpswd.UseSystemPasswordChar = false;
+            this.reg1_paswd_txt.Depth = 0;
+            this.reg1_paswd_txt.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.reg1_paswd_txt.Hint = "";
+            this.reg1_paswd_txt.Location = new System.Drawing.Point(54, 198);
+            this.reg1_paswd_txt.MaxLength = 32767;
+            this.reg1_paswd_txt.MouseState = MaterialSkin.MouseState.HOVER;
+            this.reg1_paswd_txt.Name = "reg1_paswd_txt";
+            this.reg1_paswd_txt.PasswordChar = '\0';
+            this.reg1_paswd_txt.SelectedText = "";
+            this.reg1_paswd_txt.SelectionLength = 0;
+            this.reg1_paswd_txt.SelectionStart = 0;
+            this.reg1_paswd_txt.Size = new System.Drawing.Size(213, 23);
+            this.reg1_paswd_txt.TabIndex = 74;
+            this.reg1_paswd_txt.TabStop = false;
+            this.reg1_paswd_txt.UseSystemPasswordChar = false;
             // 
             // label5
             // 
@@ -217,23 +218,23 @@ namespace Enchanter_Fashion
             this.label5.TabIndex = 73;
             this.label5.Text = "P a s s w o r d";
             // 
-            // regemailtxt
+            // reg1_email_txt
             // 
-            this.regemailtxt.Depth = 0;
-            this.regemailtxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(5)))), ((int)(((byte)(179)))), ((int)(((byte)(132)))));
-            this.regemailtxt.Hint = "";
-            this.regemailtxt.Location = new System.Drawing.Point(54, 143);
-            this.regemailtxt.MaxLength = 32767;
-            this.regemailtxt.MouseState = MaterialSkin.MouseState.HOVER;
-            this.regemailtxt.Name = "regemailtxt";
-            this.regemailtxt.PasswordChar = '\0';
-            this.regemailtxt.SelectedText = "";
-            this.regemailtxt.SelectionLength = 0;
-            this.regemailtxt.SelectionStart = 0;
-            this.regemailtxt.Size = new System.Drawing.Size(213, 23);
-            this.regemailtxt.TabIndex = 72;
-            this.regemailtxt.TabStop = false;
-            this.regemailtxt.UseSystemPasswordChar = false;
+            this.reg1_email_txt.Depth = 0;
+            this.reg1_email_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(5)))), ((int)(((byte)(179)))), ((int)(((byte)(132)))));
+            this.reg1_email_txt.Hint = "";
+            this.reg1_email_txt.Location = new System.Drawing.Point(54, 143);
+            this.reg1_email_txt.MaxLength = 32767;
+            this.reg1_email_txt.MouseState = MaterialSkin.MouseState.HOVER;
+            this.reg1_email_txt.Name = "reg1_email_txt";
+            this.reg1_email_txt.PasswordChar = '\0';
+            this.reg1_email_txt.SelectedText = "";
+            this.reg1_email_txt.SelectionLength = 0;
+            this.reg1_email_txt.SelectionStart = 0;
+            this.reg1_email_txt.Size = new System.Drawing.Size(213, 23);
+            this.reg1_email_txt.TabIndex = 72;
+            this.reg1_email_txt.TabStop = false;
+            this.reg1_email_txt.UseSystemPasswordChar = false;
             // 
             // label4
             // 
@@ -275,7 +276,7 @@ namespace Enchanter_Fashion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.materialSingleLineTextField1);
+            this.Controls.Add(this.reg1_username_txt);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.reg1sgn_lbl);
@@ -283,11 +284,11 @@ namespace Enchanter_Fashion
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.reg1nxt_btn);
-            this.Controls.Add(this.regcnfrmpswd);
+            this.Controls.Add(this.reg1_cmpaswd_txt);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.regpswd);
+            this.Controls.Add(this.reg1_paswd_txt);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.regemailtxt);
+            this.Controls.Add(this.reg1_email_txt);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label7);
@@ -299,22 +300,21 @@ namespace Enchanter_Fashion
         }
 
         #endregion
-
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private MaterialSkin.Controls.MaterialSingleLineTextField regcnfrmpswd;
         private System.Windows.Forms.Label label6;
-        private MaterialSkin.Controls.MaterialSingleLineTextField regpswd;
         private System.Windows.Forms.Label label5;
-        private MaterialSkin.Controls.MaterialSingleLineTextField regemailtxt;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
         public MaterialSkin.Controls.MaterialFlatButton reg1nxt_btn;
         public System.Windows.Forms.Label reg1sgn_lbl;
+        public MaterialSkin.Controls.MaterialSingleLineTextField reg1_username_txt;
+        public MaterialSkin.Controls.MaterialSingleLineTextField reg1_cmpaswd_txt;
+        public MaterialSkin.Controls.MaterialSingleLineTextField reg1_paswd_txt;
+        public MaterialSkin.Controls.MaterialSingleLineTextField reg1_email_txt;
     }
 }

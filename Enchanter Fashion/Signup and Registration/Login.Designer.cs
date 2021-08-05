@@ -133,9 +133,9 @@ namespace Enchanter_Fashion
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(189)))), ((int)(((byte)(168)))));
             this.label4.Location = new System.Drawing.Point(52, 75);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 15);
+            this.label4.Size = new System.Drawing.Size(91, 15);
             this.label4.TabIndex = 62;
-            this.label4.Text = "E m a i l";
+            this.label4.Text = "U s e r n a m e";
             // 
             // lgsnup_btn
             // 
