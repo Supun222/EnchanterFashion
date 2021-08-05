@@ -172,6 +172,16 @@ namespace Enchanter_Fashion
                 {
                     currntlbl.Text = (getvalue.cuurentslide + 1).ToString();
                 }
+                if (currntlbl.Text == totllbl.Text)
+                {
+                    button1.Hide();
+                    button2.Show();
+                }
+                else
+                {
+                    button1.Show();
+                    button2.Show();
+                }
                 background2.Image = Image.FromFile(filedirectory + getvalue.picfilename);
                 
             }
@@ -318,6 +328,16 @@ namespace Enchanter_Fashion
                 else
                 {
                     currntlbl.Text = (getvalue.cuurentslide + 1).ToString();
+                }
+                if (currntlbl.Text == "01")
+                {
+                    button1.Show();
+                    button2.Hide();
+                }
+                else
+                {
+                    button1.Show();
+                    button2.Show();
                 }
                 background2.Image = Image.FromFile(filedirectory + getvalue.picfilename);
             }
