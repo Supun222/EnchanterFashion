@@ -274,6 +274,7 @@
     <Compile Include="Massage\filenotfound.Designer.cs">
       <DependentUpon>filenotfound.cs</DependentUpon>
     </Compile>
+    <Compile Include="Signup and Registration\databasecrudoperations.cs" />
     <Compile Include="Signup and Registration\Login.cs">
       <SubType>UserControl</SubType>
     </Compile>

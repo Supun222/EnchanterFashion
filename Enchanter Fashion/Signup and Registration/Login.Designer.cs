@@ -75,6 +75,7 @@ namespace Enchanter_Fashion
             this.Loginbtn.TabIndex = 66;
             this.Loginbtn.Text = "Sign in";
             this.Loginbtn.UseVisualStyleBackColor = false;
+            this.Loginbtn.Click += new System.EventHandler(this.Loginbtn_Click);
             // 
             // lgnpswd
             // 
@@ -248,9 +249,7 @@ namespace Enchanter_Fashion
         #endregion
 
         private System.Windows.Forms.Label label2;
-        private MaterialSkin.Controls.MaterialSingleLineTextField lgnpswd;
         private System.Windows.Forms.Label label5;
-        private MaterialSkin.Controls.MaterialSingleLineTextField lgnemail;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
@@ -260,5 +259,7 @@ namespace Enchanter_Fashion
         private System.Windows.Forms.Label label7;
         public System.Windows.Forms.Label lgsnup_btn;
         public MaterialSkin.Controls.MaterialFlatButton Loginbtn;
+        public MaterialSkin.Controls.MaterialSingleLineTextField lgnpswd;
+        public MaterialSkin.Controls.MaterialSingleLineTextField lgnemail;
     }
 }

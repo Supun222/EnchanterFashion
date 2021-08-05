@@ -25,5 +25,10 @@ namespace Enchanter_Fashion
         {
             
         }
+
+        private void Loginbtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -22,12 +22,12 @@ namespace Enchanter_Fashion.Massage
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void loginmenubtn_click(object sender, EventArgs e)
