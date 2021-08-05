@@ -242,18 +242,19 @@
         KuH25Bbdy1mBZDgsnWP+eQsD34NKvyeGhmxZyF7AhSj6AA3GiuSh9JlQAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="descptnlbl.BaseStylesheet" xml:space="preserve">
+  <data name="brandname_lbl.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Arial'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="descptn_lbl.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Arial'; font-size: 9.75pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
-  <data name="descptnlbl.Text" xml:space="preserve">
+  <data name="descptn_lbl.Text" xml:space="preserve">
     <value>This heavy cotton jersey sweatshirt features the number 
 25, the Creative Director’s lucky number, alongside the
 year 1921, the year of the House’s founding. Ever more 
 thought provoking, ‘Eschatology’, a doctrine that 
 explores the ultimate destiny of humans and the 
-universe, and 'Blind for Love’, an evolution of the 
-original 'L'Aveugle Par Amour,’ are printed on
-the front and back.
+
 
 1. Blue stone washed heavy cotton jerseywith 
     "25 Gucci Eschatology Blind for Love 1921" 
@@ -265,7 +266,7 @@ the front and back.
 5. Made in Italy
 6. The product shown in this image is a size medium</value>
   </data>
-  <data name="drstyplbl.BaseStylesheet" xml:space="preserve">
+  <data name="collect_lbl.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Times New Roman'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
   <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
@@ -329,17 +330,16 @@ the front and back.
         RU5ErkJggg==
 </value>
   </data>
-  <data name="button8.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="addnewitems_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAGMSURBVEhL3ZXNSsNQEIWDVl0leSx/QBCkKOgb+VN/VhUFXYgi6gu48AEsqAtRitWlaMFFFdyp
-        30kmJiYhRkg3PXDInTMzd+bem9w4A48xz/MWXdc94dmBr8YO2jHPBcWEof+E7/t1JniEX/DFijREfKc8
-        u+Z7wJ61tFKokbRuyZdwAm0odP3CML5JCl9bbENa6CoAgRuWsIpZC9VCqKE15bCSJdPyQdB8qcAcqCH4
-        yYqmTcpAB6o9v2Ccu1QK78BtM9PQlmlL24xHQikBHEH3cNykDOjuXDQzA3KnNAdN1E2KgeMQPjHMO9AA
-        fxUAWsUz3Dc7BmIbHpiZixIFNM8RvDUzBuJb+nC15+itBHvGHy19JtjLijEzBuJ7ugDdNtHPEoy+5KS2
-        aeEBigpUuUV3ZsZA7Psh9/c1BaM472GLce6HxuRbsGlmGsUfmkDyjHXQl6siAEErKqIEzGovO4OWGlzX
-        dHPFs9rrOoIOiqToh9Nlosp+OEnohtXbtQdv4IdR410mnlNMGDqYcJxvchOLs9FdPmgAAAAASUVORK5C
-        YII=
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAYxJREFUSEvd
+        lc1Kw1AQhYNWXSV5LH9AEKQo6Bv5U39WFQVdiCLqC7jwASyoC1GK1aVowUUV3KnfSSYmJiFGSDc9cMid
+        MzN35t6b3DgDjzHP8xZd1z3h2YGvxg7aMc8FxYSh/4Tv+3UmeIRf8MWKNER8pzy75nvAnrW0UqiRtG7J
+        l3ACbSh0/cIwvkkKX1tsQ1roKgCBG5awilkL1UKooTXlsJIl0/JB0HypwByoIfjJiqZNykAHqj2/YJy7
+        VArvwG0z09CWaUvbjEdCKQEcQfdw3KQM6O5cNDMDcqc0B03UTYqB4xA+Mcw70AB/FQBaxTPcNzsGYhse
+        mJmLEgU0zxG8NTMG4lv6cLXn6K0Ee8YfLX0m2MuKMTMG4nu6AN020c8SjL7kpLZp4QGKClS5RXdmxkDs
+        +yH39zUFozjvYYtx7ofG5FuwaWYaxR+aQPKMddCXqyIAQSsqogTMai87g5YaXNd0c8Wz2us6gg6KpOiH
+        02Wiyn44SeiG1du1B2/gh1HjXSaeU0wYOphwnG9yE4uz0V0+aAAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="currntlbl.BaseStylesheet" xml:space="preserve">

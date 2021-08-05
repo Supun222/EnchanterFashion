@@ -28,6 +28,7 @@ namespace Enchanter_Fashion
         bool isallbtnclicked = true; bool ismenbutnclicked = true; bool iskidsbtnclicked = true;
         bool iswomanbtnclicked = true; bool isshoesbutnclicked = true;
         string filedirectory = @"D:\Projrct\Enchanter Fashion\Display Board\Images\";
+        int current = 0;
         //theruni
 
         private void button1_Click(object sender, EventArgs e)
@@ -42,6 +43,7 @@ namespace Enchanter_Fashion
                     getvalue.claerarraylist();
                     getvalue.settingsvalues(setqury.get_query("all"));
                     getvalue.returnnextvalues();
+                    current = 0;
                     isallbtnclicked = false;
                     if (getvalue.totalslides < 10)
                     {
@@ -68,6 +70,7 @@ namespace Enchanter_Fashion
                     getvalue.claerarraylist();
                     getvalue.settingsvalues(setqury.get_query("men"));
                     getvalue.returnnextvalues();
+                    current = 0;
                     ismenbutnclicked = false;
                     if (getvalue.totalslides < 10)
                     {
@@ -94,6 +97,7 @@ namespace Enchanter_Fashion
                     getvalue.claerarraylist();
                     getvalue.settingsvalues(setqury.get_query("women"));
                     getvalue.returnnextvalues();
+                    current = 0;
                     iswomanbtnclicked = false;
                     if (getvalue.totalslides < 10)
                     {
@@ -120,6 +124,7 @@ namespace Enchanter_Fashion
                     getvalue.claerarraylist();
                     getvalue.settingsvalues(setqury.get_query("kids"));
                     getvalue.returnnextvalues();
+                    current = 0;
                     iskidsbtnclicked = false;
                     if (getvalue.totalslides < 10)
                     {
@@ -146,6 +151,7 @@ namespace Enchanter_Fashion
                     getvalue.claerarraylist();
                     getvalue.settingsvalues(setqury.get_query("shoes"));
                     getvalue.returnnextvalues();
+                    current = 0;
                     isshoesbutnclicked = false;
                     if (getvalue.totalslides < 10)
                     {
@@ -164,14 +170,16 @@ namespace Enchanter_Fashion
             }
             try
             {
-                if ((getvalue.cuurentslide + 1) < 10)
+                current = current + 1;
+                if (current < 10)
                 {
-                    currntlbl.Text = "0" + (getvalue.cuurentslide + 1).ToString();
+                    currntlbl.Text = "0" + current.ToString();
                 }
                 else
                 {
-                    currntlbl.Text = (getvalue.cuurentslide + 1).ToString();
+                    currntlbl.Text = current.ToString();
                 }
+                
                 if (currntlbl.Text == totllbl.Text)
                 {
                     button1.Hide();
@@ -182,8 +190,15 @@ namespace Enchanter_Fashion
                     button1.Show();
                     button2.Show();
                 }
-                background2.Image = Image.FromFile(filedirectory + getvalue.picfilename);
                 
+                background2.Image = Image.FromFile(filedirectory + getvalue.picfilename);
+                collect_lbl.Text = getvalue.collection;
+                iteamnml_bl.Text = getvalue.itemname;
+                brandname_lbl.Text = getvalue.brand;
+                prc_lbl.Text = "Rs. " + getvalue.price + ".00 /=";
+                descptn_lbl.Text = getvalue.description;
+                descptn_lbl.AutoSize = false;
+                descptn_lbl.Size = new Size(322, 254);
             }
             catch(FileNotFoundException ex)
             {
@@ -203,6 +218,7 @@ namespace Enchanter_Fashion
                     getvalue.claerarraylist();
                     getvalue.settingsvalues(setqury.get_query("all"));
                     getvalue.returnpreviuosvalues();
+                    current = 0;
                     isallbtnclicked = false;
                     if (getvalue.totalslides < 10)
                     {
@@ -228,6 +244,7 @@ namespace Enchanter_Fashion
                     getvalue.claerarraylist();
                     getvalue.settingsvalues(setqury.get_query("men"));
                     getvalue.returnpreviuosvalues();
+                    current = 0;
                     ismenbutnclicked = false;
                     if (getvalue.totalslides < 10)
                     {
@@ -253,6 +270,7 @@ namespace Enchanter_Fashion
                     getvalue.claerarraylist();
                     getvalue.settingsvalues(setqury.get_query("women"));
                     getvalue.returnpreviuosvalues();
+                    current = 0;
                     iswomanbtnclicked = false;
                     if (getvalue.totalslides < 10)
                     {
@@ -278,6 +296,7 @@ namespace Enchanter_Fashion
                     getvalue.claerarraylist();
                     getvalue.settingsvalues(setqury.get_query("kids"));
                     getvalue.returnpreviuosvalues();
+                    current = 0;
                     iskidsbtnclicked = false;
                     if (getvalue.totalslides < 10)
                     {
@@ -303,6 +322,7 @@ namespace Enchanter_Fashion
                     getvalue.claerarraylist();
                     getvalue.settingsvalues(setqury.get_query("shoes"));
                     getvalue.returnpreviuosvalues();
+                    current = 0;
                     isshoesbutnclicked = false;
                     if (getvalue.totalslides < 10)
                     {
@@ -321,13 +341,14 @@ namespace Enchanter_Fashion
             }
             try
             {
-                if ((getvalue.cuurentslide + 1) < 10)
+                current = current - 1;
+                if (current < 10)
                 {
-                    currntlbl.Text = "0" + (getvalue.cuurentslide + 1).ToString();
+                    currntlbl.Text = "0" + current.ToString();
                 }
                 else
                 {
-                    currntlbl.Text = (getvalue.cuurentslide + 1).ToString();
+                    currntlbl.Text = current.ToString();
                 }
                 if (currntlbl.Text == "01")
                 {
@@ -340,6 +361,12 @@ namespace Enchanter_Fashion
                     button2.Show();
                 }
                 background2.Image = Image.FromFile(filedirectory + getvalue.picfilename);
+                collect_lbl.Text = getvalue.collection;
+                iteamnml_bl.Text = getvalue.itemname;
+                brandname_lbl.Text = getvalue.brand;
+                prc_lbl.Text = "Rs. " + getvalue.price + ".00 /="; 
+                descptn_lbl.Text = getvalue.description;
+                descptn_lbl.Size = new Size(322, 254);
             }
             catch (FileNotFoundException ex)
             {
@@ -389,13 +416,14 @@ namespace Enchanter_Fashion
         {
             sideunderline_bar.Height = men_btn.Height;
             sideunderline_bar.Top = men_btn.Top;
-            
+            button1_Click(null, null);
         }
 
         private void shoes_btn_Click(object sender, EventArgs e)
         {
             sideunderline_bar.Height = shoes_btn.Height;
             sideunderline_bar.Top = shoes_btn.Top;
+            button1_Click(null, null);
         }
 
         private void women_btn_Click(object sender, EventArgs e)
@@ -419,6 +447,14 @@ namespace Enchanter_Fashion
             Form1 sgn = new Form1();
             this.Closed += (s, args) => this.Close();
             sgn.Show();
+        }
+
+        private void addnewitems_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            addarrivals adnewitms = new addarrivals();
+            this.Closed += (s, args) => this.Close();
+            adnewitms.Show();
         }
     }
 }

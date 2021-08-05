@@ -16,23 +16,23 @@ namespace Enchanter_Fashion.Display_Board
         {
             if (catogery == "men")
             {
-                sql_query = "SELECT  pic_file_name FROM display WHERE item_type='men'";             
+                sql_query = "SELECT contain_items.item_name , contain_items.brand , contain_items.price, contain_items.Collection ,display.pic_file_name, display.description FROM contain_items INNER JOIN display ON display.item_name=contain_items.item_name WHERE contain_items.item_type = 'men'";             
             }
             else if (catogery == "women")
             {
-                sql_query= "SELECT pic_file_name FROM display WHERE item_type='women'";               
+                sql_query= "SELECT contain_items.item_name , contain_items.brand , contain_items.price, contain_items.Collection ,display.pic_file_name, display.description FROM contain_items INNER JOIN display ON display.item_name=contain_items.item_name WHERE contain_items.item_type = 'women'";               
             }
             else if (catogery == "kids")
             {
-                sql_query = "SELECT  pic_file_name FROM display WHERE item_type='kids'";               
+                sql_query = "SELECT contain_items.item_name , contain_items.brand , contain_items.price, contain_items.Collection ,display.pic_file_name, display.description FROM contain_items INNER JOIN display ON display.item_name=contain_items.item_name WHERE contain_items.item_type = 'kids'";               
             }
             else if (catogery == "shoes")
             {
-                sql_query = "SELECT  pic_file_name FROM display WHERE item_type='shoes'";               
+                sql_query = "SELECT contain_items.item_name , contain_items.brand , contain_items.price, contain_items.Collection ,display.pic_file_name, display.description FROM contain_items INNER JOIN display ON display.item_name=contain_items.item_name WHERE contain_items.item_type = 'shoes'";               
             }
             else
             {
-                sql_query = "SELECT  pic_file_name FROM display";              
+                sql_query = "SELECT contain_items.item_name , contain_items.brand , contain_items.price, contain_items.Collection ,display.pic_file_name, display.description FROM contain_items INNER JOIN display ON display.item_name=contain_items.item_name";              
             }
             return sql_query;
         }

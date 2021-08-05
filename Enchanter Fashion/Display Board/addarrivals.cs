@@ -60,7 +60,7 @@ namespace Enchanter_Fashion.Display_Board
             }
             else
             {
-                if(item_name.TextLength > 15)
+                if(item_name.TextLength > 25)
                 {
                     if (MessageBox.Show("Please inset an item name which contains lower than 15 characters.", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.Yes)
                     {
@@ -98,8 +98,7 @@ namespace Enchanter_Fashion.Display_Board
                             {
                                 this.Close();
                             }
-                        }
-                        
+                        }                     
                     }
                     else
                     {
@@ -162,17 +161,29 @@ namespace Enchanter_Fashion.Display_Board
 
         private void datadelete_Click(object sender, EventArgs e)
         {
-            string picnumber,filename,filepath;
-            int rowindex = displaytable.CurrentCell.RowIndex;
-            DataGridViewRow row = displaytable.Rows[rowindex];
-            picnumber = row.Cells[0].Value.ToString();
-            filename = row.Cells[2].Value.ToString();
-            Console.WriteLine(filename);
-            displaytable.Rows.RemoveAt(rowindex);
-            int number = Int16.Parse(picnumber);
-            //filepath = @"D:\Projrct\Enchanter Fashion\Display Board\Images\";
-            //deletingpic(number);
-            //File.Delete(Path.Combine(filepath,filename));
+
+            if (MessageBox.Show("Do you want to delete the item?", "Enchanter Fashion", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                string picnumber, filename, filepath;
+                int rowindex = displaytable.CurrentCell.RowIndex;
+                DataGridViewRow row = displaytable.Rows[rowindex];
+                picnumber = row.Cells[0].Value.ToString();
+                filename = row.Cells[2].Value.ToString();
+                Console.WriteLine(filename);
+                displaytable.Rows.RemoveAt(rowindex);
+                int number = Int16.Parse(picnumber);
+                filepath = @"D:\Projrct\Enchanter Fashion\Display Board\Images\women11.png";
+                /*if (File.Exists(filepath))
+                {
+                    File.Delete(filepath);
+                    MessageBox.Show("File Deleted");
+                }
+                else
+                {
+                    MessageBox.Show("File Not Exists");
+                }*/
+            }
+
         }
 
         private void deletingpic(int pic_num)
@@ -193,6 +204,17 @@ namespace Enchanter_Fashion.Display_Board
             catch (MySqlException exp)
             {
 
+            }
+        }
+
+        private void back_btn_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Do you want to exit?", "Enchanter Fashion", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                this.Hide();
+                displaypanel dsply = new displaypanel();
+                this.Closed += (s, args) => this.Close();
+                dsply.Show();
             }
         }
     }
