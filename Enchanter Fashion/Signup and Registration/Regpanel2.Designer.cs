@@ -461,6 +461,7 @@ namespace Enchanter_Fashion
             this.Controls.Add(this.label2);
             this.Name = "Regpanel2";
             this.Size = new System.Drawing.Size(324, 414);
+            this.Load += new System.EventHandler(this.Regpanel2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

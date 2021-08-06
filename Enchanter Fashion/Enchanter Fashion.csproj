@@ -275,11 +275,23 @@
       <DependentUpon>filenotfound.cs</DependentUpon>
     </Compile>
     <Compile Include="Signup and Registration\databasecrudoperations.cs" />
+    <Compile Include="Signup and Registration\first_recovery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Signup and Registration\first_recovery.Designer.cs">
+      <DependentUpon>first_recovery.cs</DependentUpon>
+    </Compile>
     <Compile Include="Signup and Registration\Login.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Signup and Registration\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup and Registration\passwordrecovery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signup and Registration\passwordrecovery.Designer.cs">
+      <DependentUpon>passwordrecovery.cs</DependentUpon>
     </Compile>
     <Compile Include="Signup and Registration\Regpanel1.cs">
       <SubType>UserControl</SubType>
@@ -292,6 +304,12 @@
     </Compile>
     <Compile Include="Signup and Registration\Regpanel2.Designer.cs">
       <DependentUpon>Regpanel2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup and Registration\second_recovery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Signup and Registration\second_recovery.Designer.cs">
+      <DependentUpon>second_recovery.cs</DependentUpon>
     </Compile>
     <Compile Include="Signup and Registration\Termsandpolycies.cs">
       <SubType>Form</SubType>
@@ -324,6 +342,12 @@
     </Compile>
     <Compile Include="Display Board\womanbackground1.Designer.cs">
       <DependentUpon>womanbackground1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup and Registration\third_recovery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Signup and Registration\third_recovery.Designer.cs">
+      <DependentUpon>third_recovery.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Display Board\addarrivals.resx">
       <DependentUpon>addarrivals.cs</DependentUpon>
@@ -373,14 +397,23 @@
     <EmbeddedResource Include="Massage\filenotfound.resx">
       <DependentUpon>filenotfound.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Signup and Registration\first_recovery.resx">
+      <DependentUpon>first_recovery.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Signup and Registration\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup and Registration\passwordrecovery.resx">
+      <DependentUpon>passwordrecovery.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Signup and Registration\Regpanel1.resx">
       <DependentUpon>Regpanel1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Signup and Registration\Regpanel2.resx">
       <DependentUpon>Regpanel2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup and Registration\second_recovery.resx">
+      <DependentUpon>second_recovery.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Signup and Registration\Termsandpolycies.resx">
       <DependentUpon>Termsandpolycies.cs</DependentUpon>
@@ -407,6 +440,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Display Board\womanbackground1.resx">
       <DependentUpon>womanbackground1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup and Registration\third_recovery.resx">
+      <DependentUpon>third_recovery.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Enchanter_Fashion.Signup_and_Registration;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,11 @@ namespace Enchanter_Fashion
         public termsnpolicy()
         {
             InitializeComponent();
+        }
+
+        private void tmsnplycsgnup_btn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

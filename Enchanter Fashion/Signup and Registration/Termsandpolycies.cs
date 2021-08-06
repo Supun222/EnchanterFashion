@@ -59,5 +59,10 @@ namespace Enchanter_Fashion
             this.Region = System.Drawing.Region.FromHrgn(ptr);
             DeleteObject(ptr);
         }
+
+        private void tmsnplycsgnup_btn_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

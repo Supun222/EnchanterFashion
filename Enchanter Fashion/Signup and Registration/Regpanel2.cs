@@ -21,5 +21,10 @@ namespace Enchanter_Fashion
         {
 
         }
+
+        private void Regpanel2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

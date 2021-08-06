@@ -34,8 +34,8 @@ namespace Enchanter_Fashion
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.accepted_check = new System.Windows.Forms.RadioButton();
+            this.not_accepted_check = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
             this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.tmsnplycsgnup_btn = new MaterialSkin.Controls.MaterialFlatButton();
@@ -82,29 +82,29 @@ namespace Enchanter_Fashion
             this.panel1.Size = new System.Drawing.Size(800, 178);
             this.panel1.TabIndex = 37;
             // 
-            // radioButton1
+            // accepted_check
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(67, 329);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(303, 21);
-            this.radioButton1.TabIndex = 38;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "I accept the terms in the license agrement.";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.accepted_check.AutoSize = true;
+            this.accepted_check.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accepted_check.Location = new System.Drawing.Point(67, 329);
+            this.accepted_check.Name = "accepted_check";
+            this.accepted_check.Size = new System.Drawing.Size(303, 21);
+            this.accepted_check.TabIndex = 38;
+            this.accepted_check.TabStop = true;
+            this.accepted_check.Text = "I accept the terms in the license agrement.";
+            this.accepted_check.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // not_accepted_check
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(67, 359);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(338, 21);
-            this.radioButton2.TabIndex = 39;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "I dont accept the terms in the license agrement.";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.not_accepted_check.AutoSize = true;
+            this.not_accepted_check.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.not_accepted_check.Location = new System.Drawing.Point(67, 359);
+            this.not_accepted_check.Name = "not_accepted_check";
+            this.not_accepted_check.Size = new System.Drawing.Size(338, 21);
+            this.not_accepted_check.TabIndex = 39;
+            this.not_accepted_check.TabStop = true;
+            this.not_accepted_check.Text = "I dont accept the terms in the license agrement.";
+            this.not_accepted_check.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -150,6 +150,7 @@ namespace Enchanter_Fashion
             this.tmsnplycsgnup_btn.TabIndex = 98;
             this.tmsnplycsgnup_btn.Text = "Sign Up";
             this.tmsnplycsgnup_btn.UseVisualStyleBackColor = false;
+            this.tmsnplycsgnup_btn.Click += new System.EventHandler(this.tmsnplycsgnup_btn_Click);
             // 
             // tmsnplycprnt_btn
             // 
@@ -200,8 +201,8 @@ namespace Enchanter_Fashion
             this.Controls.Add(this.tmsnplycsgnup_btn);
             this.Controls.Add(this.bunifuSeparator1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.not_accepted_check);
+            this.Controls.Add(this.accepted_check);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -222,12 +223,12 @@ namespace Enchanter_Fashion
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Label label4;
         private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator1;
         public MaterialSkin.Controls.MaterialFlatButton tmsnplycsgnup_btn;
         public MaterialSkin.Controls.MaterialFlatButton tmsnplycprnt_btn;
         public MaterialSkin.Controls.MaterialFlatButton tmsnplycback_btn;
+        public System.Windows.Forms.RadioButton accepted_check;
+        public System.Windows.Forms.RadioButton not_accepted_check;
     }
 }
