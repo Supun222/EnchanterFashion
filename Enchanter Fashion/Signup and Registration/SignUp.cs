@@ -313,7 +313,7 @@ namespace Enchanter_Fashion
                     this.Hide();
                     DIMassage msg = new DIMassage(username);
                     this.Closed += (s, args) => this.Close();
-                    msg.displayandInventorymsg1.topic_lbl.Text = "Hello..!!  " + dbset.username + ". Please select a option.";
+                    msg.displayandInventorymsg1.topic_lbl.Text = "Hello..!!  " + dbset.username + ". Please select an option.";
                     msg.Show();
                 }
                 else

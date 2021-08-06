@@ -15,12 +15,13 @@ namespace Enchanter_Fashion.Display_Board
 {
     public partial class addarrivals : Form
     {
-        public addarrivals()
+        public addarrivals(string usernme)
         {
             InitializeComponent();
             dataview_Click(null, null);
+            this.username = username;
         }
-        string picturefilepath;
+        string picturefilepath, username;
         private void upload_btn_Click(object sender, EventArgs e)
         {
             OpenFileDialog open = new OpenFileDialog();
@@ -67,7 +68,7 @@ namespace Enchanter_Fashion.Display_Board
                         this.Close();
                     }
                 }
-                else if (descrption_txt.TextLength > 600)
+                else if (descrption_txt.TextLength > 1000)
                 {
                     if (MessageBox.Show("Please inset a description which contains lower than 600 characters.", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.Yes)
                     {
@@ -178,15 +179,23 @@ namespace Enchanter_Fashion.Display_Board
                 deletingpic(number);
                 filepath = display.filedirectory + filename;
                 Console.WriteLine(filepath);
-                if (File.Exists(filepath))
+                try
                 {
-                    File.Delete(filepath);
-                    MessageBox.Show("File Deleted");
+                    if (File.Exists(filepath))
+                    {
+                        File.Delete(filepath);
+                        MessageBox.Show("File Deleted");
+                    }
+                    else
+                    {
+                        MessageBox.Show("File Not Exists");
+                    }
                 }
-                else
+                catch (IOException)
                 {
-                    MessageBox.Show("File Not Exists");
+
                 }
+                
             }
 
         }
@@ -217,9 +226,9 @@ namespace Enchanter_Fashion.Display_Board
             if (MessageBox.Show("Do you want to exit?", "Enchanter Fashion", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 this.Hide();
-                displaypanel dsply = new displaypanel();
+                displaypanel ds = new displaypanel(username);
                 this.Closed += (s, args) => this.Close();
-                dsply.Show();
+                ds.Show();
             }
         }
     }

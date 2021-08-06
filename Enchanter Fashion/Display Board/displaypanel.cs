@@ -474,8 +474,9 @@ namespace Enchanter_Fashion
 
         private void addnewitems_btn_Click(object sender, EventArgs e)
         {
+            getvalue.claerarraylist();
             this.Hide();
-            addarrivals adnewitms = new addarrivals();
+            addarrivals adnewitms = new addarrivals(username);
             this.Closed += (s, args) => this.Close();
             adnewitms.Show();
         }

@@ -723,3 +723,4 @@ D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Signup_and_Registration
 D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Signup_and_Registration.passwordrecovery.resources
 D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Signup_and_Registration.second_recovery.resources
 D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Signup_and_Registration.third_recovery.resources
+D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter Fashion.csproj.AssemblyReference.cache
