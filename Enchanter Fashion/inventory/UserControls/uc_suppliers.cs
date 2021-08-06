@@ -24,7 +24,19 @@ namespace Enchanter_Fashion.inventory.UserControls
 
         private void saveBtn_Click(object sender, EventArgs e)
         {
-            if(companyNameTb.Text != "")
+            if(companyNameTb.Text == "")
+            {
+                MessageBox.Show("Please enter the supplier name", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if(addressTb.Text == "")
+            {
+                MessageBox.Show("Please Enter the address");
+            }
+            else if(telephoneTb.Text == "")
+            {
+
+            }
+            /*if(companyNameTb.Text != "")
             {
                 if(telephoneTb.Text.Length == 10)
                 {
@@ -39,7 +51,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             else
             {
                 MessageBox.Show("Please enter the supplier name", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            }*/
            
 
             supplierIdTb.Text = "";

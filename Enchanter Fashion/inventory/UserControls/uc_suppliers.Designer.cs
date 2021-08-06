@@ -100,9 +100,9 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.companyName.Margin = new System.Windows.Forms.Padding(4);
             this.companyName.Name = "companyName";
             this.companyName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.companyName.Size = new System.Drawing.Size(107, 20);
+            this.companyName.Size = new System.Drawing.Size(99, 20);
             this.companyName.TabIndex = 31;
-            this.companyName.Text = "Company Name";
+            this.companyName.Text = "Supplier Name";
             this.companyName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.companyName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.companyName.Click += new System.EventHandler(this.bunifuLabel2_Click);
