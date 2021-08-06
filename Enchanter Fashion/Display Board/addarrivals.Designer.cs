@@ -462,6 +462,7 @@ namespace Enchanter_Fashion.Display_Board
             this.back_btn.TabIndex = 121;
             this.back_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.back_btn.UseVisualStyleBackColor = false;
+            this.back_btn.Click += new System.EventHandler(this.back_btn_Click);
             // 
             // dataview
             // 

@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using Enchanter_Fashion.Massage;
+using Enchanter_Fashion.Signup_and_Registration;
 
 namespace Enchanter_Fashion
 {
@@ -146,10 +147,50 @@ namespace Enchanter_Fashion
 
         private void login_Click(object sender, EventArgs e)
         {
+            string username, password;
+            username = login.lgnemail.Text;
+            password = login.lgnpswd.Text;
+
+            if (username == "")
+            {
+                if (MessageBox.Show("Please enter the username or email", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
+                {
+                    this.Close();
+                }
+            }
+            else if( password == "")
+            {
+                if (MessageBox.Show("Please enter the password", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
+                {
+                    this.Close();
+                }
+            }
+            else
+            {
+                databasecrudoperations dbset = new databasecrudoperations();
+                if(dbset.checklogin(username, password) == true) 
+                {
+                    this.Hide();
+                    DIMassage msg = new DIMassage();
+                    this.Closed += (s, args) => this.Close();
+                    msg.displayandInventorymsg1.topic_lbl.Text = "Hello..!!  " + dbset.username + ". Please select a option.";
+                    msg.Show();
+                }
+                else
+                {
+                    if (MessageBox.Show("Username or password is incorrect. please try again", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
+                    {
+                        this.Close();
+                    }
+                }
+            }
+
+
+            /*
             this.Hide();
             DIMassage msg = new DIMassage();
             this.Closed += (s, args) => this.Close();
-            msg.Show();          
+            msg.Show();*/          
         }
     }
 

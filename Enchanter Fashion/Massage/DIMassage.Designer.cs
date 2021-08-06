@@ -98,12 +98,12 @@ namespace Enchanter_Fashion.Massage
             // 
             // displayandInventorymsg1
             // 
-            this.displayandInventorymsg1.Location = new System.Drawing.Point(12, 49);
+            this.displayandInventorymsg1.Location = new System.Drawing.Point(12, 47);
             this.displayandInventorymsg1.Name = "displayandInventorymsg1";
             this.displayandInventorymsg1.Size = new System.Drawing.Size(503, 139);
             this.displayandInventorymsg1.TabIndex = 1;
             // 
-            // Massage
+            // DIMassage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -111,7 +111,7 @@ namespace Enchanter_Fashion.Massage
             this.Controls.Add(this.displayandInventorymsg1);
             this.Controls.Add(this.bunifuPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Massage";
+            this.Name = "DIMassage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Massage";
             this.bunifuPanel1.ResumeLayout(false);
@@ -126,6 +126,6 @@ namespace Enchanter_Fashion.Massage
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button5;
-        private DisplayandInventorymsg displayandInventorymsg1;
+        public DisplayandInventorymsg displayandInventorymsg1;
     }
 }

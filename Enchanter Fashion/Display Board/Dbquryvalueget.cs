@@ -13,10 +13,10 @@ namespace Enchanter_Fashion.Display_Board
 {
     class Dbquryvalueget
     {
-        public string picfilename;
-        private int slide = -1;
+        public string picfilename, brand,collection,itemname,description,price;
+        private int slide = -6;
         public int totalslides;
-        public int cuurentslide;
+        public int cuurentslide = 0;
         ArrayList arrayvalues = new ArrayList();
 
         public void settingsvalues(string sql_qury)
@@ -36,6 +36,11 @@ namespace Enchanter_Fashion.Display_Board
                 while (dr.Read())
                 {
                     arrayvalues.Add(dr.GetString("pic_file_name").ToString());
+                    arrayvalues.Add(dr.GetString("item_name").ToString());
+                    arrayvalues.Add(dr.GetString("brand").ToString());
+                    arrayvalues.Add(dr.GetString("Collection").ToString());
+                    arrayvalues.Add(dr.GetFloat("price").ToString());
+                    arrayvalues.Add(dr.GetString("description").ToString());
                     /*
                     if (first == true)
                     {
@@ -47,7 +52,7 @@ namespace Enchanter_Fashion.Display_Board
                         L.Add(dr.GetString("pic_file_name").ToString());
                     }*/
                 }
-                totalslides = arrayvalues.Count;
+                totalslides = arrayvalues.Count/6;
                 conn.Close();
             }
             catch (MySqlException exp)
@@ -70,21 +75,32 @@ namespace Enchanter_Fashion.Display_Board
         {
             try
             {
-                if (slide >= arrayvalues.Count - 1)
+                if (slide >= arrayvalues.Count - 6)
                 {
-                    slide = arrayvalues.Count - 1;
+                    slide = arrayvalues.Count - 6;
                     picfilename = arrayvalues[slide].ToString();
+                    itemname = arrayvalues[slide + 1].ToString();
+                    brand = arrayvalues[slide + 2].ToString();
+                    collection = arrayvalues[slide + 3].ToString();
+                    price = arrayvalues[slide + 4].ToString();
+                    description = arrayvalues[slide + 5].ToString();
+                    
                     //Console.WriteLine(slide);
                     //Console.WriteLine(arrayvalues[slide].ToString()); 
                 }
                 else
                 {
-                    slide = slide + 1;
+                    slide = slide + 6;
                     picfilename = arrayvalues[slide].ToString();
+                    itemname = arrayvalues[slide + 1].ToString();
+                    brand = arrayvalues[slide + 2].ToString();
+                    collection = arrayvalues[slide + 3].ToString();
+                    price = arrayvalues[slide + 4].ToString();
+                    description = arrayvalues[slide + 5].ToString();
                     //Console.WriteLine(slide);
                     //Console.WriteLine(arrayvalues[slide].ToString());           
                 }
-                cuurentslide = slide;
+                //cuurentslide = (slide/6) + 1;
             }
             catch (ArgumentOutOfRangeException ex)
             {
@@ -100,18 +116,28 @@ namespace Enchanter_Fashion.Display_Board
                 if (slide <= 0)
                 {
                     slide = 0;
-                    picfilename = arrayvalues[0].ToString();
+                    picfilename = arrayvalues[slide].ToString();
+                    itemname = arrayvalues[slide + 1].ToString();
+                    brand = arrayvalues[slide + 2].ToString();
+                    collection = arrayvalues[slide + 3].ToString();
+                    price = arrayvalues[slide + 4].ToString();
+                    description = arrayvalues[slide + 5].ToString();
                     //Console.WriteLine(slide);
                     //Console.WriteLine(arrayvalues[0].ToString());
                 }
                 else
                 {
-                    slide = slide - 1;
+                    slide = slide - 6;
                     picfilename = arrayvalues[slide].ToString();
+                    itemname = arrayvalues[slide + 1].ToString();
+                    brand = arrayvalues[slide + 2].ToString();
+                    collection = arrayvalues[slide + 3].ToString();
+                    price = arrayvalues[slide + 4].ToString();
+                    description = arrayvalues[slide + 5].ToString();
                     //Console.WriteLine(slide);
                     //Console.WriteLine(arrayvalues[slide].ToString());                         
                 }
-                cuurentslide = slide;
+                //cuurentslide = cuurentslide - 1;
             }
             catch (ArgumentOutOfRangeException ex)
             {
@@ -123,7 +149,8 @@ namespace Enchanter_Fashion.Display_Board
         public void claerarraylist()
         {
             arrayvalues.Clear();
-            slide = -1;
+            slide = -6;
+            cuurentslide = 0;
         }
     }
 }

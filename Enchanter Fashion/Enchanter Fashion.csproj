@@ -274,6 +274,7 @@
     <Compile Include="Massage\filenotfound.Designer.cs">
       <DependentUpon>filenotfound.cs</DependentUpon>
     </Compile>
+    <Compile Include="Signup and Registration\databasecrudoperations.cs" />
     <Compile Include="Signup and Registration\Login.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -422,6 +423,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Display Board\Images\" />
     <Folder Include="Errors\" />
   </ItemGroup>
   <ItemGroup>
@@ -437,13 +439,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Display Board\Images\boy11.png" />
-    <Content Include="Display Board\Images\boy12.png" />
-    <Content Include="Display Board\Images\boy13.png" />
-    <Content Include="Display Board\Images\boy14.png" />
-    <Content Include="Display Board\Images\women11.png" />
-    <Content Include="Display Board\Images\women12.png" />
-    <Content Include="Display Board\Images\women21.png" />
     <Content Include="Icons\icons8_delete_20px_1.png" />
     <Content Include="Icons\icons8_horizontal_line_20px.png" />
     <Content Include="Icons\icons8_macos_minimize_24px.png" />
