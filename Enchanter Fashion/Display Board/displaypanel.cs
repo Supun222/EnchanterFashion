@@ -19,9 +19,16 @@ namespace Enchanter_Fashion
     {
         public displaypanel()
         {
-            InitializeComponent();
+            //InitializeComponent();
             //sideunderline_bar.Height = all_btn.Height;
+        }
+        public string username;
+        public displaypanel(string username)
+        {
+            InitializeComponent();
+            sideunderline_bar.Height = all_btn.Height;
             button1_Click(null, null);
+            this.username = username;
         }
 
         Dbquryset setqury = new Dbquryset();
@@ -58,7 +65,7 @@ namespace Enchanter_Fashion
                 else
                 {
                     getvalue.returnnextvalues();
-                    
+
                 }
 
             }
@@ -85,7 +92,7 @@ namespace Enchanter_Fashion
                 else
                 {
                     getvalue.returnnextvalues();
-                    
+
                 }
 
             }
@@ -112,7 +119,7 @@ namespace Enchanter_Fashion
                 else
                 {
                     getvalue.returnnextvalues();
-                    
+
                 }
 
             }
@@ -139,7 +146,7 @@ namespace Enchanter_Fashion
                 else
                 {
                     getvalue.returnnextvalues();
-                    
+
                 }
 
             }
@@ -166,7 +173,7 @@ namespace Enchanter_Fashion
                 else
                 {
                     getvalue.returnnextvalues();
-                    
+
                 }
             }
             try
@@ -180,7 +187,7 @@ namespace Enchanter_Fashion
                 {
                     currntlbl.Text = current.ToString();
                 }
-                
+
                 if (currntlbl.Text == totllbl.Text)
                 {
                     button1.Hide();
@@ -201,12 +208,19 @@ namespace Enchanter_Fashion
                 descptn_lbl.Text = getvalue.description;
                 descptn_lbl.AutoSize = false;
                 descptn_lbl.Size = new Size(322, 254);
+                black_lbl.Text = "| Black  : " + getvalue.black;
+                blue_lbl.Text = "| Blue   : " + getvalue.blue;
+                white_lbl.Text = "| White  : " + getvalue.white;
+                redd_lbl.Text = "| Red    : " + getvalue.red;
+                small_lbl.Text = "| Small   : " + getvalue.small;
+                medium_lbl.Text = "| Medium  : " + getvalue.medium;
+                large_lbl.Text = "| Large   : " + getvalue.large;
             }
-            catch(FileNotFoundException ex)
+            catch (FileNotFoundException ex)
             {
                 filenotfound fillmissing = new filenotfound();
                 fillmissing.Show();
-            }       
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -234,7 +248,7 @@ namespace Enchanter_Fashion
                 else
                 {
                     getvalue.returnpreviuosvalues();
-                    
+
                 }
             }
             else if (sideunderline_bar.Height == men_btn.Height)
@@ -260,7 +274,7 @@ namespace Enchanter_Fashion
                 else
                 {
                     getvalue.returnpreviuosvalues();
-                    
+
                 }
             }
             else if (sideunderline_bar.Height == women_btn.Height)
@@ -286,7 +300,7 @@ namespace Enchanter_Fashion
                 else
                 {
                     getvalue.returnpreviuosvalues();
-                    
+
                 }
             }
             else if (sideunderline_bar.Height == kids_btn.Height)
@@ -312,7 +326,7 @@ namespace Enchanter_Fashion
                 else
                 {
                     getvalue.returnpreviuosvalues();
-                    
+
                 }
             }
             else
@@ -338,7 +352,7 @@ namespace Enchanter_Fashion
                 else
                 {
                     getvalue.returnpreviuosvalues();
-                    
+
                 }
             }
             try
@@ -366,9 +380,16 @@ namespace Enchanter_Fashion
                 collect_lbl.Text = getvalue.collection;
                 iteamnml_bl.Text = getvalue.itemname;
                 brandname_lbl.Text = getvalue.brand;
-                prc_lbl.Text = "Rs. " + getvalue.price + ".00 /="; 
+                prc_lbl.Text = "Rs. " + getvalue.price + ".00 /=";
                 descptn_lbl.Text = getvalue.description;
                 descptn_lbl.Size = new Size(322, 254);
+                black_lbl.Text = "| Black  : " + getvalue.black;
+                blue_lbl.Text = "| Blue   : " + getvalue.blue;
+                white_lbl.Text = "| White  : " + getvalue.white;
+                redd_lbl.Text = "| Red    : " + getvalue.red;
+                small_lbl.Text = "| Small   : " + getvalue.small;
+                medium_lbl.Text = "| Medium  : " + getvalue.medium;
+                large_lbl.Text = "| Large   : " + getvalue.large;
             }
             catch (FileNotFoundException ex)
             {
@@ -384,7 +405,7 @@ namespace Enchanter_Fashion
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
-
+            quick_panel.BringToFront();
         }
 
         private void button10_Enter(object sender, EventArgs e)
@@ -433,7 +454,7 @@ namespace Enchanter_Fashion
             sideunderline_bar.Height = women_btn.Height;
             sideunderline_bar.Top = women_btn.Top;
             button1_Click(null, null);
-            
+
         }
 
         private void kids_btn_Click(object sender, EventArgs e)
@@ -457,6 +478,11 @@ namespace Enchanter_Fashion
             addarrivals adnewitms = new addarrivals();
             this.Closed += (s, args) => this.Close();
             adnewitms.Show();
+        }
+
+        private void goback_btn_Click(object sender, EventArgs e)
+        {
+            quick_panel.SendToBack();
         }
     }
 }

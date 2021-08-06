@@ -33,6 +33,7 @@ namespace Enchanter_Fashion.Signup_and_Registration
             this.label3 = new System.Windows.Forms.Label();
             this.email_or_username = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label2 = new System.Windows.Forms.Label();
+            this.back_btn = new MaterialSkin.Controls.MaterialFlatButton();
             this.SuspendLayout();
             // 
             // recovery1_next
@@ -44,7 +45,7 @@ namespace Enchanter_Fashion.Signup_and_Registration
             this.recovery1_next.DialogResult = System.Windows.Forms.DialogResult.Ignore;
             this.recovery1_next.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.recovery1_next.Icon = null;
-            this.recovery1_next.Location = new System.Drawing.Point(134, 214);
+            this.recovery1_next.Location = new System.Drawing.Point(217, 213);
             this.recovery1_next.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.recovery1_next.MouseState = MaterialSkin.MouseState.HOVER;
             this.recovery1_next.Name = "recovery1_next";
@@ -96,10 +97,31 @@ namespace Enchanter_Fashion.Signup_and_Registration
             this.label2.TabIndex = 98;
             this.label2.Text = "Welcome ";
             // 
+            // back_btn
+            // 
+            this.back_btn.AutoSize = true;
+            this.back_btn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.back_btn.BackColor = System.Drawing.Color.White;
+            this.back_btn.Depth = 0;
+            this.back_btn.DialogResult = System.Windows.Forms.DialogResult.Ignore;
+            this.back_btn.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.back_btn.Icon = null;
+            this.back_btn.Location = new System.Drawing.Point(42, 213);
+            this.back_btn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.back_btn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.back_btn.Name = "back_btn";
+            this.back_btn.Primary = false;
+            this.back_btn.Size = new System.Drawing.Size(56, 36);
+            this.back_btn.TabIndex = 101;
+            this.back_btn.Text = "Back";
+            this.back_btn.UseVisualStyleBackColor = false;
+            this.back_btn.Click += new System.EventHandler(this.back_btn_Click);
+            // 
             // first_recovery
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.back_btn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.email_or_username);
             this.Controls.Add(this.label2);
@@ -116,5 +138,6 @@ namespace Enchanter_Fashion.Signup_and_Registration
         private System.Windows.Forms.Label label3;
         public MaterialSkin.Controls.MaterialSingleLineTextField email_or_username;
         private System.Windows.Forms.Label label2;
+        public MaterialSkin.Controls.MaterialFlatButton back_btn;
     }
 }

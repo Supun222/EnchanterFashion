@@ -79,7 +79,7 @@ namespace Enchanter_Fashion.Signup_and_Registration
             {
                 int count = 0;
                 MySqlConnection con = DBConection.getconnection();
-                string query = "SELECT COUNT(username) AS count FROM registration WHERE username = '" + name + "';";
+                string query = "SELECT COUNT(username) AS count, username FROM registration WHERE username = '" + name + "';";
                 Console.WriteLine(query);
                 MySqlCommand mycmd = new MySqlCommand(query, con);
                 con.Open();
@@ -87,6 +87,7 @@ namespace Enchanter_Fashion.Signup_and_Registration
                 while (dr.Read())
                 {
                     count = dr.GetInt32("count");
+                    this.username = dr.GetString("username");
                 }
                 con.Close();
                 if(count == 1)
@@ -111,7 +112,7 @@ namespace Enchanter_Fashion.Signup_and_Registration
             {
                 int count = 0;
                 MySqlConnection con = DBConection.getconnection();
-                string query = "SELECT COUNT(email) AS count FROM registration WHERE email = '" + email + "';";
+                string query = "SELECT COUNT(email) AS count, username FROM registration WHERE email = '" + email + "';";
                 Console.WriteLine(query);
                 MySqlCommand mycmd = new MySqlCommand(query, con);
                 con.Open();
@@ -119,6 +120,7 @@ namespace Enchanter_Fashion.Signup_and_Registration
                 while (dr.Read())
                 {
                     count = dr.GetInt32("count");
+                    this.username = dr.GetString("username");
                 }
                 con.Close();
                 if (count == 1)
@@ -170,7 +172,7 @@ namespace Enchanter_Fashion.Signup_and_Registration
             }
         }
 
-        public bool check_answers(string schoolname, string bookname, string text)
+        public bool check_answers(string schoolname, string bookname)
         {
             string username = "", email = "";
             try
@@ -193,7 +195,7 @@ namespace Enchanter_Fashion.Signup_and_Registration
 
             }
 
-            if(username == text || email == text)
+            if(username == this.username || email == username)
             {
                 return true;
             }
@@ -219,27 +221,16 @@ namespace Enchanter_Fashion.Signup_and_Registration
             var hasLowerChar = new Regex(@"[a-z]+");
             var hasSymbols = new Regex(@"[!@#$%^&*()_+=\[{\]};:<>|./?,-]");
 
-            if (!hasLowerChar.IsMatch(input))
-            {
-                errormaages = "Password should contain At least one lower case letter";
-                return false;
-            }
-            else if (!hasUpperChar.IsMatch(input))
+            if (!hasUpperChar.IsMatch(input))
             {
                 errormaages = "Password should contain At least one upper case letter";
                 return false;
-            }
-            else if (!hasMiniMaxChars.IsMatch(input))
-            {
-                errormaages = "Password should not be less than or greater than 12 characters";
-                return false;
-            }
+            }          
             else if (!hasNumber.IsMatch(input))
             {
                 errormaages = "Password should contain At least one numeric value";
                 return false;
             }
-
             else if (!hasSymbols.IsMatch(input))
             {
                 errormaages = "Password should contain At least one special case characters";
@@ -251,12 +242,12 @@ namespace Enchanter_Fashion.Signup_and_Registration
             }
         }
 
-        public void updatepassword(string password)
+        public void updatepassword(string password )
         {
             try
             {
                 MySqlConnection con = DBConection.getconnection();
-                string query = "update password FROM registration set password='" + password + "'; ";
+                string query = "UPDATE registration SET registration.password = '"+ password + "' WHERE registration.username = '"+ this.username + "' OR registration.email = '" + username + "';";
                 Console.WriteLine(query);
                 MySqlCommand mycmd = new MySqlCommand(query, con);
                 con.Open();

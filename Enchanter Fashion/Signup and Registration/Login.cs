@@ -30,5 +30,10 @@ namespace Enchanter_Fashion
         {
 
         }
+
+        private void forgotpswd_lbl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

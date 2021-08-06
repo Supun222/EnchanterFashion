@@ -17,12 +17,24 @@ namespace Enchanter_Fashion.Signup_and_Registration
             InitializeComponent();
 
             first_recovery.recovery1_next.Click += firstrcvy_next_btn_Click;
+            first_recovery.back_btn.Click += firstrcvy_back_butn_Click;
             second_recovery.recovery2_next.Click += secondtrcvy_next_btn_Click;
             third_recovery.submit_btn.Click += thirdtrcvy_next_btn_Click;
         }
 
         public string username, password;
         databasecrudoperations dbset = new databasecrudoperations();
+
+        private void firstrcvy_back_butn_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Do you want to exit?", "Enchanter Fashion", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                this.Hide();
+                Form1 signup = new Form1();
+                this.Closed += (s, args) => this.Close();
+                signup.Show();
+            }  
+        }
 
         private void firstrcvy_next_btn_Click(object sender, EventArgs e)
         {
@@ -68,13 +80,14 @@ namespace Enchanter_Fashion.Signup_and_Registration
             }
             else
             {
-                if(dbset.check_answers(second_recovery.school_name.Text, second_recovery.book_name.Text, this.username) == true)
+                if(dbset.check_answers(second_recovery.school_name.Text, second_recovery.book_name.Text) == true)
                 {
-                    first_recovery.SendToBack();
-                    second_recovery.SendToBack();
-                    third_recovery.BringToFront();
+
                     if (MessageBox.Show("Answers are correct.", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
                     {
+                        first_recovery.SendToBack();
+                        second_recovery.SendToBack();
+                        third_recovery.BringToFront();
                     }
                 }
                 else
@@ -92,8 +105,17 @@ namespace Enchanter_Fashion.Signup_and_Registration
             {
                 if(third_recovery.new_pswd.Text == third_recovery.confirm_pswd.Text)
                 {
+                    this.password = third_recovery.new_pswd.Text;
                     dbset.updatepassword(this.password);
                 }
+                if (MessageBox.Show("Hello.. " + dbset.username + ". your new password has updated. please dont forget your password again.", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
+                {
+                    this.Hide();
+                    Form1 signup = new Form1();
+                    this.Closed += (s, args) => this.Close();
+                    signup.Show();
+                }
+                this.Hide();
             }
             else
             {

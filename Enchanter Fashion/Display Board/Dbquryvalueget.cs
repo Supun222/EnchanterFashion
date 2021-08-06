@@ -13,10 +13,11 @@ namespace Enchanter_Fashion.Display_Board
 {
     class Dbquryvalueget
     {
-        public string picfilename, brand,collection,itemname,description,price;
+        public string picfilename, brand, collection, itemname, description, price;
         private int slide = -6;
         public int totalslides;
         public int cuurentslide = 0;
+        public string black, blue, white, red, small, medium, large;
         ArrayList arrayvalues = new ArrayList();
 
         public void settingsvalues(string sql_qury)
@@ -52,7 +53,7 @@ namespace Enchanter_Fashion.Display_Board
                         L.Add(dr.GetString("pic_file_name").ToString());
                     }*/
                 }
-                totalslides = arrayvalues.Count/6;
+                totalslides = arrayvalues.Count / 6;
                 conn.Close();
             }
             catch (MySqlException exp)
@@ -84,7 +85,7 @@ namespace Enchanter_Fashion.Display_Board
                     collection = arrayvalues[slide + 3].ToString();
                     price = arrayvalues[slide + 4].ToString();
                     description = arrayvalues[slide + 5].ToString();
-                    
+
                     //Console.WriteLine(slide);
                     //Console.WriteLine(arrayvalues[slide].ToString()); 
                 }
@@ -99,6 +100,30 @@ namespace Enchanter_Fashion.Display_Board
                     description = arrayvalues[slide + 5].ToString();
                     //Console.WriteLine(slide);
                     //Console.WriteLine(arrayvalues[slide].ToString());           
+                }
+                try
+                {
+                    MySqlConnection con = DBConection.getconnection();
+                    string query = "SELECT contain_items.Black, contain_items.Blue, contain_items.White, contain_items.Red, contain_items.SMALL, contain_items.MEDIUM, contain_items.LARGE FROM contain_items WHERE contain_items.item_name = '" + itemname + "';";
+                    Console.WriteLine(query);
+                    MySqlCommand mycmd = new MySqlCommand(query, con);
+                    con.Open();
+                    MySqlDataReader dr = mycmd.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        black = dr.GetString("Black");
+                        blue = dr.GetString("Blue");
+                        white = dr.GetString("White");
+                        red = dr.GetString("Red");
+                        small = dr.GetString("SMALL");
+                        medium = dr.GetString("MEDIUM");
+                        large = dr.GetString("LARGE");
+                    }
+                    con.Close();
+                }
+                catch (MySqlException exp)
+                {
+
                 }
                 //cuurentslide = (slide/6) + 1;
             }
@@ -137,13 +162,37 @@ namespace Enchanter_Fashion.Display_Board
                     //Console.WriteLine(slide);
                     //Console.WriteLine(arrayvalues[slide].ToString());                         
                 }
+                try
+                {
+                    MySqlConnection con = DBConection.getconnection();
+                    string query = "SELECT contain_items.Black, contain_items.Blue, contain_items.White, contain_items.Red, contain_items.SMALL, contain_items.MEDIUM, contain_items.LARGE FROM contain_items WHERE contain_items.item_name = '" + itemname + "';";
+                    Console.WriteLine(query);
+                    MySqlCommand mycmd = new MySqlCommand(query, con);
+                    con.Open();
+                    MySqlDataReader dr = mycmd.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        black = dr.GetString("Black");
+                        blue = dr.GetString("Blue");
+                        white = dr.GetString("White");
+                        red = dr.GetString("Red");
+                        small = dr.GetString("SMALL");
+                        medium = dr.GetString("MEDIUM");
+                        large = dr.GetString("LARGE");
+                    }
+                    con.Close();
+                }
+                catch (MySqlException exp)
+                {
+
+                }
                 //cuurentslide = cuurentslide - 1;
             }
             catch (ArgumentOutOfRangeException ex)
             {
                 filenotfound fillmissing = new filenotfound();
                 fillmissing.Show();
-            }           
+            }
         }
 
         public void claerarraylist()
@@ -152,5 +201,8 @@ namespace Enchanter_Fashion.Display_Board
             slide = -6;
             cuurentslide = 0;
         }
+
+
+
     }
 }

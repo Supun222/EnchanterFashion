@@ -16,5 +16,10 @@ namespace Enchanter_Fashion.Signup_and_Registration
         {
             InitializeComponent();
         }
+
+        private void back_btn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
