@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Enchanter_Fashion.DBConnection;
+using MySql.Data.MySqlClient;
 
 namespace Enchanter_Fashion.inventory.UserControls
 {
@@ -15,6 +17,7 @@ namespace Enchanter_Fashion.inventory.UserControls
         public uc_users()
         {
             InitializeComponent();
+            viewBtn_Click(null, null);
         }
         public static string encodePwToBase64 (string password){
             try
@@ -64,7 +67,44 @@ namespace Enchanter_Fashion.inventory.UserControls
             string decodedPw = decodeFromBase64(encodedPw);
             string encodedConfirmPw = encodePwToBase64(confirmPwTb.Text);
             string decodedConfirmPw = decodeFromBase64(encodedConfirmPw);
-            if (nicTb.Text.Length == 10 || nicTb.Text.Length == 11)
+
+            if(nicTb.Text == "")
+            {
+                MessageBox.Show("Please enter the NIC number", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (userNameTb.Text == "")
+            {
+                MessageBox.Show("Please enter the user name", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (pwTb.Text == "")
+            {
+                MessageBox.Show("Please enter the Password", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (confirmPwTb.Text == "")
+            {
+                MessageBox.Show("Please confirm the password", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                if (nicTb.Text.Length == 10 || nicTb.Text.Length == 11)
+                {
+                    if (decodedPw == decodedConfirmPw)
+                    {
+                        dbSetUser add = new dbSetUser();
+                        add.userInsert_value(nicTb.Text, userNameTb.Text, encodedPw);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Password does not match", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Please enter a valid Id number", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+            /*if (nicTb.Text.Length == 10 || nicTb.Text.Length == 11)
             {
                 if (decodedPw == decodedConfirmPw)
                 {
@@ -79,7 +119,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             else
             {
                 MessageBox.Show("Please enter a valid Id number", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            }*/
             nicTb.Text = "";
             userNameTb.Text = "";
             pwTb.Text = "";
@@ -96,20 +136,46 @@ namespace Enchanter_Fashion.inventory.UserControls
             else
             {
                 dbSetUser remove = new dbSetUser();
-                remove.userDelete_value(nicTb.Text, userNameTb.Text, pwTb.Text);
+                if (remove.checkItem(nicTb.Text) == true)
+                {
+                    remove.userDelete_value(nicTb.Text, userNameTb.Text, pwTb.Text);
+                }
+                else
+                {
+                    MessageBox.Show("Please enter correct NIC number",this.Text,MessageBoxButtons.OK,MessageBoxIcon.Error);
+                }
+            }    
 
-
-                nicTb.Text = "";
-                userNameTb.Text = "";
-                pwTb.Text = "";
-                confirmPwTb.Text = "";
-            }
+             nicTb.Text = "";
+             userNameTb.Text = "";
+             pwTb.Text = "";
+             confirmPwTb.Text = "";
+            
         }
 
-        private void table_CellContentClick(object sender, DataGridViewCellEventArgs e)
+ 
+    
+
+        private void viewBtn_Click(object sender, EventArgs e)
         {
-            //dbSetUser display = new dbSetUser();
-            //display.displayTable();
+            try
+            {
+                MySqlConnection con = DBConection.getconnection();
+                string query = "SELECT* FROM users";
+                Console.WriteLine(query);
+                MySqlCommand mycmd = new MySqlCommand(query, con);
+                con.Open();
+                MySqlDataAdapter myadpter = new MySqlDataAdapter();
+                myadpter.SelectCommand = mycmd;
+                DataTable dTable = new DataTable();
+                myadpter.Fill(dTable);
+                table.DataSource = dTable;
+                con.Close();
+            }
+            catch (MySqlException exp)
+            {
+
+            }
         }
     }
 }

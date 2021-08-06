@@ -17,6 +17,39 @@ namespace Enchanter_Fashion.inventory.UserControls
         string sql_query;
         //uc_users user = new uc_users(); 
 
+        public bool checkItem(string nic)
+        {
+            int count = 0;
+
+            try
+            {
+                MySqlConnection conn = DBConection.getconnection();
+                sql_query = "SELECT COUNT(nic) AS count FROM users WHERE nic = '" + nic + "'";
+                Console.WriteLine(sql_query);
+                MySqlCommand mycommand = new MySqlCommand(sql_query, conn);
+                conn.Open();
+                MySqlDataReader myreader = mycommand.ExecuteReader();
+                while (myreader.Read())
+                {
+                    count = myreader.GetInt32("count");
+                }
+                conn.Close();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            if (count == 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
 
 
         public void userInsert_value(string nic, string userName, string pw)
