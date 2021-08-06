@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.IO;
 using Enchanter_Fashion.Massage;
 using Enchanter_Fashion.Signup_and_Registration;
+using System.Text.RegularExpressions;
 
 namespace Enchanter_Fashion
 {
@@ -53,8 +54,15 @@ namespace Enchanter_Fashion
             regpanel2.reg2sgn_lbl.Click += reg2sgn_lbl_click;
 
             login.Loginbtn.Click += login_Click;
+
+            terms.tmsnplycsgnup_btn.Click += termsandpolicies_btn_click;
         }
-        
+
+
+        Termsandpolycies terms = new Termsandpolycies();
+        databasecrudoperations dbset = new databasecrudoperations();
+        public string newusername, email, name, phonenumber, gender, bookname, schoolname, password;
+
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
             System.IntPtr ptr = CreateRoundRectRgn(0, 0, this.Width, this.Height, 20, 20); // _BoarderRaduis can be adjusted to your needs, try 15 to start.
@@ -79,12 +87,155 @@ namespace Enchanter_Fashion
 
         private void reg1nxt_btn_click(object sender, EventArgs e)
         {
-            regpanel2.BringToFront();
+            if (regpanel1.reg1_username_txt.Text == "")
+            {
+                if (MessageBox.Show("Please enter a username", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
+                {
+
+                }
+            }
+            else if (regpanel1.reg1_email_txt.Text == "")
+            {
+                if (MessageBox.Show("Please enter an email", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
+                {
+
+                }
+            }
+            else if (regpanel1.reg1_paswd_txt.Text == "")
+            {
+                if (MessageBox.Show("Please enter the username or email", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
+                {
+
+                }
+            }
+            else
+            {
+                if (Regex.IsMatch(regpanel1.reg1_username_txt.Text, @"^[!#$%%^&*()?/<>.,'""]+$") == true || Regex.IsMatch(regpanel1.reg1_email_txt.Text, @"^[!#$%%^&*()?/<>.,'""]+$") == true || Regex.IsMatch(regpanel1.reg1_paswd_txt.Text, @"^[()?/<>.,'""]+$") == true)
+                {
+                    if (MessageBox.Show("Please use only letters without numbers of any spcial charactors", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
+                    {
+
+                    }
+                }
+                else
+                {
+                    if (IsValidEmail(regpanel1.reg1_email_txt.Text) == false)
+                    {
+                        if (MessageBox.Show("Please insert a correct email address.", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
+                        {
+
+                        }
+                    }
+                    else
+                    {
+                        if (regpanel1.reg1_paswd_txt.Text == regpanel1.reg1_cmpaswd_txt.Text)
+                        {
+                            this.newusername = regpanel1.reg1_username_txt.Text;
+                            this.email = regpanel1.reg1_email_txt.Text;
+                            this.password = regpanel1.reg1_paswd_txt.Text;
+                            regpanel2.BringToFront();
+                        }
+                        else
+                        {
+                            if (MessageBox.Show("Password and confirm passwords are not matching. Please try again.", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
+                            {
+
+                            }
+                        }
+                    }
+                }
+                
+            }
+            
+        }
+
+        bool IsValidEmail(string email)
+        {
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return addr.Address == email;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         private void reg2nxt_btn_click(object sender, EventArgs e)
         {
-            new Termsandpolycies().Visible = true;
+            if (regpanel2.fullname_txt.Text == "")
+            {
+                if (MessageBox.Show("Please enter a username", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
+                {
+                }
+            }
+            else if (regpanel2.phonnumber_txt.Text == "")
+            {
+                if (MessageBox.Show("Please enter a username", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
+                {
+                }
+            }
+            else if (regpanel2.bookname.Text == "" || regpanel2.schoolname.Text == "")
+            {
+                if (MessageBox.Show("Please answer to the questions", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
+                {
+                }
+            }          
+            else
+            {
+                if (Regex.IsMatch(regpanel2.fullname_txt.Text, @"^[!#$%%^&*()?/<>.,'""]+$") == true || Regex.IsMatch(regpanel2.bookname.Text, @"^[!#$%%^&*()?/<>.,'""]+$") == true || Regex.IsMatch(regpanel2.schoolname.Text, @"^[()?/<>.,'""]+$") == true)
+                {
+                    if (MessageBox.Show("Please use only letters without numbers of any spcial charactors", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
+                    {
+
+                    }
+                }
+                else
+                {
+                    if (Regex.IsMatch(regpanel2.phonnumber_txt.Text, @"[^0-9]"))
+                    {
+                        if (MessageBox.Show("Please insert correct phone number", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
+                        {
+                        }
+                    }
+                    else
+                    {
+                        this.name = regpanel2.fullname_txt.Text;
+                        this.phonenumber = regpanel2.phonnumber_txt.Text;
+                        this.bookname = regpanel2.bookname.Text;
+                        this.schoolname = regpanel2.schoolname.Text;
+                        if (regpanel2.male_radio.Checked == true)
+                        {
+                            this.gender = "male";
+                        }
+                        else if (regpanel2.female_radio.Checked == true)
+                        {
+                            this.gender = "female";
+                        }
+
+                        if (dbset.checkusername(newusername) == true)
+                        {
+                            if (MessageBox.Show("This username has aleady taken. Please insert a different one.", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
+                            {
+                            }
+                        }
+                        else if (dbset.checkemail(email) == true)
+                        {
+                            if (MessageBox.Show("This email has aleady taken. Please insert a different one.", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
+                            {
+                            }
+                        }
+                        else
+                        {
+                            terms.Show();
+                        }
+
+                    }
+  
+                }
+            }
+            
         }
 
         private void reg2back_btn_click(object sender, EventArgs e)
@@ -113,19 +264,7 @@ namespace Enchanter_Fashion
                 cp.ClassStyle |= CS_DropShadows;
                 return cp;
             }
-        }
-
-        string regmailtxt="", lgnmailtxt="";
-
-        public void setregemailvalue(string text)
-        {
-            regmailtxt = text;
-        }
-
-        public void setlgnemailvalue(string text)
-        {
-            lgnmailtxt = text;
-        }       
+        }      
 
         private void login_Load(object sender, EventArgs e)
         {
@@ -155,14 +294,14 @@ namespace Enchanter_Fashion
             {
                 if (MessageBox.Show("Please enter the username or email", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
                 {
-                    this.Close();
+                    
                 }
             }
             else if( password == "")
             {
                 if (MessageBox.Show("Please enter the password", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
                 {
-                    this.Close();
+                    
                 }
             }
             else
@@ -180,19 +319,34 @@ namespace Enchanter_Fashion
                 {
                     if (MessageBox.Show("Username or password is incorrect. please try again", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
                     {
-                        this.Close();
+  
                     }
                 }
-            }
-
-
-            /*
-            this.Hide();
-            DIMassage msg = new DIMassage();
-            this.Closed += (s, args) => this.Close();
-            msg.Show();*/          
+            }         
         }
+
+        private void termsandpolicies_btn_click(object sender, EventArgs e)
+        {
+            if (terms.accepted_check.Checked == true)
+            {
+                int ph_numb = Int32.Parse(phonenumber);
+                dbset.registeringcompleting(this.newusername, this.email, this.name, ph_numb, this.password, this.gender, this.bookname, this.schoolname);
+                if (MessageBox.Show("Registration is successful.", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
+                {
+                }
+                terms.Hide();
+                login.BringToFront();
+                regpanel1.SendToBack();
+                regpanel2.SendToBack();
+            }
+            else
+            {
+                if (MessageBox.Show("Please accept the terms and conditions.", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
+                {
+                }
+            }
+        }
+
+        
     }
-
-
 }

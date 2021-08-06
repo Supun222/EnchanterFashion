@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -27,7 +28,7 @@ namespace Enchanter_Fashion
         Dbquryvalueget getvalue = new Dbquryvalueget();
         bool isallbtnclicked = true; bool ismenbutnclicked = true; bool iskidsbtnclicked = true;
         bool iswomanbtnclicked = true; bool isshoesbutnclicked = true;
-        string filedirectory = @"D:\Projrct\Enchanter Fashion\Display Board\Images\";
+        public string filedirectory = Directory.GetParent(Directory.GetParent(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)).ToString()) + @"\Display Board\Images\";
         int current = 0;
         //theruni
 
@@ -190,7 +191,8 @@ namespace Enchanter_Fashion
                     button1.Show();
                     button2.Show();
                 }
-                
+                //Console.WriteLine(filedirectory);
+                //Console.WriteLine( Directory.GetParent(Directory.GetParent(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)).ToString()));
                 background2.Image = Image.FromFile(filedirectory + getvalue.picfilename);
                 collect_lbl.Text = getvalue.collection;
                 iteamnml_bl.Text = getvalue.itemname;

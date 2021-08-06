@@ -30,16 +30,21 @@ namespace Enchanter_Fashion
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Regpanel2));
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            this.female_radio = new System.Windows.Forms.RadioButton();
+            this.male_radio = new System.Windows.Forms.RadioButton();
             this.label9 = new System.Windows.Forms.Label();
-            this.materialSingleLineTextField2 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label7 = new System.Windows.Forms.Label();
             this.reg2back_btn = new MaterialSkin.Controls.MaterialFlatButton();
             this.reg2next_btn = new MaterialSkin.Controls.MaterialFlatButton();
-            this.hsnumbtxt = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.lgnemail = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.phonnumber_txt = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label4 = new System.Windows.Forms.Label();
             this.reg2sgn_lbl = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
@@ -48,29 +53,33 @@ namespace Enchanter_Fashion
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.schoolname = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.bookname = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.fullname_txt = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // radioButton2
+            // female_radio
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(185, 258);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(59, 17);
-            this.radioButton2.TabIndex = 104;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Female";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.female_radio.AutoSize = true;
+            this.female_radio.Location = new System.Drawing.Point(185, 261);
+            this.female_radio.Name = "female_radio";
+            this.female_radio.Size = new System.Drawing.Size(59, 17);
+            this.female_radio.TabIndex = 104;
+            this.female_radio.TabStop = true;
+            this.female_radio.Text = "Female";
+            this.female_radio.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // male_radio
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(131, 258);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(48, 17);
-            this.radioButton1.TabIndex = 103;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Male";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.male_radio.AutoSize = true;
+            this.male_radio.Location = new System.Drawing.Point(131, 261);
+            this.male_radio.Name = "male_radio";
+            this.male_radio.Size = new System.Drawing.Size(48, 17);
+            this.male_radio.TabIndex = 103;
+            this.male_radio.TabStop = true;
+            this.male_radio.Text = "Male";
+            this.male_radio.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
@@ -78,49 +87,11 @@ namespace Enchanter_Fashion
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(189)))), ((int)(((byte)(168)))));
-            this.label9.Location = new System.Drawing.Point(50, 235);
+            this.label9.Location = new System.Drawing.Point(51, 238);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(68, 15);
             this.label9.TabIndex = 102;
             this.label9.Text = "G e n d e r";
-            // 
-            // materialSingleLineTextField2
-            // 
-            this.materialSingleLineTextField2.Depth = 0;
-            this.materialSingleLineTextField2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.materialSingleLineTextField2.Hint = "";
-            this.materialSingleLineTextField2.Location = new System.Drawing.Point(71, 200);
-            this.materialSingleLineTextField2.MaxLength = 32767;
-            this.materialSingleLineTextField2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField2.Name = "materialSingleLineTextField2";
-            this.materialSingleLineTextField2.PasswordChar = '\0';
-            this.materialSingleLineTextField2.SelectedText = "";
-            this.materialSingleLineTextField2.SelectionLength = 0;
-            this.materialSingleLineTextField2.SelectionStart = 0;
-            this.materialSingleLineTextField2.Size = new System.Drawing.Size(172, 23);
-            this.materialSingleLineTextField2.TabIndex = 101;
-            this.materialSingleLineTextField2.TabStop = false;
-            this.materialSingleLineTextField2.Text = "city :";
-            this.materialSingleLineTextField2.UseSystemPasswordChar = false;
-            // 
-            // materialSingleLineTextField1
-            // 
-            this.materialSingleLineTextField1.Depth = 0;
-            this.materialSingleLineTextField1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.materialSingleLineTextField1.Hint = "";
-            this.materialSingleLineTextField1.Location = new System.Drawing.Point(71, 167);
-            this.materialSingleLineTextField1.MaxLength = 32767;
-            this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
-            this.materialSingleLineTextField1.PasswordChar = '\0';
-            this.materialSingleLineTextField1.SelectedText = "";
-            this.materialSingleLineTextField1.SelectionLength = 0;
-            this.materialSingleLineTextField1.SelectionStart = 0;
-            this.materialSingleLineTextField1.Size = new System.Drawing.Size(172, 23);
-            this.materialSingleLineTextField1.TabIndex = 100;
-            this.materialSingleLineTextField1.TabStop = false;
-            this.materialSingleLineTextField1.Text = "street :";
-            this.materialSingleLineTextField1.UseSystemPasswordChar = false;
             // 
             // label7
             // 
@@ -128,11 +99,11 @@ namespace Enchanter_Fashion
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(189)))), ((int)(((byte)(168)))));
-            this.label7.Location = new System.Drawing.Point(50, 107);
+            this.label7.Location = new System.Drawing.Point(51, 151);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 15);
+            this.label7.Size = new System.Drawing.Size(92, 15);
             this.label7.TabIndex = 99;
-            this.label7.Text = "A d d r e s s";
+            this.label7.Text = "Q u e s t i o n s";
             // 
             // reg2back_btn
             // 
@@ -171,44 +142,25 @@ namespace Enchanter_Fashion
             this.reg2next_btn.TabIndex = 97;
             this.reg2next_btn.Text = "next";
             this.reg2next_btn.UseVisualStyleBackColor = false;
+            this.reg2next_btn.Click += new System.EventHandler(this.reg2next_btn_Click);
             // 
-            // hsnumbtxt
+            // phonnumber_txt
             // 
-            this.hsnumbtxt.Depth = 0;
-            this.hsnumbtxt.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold);
-            this.hsnumbtxt.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.hsnumbtxt.Hint = "";
-            this.hsnumbtxt.Location = new System.Drawing.Point(71, 134);
-            this.hsnumbtxt.MaxLength = 32767;
-            this.hsnumbtxt.MouseState = MaterialSkin.MouseState.HOVER;
-            this.hsnumbtxt.Name = "hsnumbtxt";
-            this.hsnumbtxt.PasswordChar = '\0';
-            this.hsnumbtxt.SelectedText = "";
-            this.hsnumbtxt.SelectionLength = 0;
-            this.hsnumbtxt.SelectionStart = 0;
-            this.hsnumbtxt.Size = new System.Drawing.Size(172, 23);
-            this.hsnumbtxt.TabIndex = 96;
-            this.hsnumbtxt.TabStop = false;
-            this.hsnumbtxt.Text = "no: ";
-            this.hsnumbtxt.UseSystemPasswordChar = false;
-            // 
-            // lgnemail
-            // 
-            this.lgnemail.Depth = 0;
-            this.lgnemail.ForeColor = System.Drawing.Color.Silver;
-            this.lgnemail.Hint = "";
-            this.lgnemail.Location = new System.Drawing.Point(54, 80);
-            this.lgnemail.MaxLength = 32767;
-            this.lgnemail.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lgnemail.Name = "lgnemail";
-            this.lgnemail.PasswordChar = '\0';
-            this.lgnemail.SelectedText = "";
-            this.lgnemail.SelectionLength = 0;
-            this.lgnemail.SelectionStart = 0;
-            this.lgnemail.Size = new System.Drawing.Size(213, 23);
-            this.lgnemail.TabIndex = 95;
-            this.lgnemail.TabStop = false;
-            this.lgnemail.UseSystemPasswordChar = false;
+            this.phonnumber_txt.Depth = 0;
+            this.phonnumber_txt.ForeColor = System.Drawing.Color.Silver;
+            this.phonnumber_txt.Hint = "";
+            this.phonnumber_txt.Location = new System.Drawing.Point(54, 119);
+            this.phonnumber_txt.MaxLength = 32767;
+            this.phonnumber_txt.MouseState = MaterialSkin.MouseState.HOVER;
+            this.phonnumber_txt.Name = "phonnumber_txt";
+            this.phonnumber_txt.PasswordChar = '\0';
+            this.phonnumber_txt.SelectedText = "";
+            this.phonnumber_txt.SelectionLength = 0;
+            this.phonnumber_txt.SelectionStart = 0;
+            this.phonnumber_txt.Size = new System.Drawing.Size(213, 23);
+            this.phonnumber_txt.TabIndex = 95;
+            this.phonnumber_txt.TabStop = false;
+            this.phonnumber_txt.UseSystemPasswordChar = false;
             // 
             // label4
             // 
@@ -216,7 +168,7 @@ namespace Enchanter_Fashion
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(189)))), ((int)(((byte)(168)))));
-            this.label4.Location = new System.Drawing.Point(51, 65);
+            this.label4.Location = new System.Drawing.Point(51, 104);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(128, 15);
             this.label4.TabIndex = 94;
@@ -306,20 +258,199 @@ namespace Enchanter_Fashion
             this.label2.TabIndex = 87;
             this.label2.Text = "Welcome";
             // 
+            // schoolname
+            // 
+            this.schoolname.AcceptsReturn = false;
+            this.schoolname.AcceptsTab = false;
+            this.schoolname.AnimationSpeed = 200;
+            this.schoolname.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.schoolname.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.schoolname.BackColor = System.Drawing.Color.Transparent;
+            this.schoolname.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("schoolname.BackgroundImage")));
+            this.schoolname.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.schoolname.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.schoolname.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.schoolname.BorderColorIdle = System.Drawing.Color.Silver;
+            this.schoolname.BorderRadius = 1;
+            this.schoolname.BorderThickness = 1;
+            this.schoolname.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.schoolname.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.schoolname.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.schoolname.DefaultText = "";
+            this.schoolname.FillColor = System.Drawing.Color.White;
+            this.schoolname.HideSelection = true;
+            this.schoolname.IconLeft = null;
+            this.schoolname.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.schoolname.IconPadding = 10;
+            this.schoolname.IconRight = null;
+            this.schoolname.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.schoolname.Lines = new string[0];
+            this.schoolname.Location = new System.Drawing.Point(54, 177);
+            this.schoolname.MaxLength = 32767;
+            this.schoolname.MinimumSize = new System.Drawing.Size(1, 1);
+            this.schoolname.Modified = false;
+            this.schoolname.Multiline = false;
+            this.schoolname.Name = "schoolname";
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.schoolname.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.schoolname.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.schoolname.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.schoolname.OnIdleState = stateProperties4;
+            this.schoolname.Padding = new System.Windows.Forms.Padding(3);
+            this.schoolname.PasswordChar = '\0';
+            this.schoolname.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.schoolname.PlaceholderText = "What is your first school name?";
+            this.schoolname.ReadOnly = false;
+            this.schoolname.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.schoolname.SelectedText = "";
+            this.schoolname.SelectionLength = 0;
+            this.schoolname.SelectionStart = 0;
+            this.schoolname.ShortcutsEnabled = true;
+            this.schoolname.Size = new System.Drawing.Size(214, 25);
+            this.schoolname.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.schoolname.TabIndex = 105;
+            this.schoolname.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.schoolname.TextMarginBottom = 0;
+            this.schoolname.TextMarginLeft = 3;
+            this.schoolname.TextMarginTop = 0;
+            this.schoolname.TextPlaceholder = "What is your first school name?";
+            this.schoolname.UseSystemPasswordChar = false;
+            this.schoolname.WordWrap = true;
+            // 
+            // bookname
+            // 
+            this.bookname.AcceptsReturn = false;
+            this.bookname.AcceptsTab = false;
+            this.bookname.AnimationSpeed = 200;
+            this.bookname.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.bookname.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.bookname.BackColor = System.Drawing.Color.Transparent;
+            this.bookname.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bookname.BackgroundImage")));
+            this.bookname.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.bookname.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bookname.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.bookname.BorderColorIdle = System.Drawing.Color.Silver;
+            this.bookname.BorderRadius = 1;
+            this.bookname.BorderThickness = 1;
+            this.bookname.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.bookname.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bookname.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.bookname.DefaultText = "";
+            this.bookname.FillColor = System.Drawing.Color.White;
+            this.bookname.HideSelection = true;
+            this.bookname.IconLeft = null;
+            this.bookname.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.bookname.IconPadding = 10;
+            this.bookname.IconRight = null;
+            this.bookname.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.bookname.Lines = new string[0];
+            this.bookname.Location = new System.Drawing.Point(54, 208);
+            this.bookname.MaxLength = 32767;
+            this.bookname.MinimumSize = new System.Drawing.Size(1, 1);
+            this.bookname.Modified = false;
+            this.bookname.Multiline = false;
+            this.bookname.Name = "bookname";
+            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties5.FillColor = System.Drawing.Color.Empty;
+            stateProperties5.ForeColor = System.Drawing.Color.Empty;
+            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bookname.OnActiveState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.bookname.OnDisabledState = stateProperties6;
+            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties7.FillColor = System.Drawing.Color.Empty;
+            stateProperties7.ForeColor = System.Drawing.Color.Empty;
+            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bookname.OnHoverState = stateProperties7;
+            stateProperties8.BorderColor = System.Drawing.Color.Silver;
+            stateProperties8.FillColor = System.Drawing.Color.White;
+            stateProperties8.ForeColor = System.Drawing.Color.Empty;
+            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bookname.OnIdleState = stateProperties8;
+            this.bookname.Padding = new System.Windows.Forms.Padding(3);
+            this.bookname.PasswordChar = '\0';
+            this.bookname.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.bookname.PlaceholderText = "What is your favorite book?";
+            this.bookname.ReadOnly = false;
+            this.bookname.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.bookname.SelectedText = "";
+            this.bookname.SelectionLength = 0;
+            this.bookname.SelectionStart = 0;
+            this.bookname.ShortcutsEnabled = true;
+            this.bookname.Size = new System.Drawing.Size(214, 25);
+            this.bookname.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.bookname.TabIndex = 106;
+            this.bookname.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bookname.TextMarginBottom = 0;
+            this.bookname.TextMarginLeft = 3;
+            this.bookname.TextMarginTop = 0;
+            this.bookname.TextPlaceholder = "What is your favorite book?";
+            this.bookname.UseSystemPasswordChar = false;
+            this.bookname.WordWrap = true;
+            // 
+            // fullname_txt
+            // 
+            this.fullname_txt.Depth = 0;
+            this.fullname_txt.ForeColor = System.Drawing.Color.Silver;
+            this.fullname_txt.Hint = "";
+            this.fullname_txt.Location = new System.Drawing.Point(54, 73);
+            this.fullname_txt.MaxLength = 32767;
+            this.fullname_txt.MouseState = MaterialSkin.MouseState.HOVER;
+            this.fullname_txt.Name = "fullname_txt";
+            this.fullname_txt.PasswordChar = '\0';
+            this.fullname_txt.SelectedText = "";
+            this.fullname_txt.SelectionLength = 0;
+            this.fullname_txt.SelectionStart = 0;
+            this.fullname_txt.Size = new System.Drawing.Size(213, 23);
+            this.fullname_txt.TabIndex = 108;
+            this.fullname_txt.TabStop = false;
+            this.fullname_txt.UseSystemPasswordChar = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(189)))), ((int)(((byte)(168)))));
+            this.label1.Location = new System.Drawing.Point(51, 58);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(93, 15);
+            this.label1.TabIndex = 107;
+            this.label1.Text = "F u l l   n a m e";
+            // 
             // Regpanel2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.fullname_txt);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.bookname);
+            this.Controls.Add(this.schoolname);
+            this.Controls.Add(this.female_radio);
+            this.Controls.Add(this.male_radio);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.materialSingleLineTextField2);
-            this.Controls.Add(this.materialSingleLineTextField1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.reg2back_btn);
             this.Controls.Add(this.reg2next_btn);
-            this.Controls.Add(this.hsnumbtxt);
-            this.Controls.Add(this.lgnemail);
+            this.Controls.Add(this.phonnumber_txt);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.reg2sgn_lbl);
             this.Controls.Add(this.button3);
@@ -330,21 +461,15 @@ namespace Enchanter_Fashion
             this.Controls.Add(this.label2);
             this.Name = "Regpanel2";
             this.Size = new System.Drawing.Size(324, 414);
+            this.Load += new System.EventHandler(this.Regpanel2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label label9;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField2;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField1;
         private System.Windows.Forms.Label label7;
-        private MaterialSkin.Controls.MaterialSingleLineTextField hsnumbtxt;
-        private MaterialSkin.Controls.MaterialSingleLineTextField lgnemail;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
@@ -355,5 +480,12 @@ namespace Enchanter_Fashion
         public System.Windows.Forms.Label reg2sgn_lbl;
         public MaterialSkin.Controls.MaterialFlatButton reg2back_btn;
         public MaterialSkin.Controls.MaterialFlatButton reg2next_btn;
+        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.RadioButton female_radio;
+        public System.Windows.Forms.RadioButton male_radio;
+        public MaterialSkin.Controls.MaterialSingleLineTextField phonnumber_txt;
+        public Bunifu.UI.WinForms.BunifuTextBox schoolname;
+        public Bunifu.UI.WinForms.BunifuTextBox bookname;
+        public MaterialSkin.Controls.MaterialSingleLineTextField fullname_txt;
     }
 }

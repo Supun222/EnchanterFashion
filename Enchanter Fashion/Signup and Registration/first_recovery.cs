@@ -1,5 +1,4 @@
-﻿using Enchanter_Fashion.Signup_and_Registration;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Enchanter_Fashion
+namespace Enchanter_Fashion.Signup_and_Registration
 {
-    public partial class termsnpolicy : UserControl
+    public partial class first_recovery : UserControl
     {
-        public termsnpolicy()
+        public first_recovery()
         {
             InitializeComponent();
-        }
-
-        private void tmsnplycsgnup_btn_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

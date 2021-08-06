@@ -6,7 +6,7 @@ using System.Windows.Forms;
 using Enchanter_Fashion.Display_Board;
 using Enchanter_Fashion.inventory;
 using Enchanter_Fashion.Massage;
-
+using Enchanter_Fashion.Signup_and_Registration;
 
 namespace Enchanter_Fashion
 {
@@ -28,6 +28,7 @@ namespace Enchanter_Fashion
             Application.Run(new testing());
             //Application.Run(new DIMassage());
             //Application.Run(new addarrivals());
+            Application.Run(new passwordrecovery());
         }
     }
 }
