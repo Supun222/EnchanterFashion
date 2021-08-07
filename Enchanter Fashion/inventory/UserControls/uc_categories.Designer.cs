@@ -82,7 +82,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.removeBtn = new System.Windows.Forms.Button();
             this.editBtn = new System.Windows.Forms.Button();
             this.saveBtn = new System.Windows.Forms.Button();
-            this.table = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.dgvUser = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.companyName = new Bunifu.UI.WinForms.BunifuLabel();
@@ -93,7 +93,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.addressTb = new Bunifu.UI.WinForms.BunifuTextBox();
             this.companyNameTb = new Bunifu.UI.WinForms.BunifuTextBox();
             this.supplierIdTb = new Bunifu.UI.WinForms.BunifuTextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.table)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuLabel8
@@ -587,16 +587,16 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.saveBtn.Text = "SAVE";
             this.saveBtn.UseVisualStyleBackColor = false;
             // 
-            // table
+            // dgvUser
             // 
-            this.table.AllowCustomTheming = false;
+            this.dgvUser.AllowCustomTheming = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.table.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.table.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.table.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.table.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvUser.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvUser.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvUser.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvUser.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
@@ -604,26 +604,26 @@ namespace Enchanter_Fashion.inventory.UserControls
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.table.ColumnHeadersHeight = 40;
-            this.table.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            this.table.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.table.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.table.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.table.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.table.CurrentTheme.BackColor = System.Drawing.Color.White;
-            this.table.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.table.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
-            this.table.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.table.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.table.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            this.table.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.table.CurrentTheme.Name = null;
-            this.table.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.table.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.table.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.table.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.table.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvUser.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvUser.ColumnHeadersHeight = 40;
+            this.dgvUser.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.dgvUser.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dgvUser.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvUser.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dgvUser.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvUser.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.dgvUser.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dgvUser.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.dgvUser.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.dgvUser.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvUser.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.dgvUser.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvUser.CurrentTheme.Name = null;
+            this.dgvUser.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvUser.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dgvUser.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvUser.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dgvUser.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
@@ -631,22 +631,22 @@ namespace Enchanter_Fashion.inventory.UserControls
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.table.DefaultCellStyle = dataGridViewCellStyle3;
-            this.table.EnableHeadersVisualStyles = false;
-            this.table.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.table.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.table.HeaderBgColor = System.Drawing.Color.Empty;
-            this.table.HeaderForeColor = System.Drawing.Color.White;
-            this.table.Location = new System.Drawing.Point(4, 346);
-            this.table.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.table.Name = "table";
-            this.table.RowHeadersVisible = false;
-            this.table.RowHeadersWidth = 62;
-            this.table.RowTemplate.Height = 40;
-            this.table.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.table.Size = new System.Drawing.Size(548, 175);
-            this.table.TabIndex = 75;
-            this.table.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.dgvUser.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvUser.EnableHeadersVisualStyles = false;
+            this.dgvUser.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dgvUser.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.dgvUser.HeaderBgColor = System.Drawing.Color.Empty;
+            this.dgvUser.HeaderForeColor = System.Drawing.Color.White;
+            this.dgvUser.Location = new System.Drawing.Point(4, 346);
+            this.dgvUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dgvUser.Name = "dgvUser";
+            this.dgvUser.RowHeadersVisible = false;
+            this.dgvUser.RowHeadersWidth = 62;
+            this.dgvUser.RowTemplate.Height = 40;
+            this.dgvUser.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvUser.Size = new System.Drawing.Size(655, 175);
+            this.dgvUser.TabIndex = 75;
+            this.dgvUser.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
             // button5
             // 
@@ -1054,7 +1054,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.Controls.Add(this.removeBtn);
             this.Controls.Add(this.editBtn);
             this.Controls.Add(this.saveBtn);
-            this.Controls.Add(this.table);
+            this.Controls.Add(this.dgvUser);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.companyName);
@@ -1067,7 +1067,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.Controls.Add(this.supplierIdTb);
             this.Name = "uc_categories";
             this.Size = new System.Drawing.Size(1138, 945);
-            ((System.ComponentModel.ISupportInitialize)(this.table)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1088,7 +1088,7 @@ namespace Enchanter_Fashion.inventory.UserControls
         private System.Windows.Forms.Button removeBtn;
         private System.Windows.Forms.Button editBtn;
         private System.Windows.Forms.Button saveBtn;
-        private Bunifu.UI.WinForms.BunifuDataGridView table;
+        private Bunifu.UI.WinForms.BunifuDataGridView dgvUser;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private Bunifu.UI.WinForms.BunifuLabel companyName;
