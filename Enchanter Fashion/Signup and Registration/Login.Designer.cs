@@ -30,7 +30,7 @@ namespace Enchanter_Fashion
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            this.label2 = new System.Windows.Forms.Label();
+            this.forgotpswd_lbl = new System.Windows.Forms.Label();
             this.Loginbtn = new MaterialSkin.Controls.MaterialFlatButton();
             this.lgnpswd = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label5 = new System.Windows.Forms.Label();
@@ -45,17 +45,18 @@ namespace Enchanter_Fashion
             this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label2
+            // forgotpswd_lbl
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Silver;
-            this.label2.Location = new System.Drawing.Point(139, 197);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 15);
-            this.label2.TabIndex = 67;
-            this.label2.Text = "Forgotten password?";
+            this.forgotpswd_lbl.AutoSize = true;
+            this.forgotpswd_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.forgotpswd_lbl.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.forgotpswd_lbl.ForeColor = System.Drawing.Color.Silver;
+            this.forgotpswd_lbl.Location = new System.Drawing.Point(139, 197);
+            this.forgotpswd_lbl.Name = "forgotpswd_lbl";
+            this.forgotpswd_lbl.Size = new System.Drawing.Size(136, 15);
+            this.forgotpswd_lbl.TabIndex = 67;
+            this.forgotpswd_lbl.Text = "Forgotten password?";
+            this.forgotpswd_lbl.Click += new System.EventHandler(this.forgotpswd_lbl_Click);
             // 
             // Loginbtn
             // 
@@ -226,7 +227,7 @@ namespace Enchanter_Fashion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.forgotpswd_lbl);
             this.Controls.Add(this.Loginbtn);
             this.Controls.Add(this.lgnpswd);
             this.Controls.Add(this.label5);
@@ -247,8 +248,6 @@ namespace Enchanter_Fashion
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button3;
@@ -261,5 +260,6 @@ namespace Enchanter_Fashion
         public MaterialSkin.Controls.MaterialFlatButton Loginbtn;
         public MaterialSkin.Controls.MaterialSingleLineTextField lgnpswd;
         public MaterialSkin.Controls.MaterialSingleLineTextField lgnemail;
+        public System.Windows.Forms.Label forgotpswd_lbl;
     }
 }

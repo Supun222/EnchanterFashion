@@ -54,6 +54,7 @@ namespace Enchanter_Fashion
             regpanel2.reg2sgn_lbl.Click += reg2sgn_lbl_click;
 
             login.Loginbtn.Click += login_Click;
+            login.forgotpswd_lbl.Click += forgot_pswd_btn_Click;
 
             terms.tmsnplycsgnup_btn.Click += termsandpolicies_btn_click;
         }
@@ -310,7 +311,7 @@ namespace Enchanter_Fashion
                 if(dbset.checklogin(username, password) == true) 
                 {
                     this.Hide();
-                    DIMassage msg = new DIMassage();
+                    DIMassage msg = new DIMassage(username);
                     this.Closed += (s, args) => this.Close();
                     msg.displayandInventorymsg1.topic_lbl.Text = "Hello..!!  " + dbset.username + ". Please select a option.";
                     msg.Show();
@@ -347,6 +348,15 @@ namespace Enchanter_Fashion
             }
         }
 
-        
+        private void forgot_pswd_btn_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Do you want to recovery password?", "Enchanter Fashion", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                this.Hide();
+                passwordrecovery fogtpswd = new passwordrecovery();
+                this.Closed += (s, args) => this.Close();
+                fogtpswd.Show();
+            } 
+        }
     }
 }
