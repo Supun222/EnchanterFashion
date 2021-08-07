@@ -459,6 +459,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Display Board\Images\" />
     <Folder Include="Errors\" />
   </ItemGroup>
   <ItemGroup>
@@ -474,12 +475,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Display Board\Images\girl3.png" />
-    <Content Include="Display Board\Images\girl4.png" />
-    <Content Include="Display Board\Images\men 1.jpg" />
-    <Content Include="Display Board\Images\women1.png" />
-    <Content Include="Display Board\Images\women11.png" />
-    <Content Include="Display Board\Images\women21.png" />
     <Content Include="Icons\icons8_delete_20px_1.png" />
     <Content Include="Icons\icons8_horizontal_line_20px.png" />
     <Content Include="Icons\icons8_macos_minimize_24px.png" />

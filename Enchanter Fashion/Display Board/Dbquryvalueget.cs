@@ -201,8 +201,5 @@ namespace Enchanter_Fashion.Display_Board
             slide = -6;
             cuurentslide = 0;
         }
-
-
-
     }
 }
