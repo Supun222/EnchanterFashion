@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Enchanter_Fashion.DBConnection;
+using System.Data.SqlClient;
 
 namespace Enchanter_Fashion.inventory.UserControls
 {
@@ -16,15 +17,8 @@ namespace Enchanter_Fashion.inventory.UserControls
     {
 
 
-        //MySqlConnection con = DBConnection.getconnection();
-        // SqlCommand cm = new SqlCommand();
-        // SqlDataReader dr;
-
-        MySqlCommand cm = new MySqlCommand();
-        MySqlDataReader dr;
         MySqlConnection conn = DBConection.getconnection();
-        //conn.Open();
-
+       
 
         //aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
         public uc_categories()
@@ -38,31 +32,30 @@ namespace Enchanter_Fashion.inventory.UserControls
             try
             {
 
-                int i = 0;
-                dgvUser.Rows.Clear();
-                cm = new MySqlCommand("SELECT * FROM contain_items", conn);
                 conn.Open();
-                dr = cm.ExecuteReader();
 
-                AutoCompleteStringCollection autotext = new AutoCompleteStringCollection();
+                String str = "Select * From contain_items";
 
-                while (dr.Read())
-                {
-                    //i++;
-                    //dgvUser.Rows.Add(i, dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString());
-                    autotext.Add(dr.GetString("item_name"));
-                }
+                MySqlCommand cmd = new MySqlCommand(str, conn);
 
+                cmd.ExecuteNonQuery();
 
+                DataTable dt = new DataTable();
 
+               MySqlDataAdapter da = new MySqlDataAdapter(cmd);
 
-               // dr.Close();
-               // conn.Close();
+                da.Fill(dt);
+
+                dgvUser.DataSource = dt;
+
+                conn.Close();
+
 
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+               
             }
 
 

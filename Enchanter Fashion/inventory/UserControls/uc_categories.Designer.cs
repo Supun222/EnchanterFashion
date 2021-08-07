@@ -644,7 +644,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.dgvUser.RowHeadersWidth = 62;
             this.dgvUser.RowTemplate.Height = 40;
             this.dgvUser.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUser.Size = new System.Drawing.Size(548, 175);
+            this.dgvUser.Size = new System.Drawing.Size(655, 175);
             this.dgvUser.TabIndex = 75;
             this.dgvUser.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
