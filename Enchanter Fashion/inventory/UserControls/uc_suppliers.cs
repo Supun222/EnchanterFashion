@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Enchanter_Fashion.DBConnection;
+using MySql.Data.MySqlClient;
 
 namespace Enchanter_Fashion.inventory.UserControls
 {
@@ -15,6 +17,7 @@ namespace Enchanter_Fashion.inventory.UserControls
         public uc_suppliers()
         {
             InitializeComponent();
+            display(null, null);
         }
 
         private void bunifuLabel2_Click(object sender, EventArgs e)
@@ -27,6 +30,10 @@ namespace Enchanter_Fashion.inventory.UserControls
             if(companyNameTb.Text == "")
             {
                 MessageBox.Show("Please enter the supplier name", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if(emailTb.Text == "")
+            {
+                MessageBox.Show("Please Enter the e-mail address");
             }
             else if(addressTb.Text == "")
             {
@@ -41,7 +48,7 @@ namespace Enchanter_Fashion.inventory.UserControls
                 if(telephoneTb.Text.Length == 10)
                 {
                     dbSetSuppliers saveItems = new dbSetSuppliers();
-                    saveItems.insertData(companyNameTb.Text, addressTb.Text, telephoneTb.Text);
+                    saveItems.insertData(companyNameTb.Text, addressTb.Text, telephoneTb.Text,emailTb.Text);
                 }
                 else
                 {
@@ -64,12 +71,13 @@ namespace Enchanter_Fashion.inventory.UserControls
             {
                 MessageBox.Show("Please enter the supplier name", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }*/
-           
 
+            display(null, null);
             supplierIdTb.Text = "";
             companyNameTb.Text = "";
             addressTb.Text = "";
             telephoneTb.Text = "";
+            emailTb.Text = "";
         }
 
         private void editBtn_Click(object sender, EventArgs e)
@@ -81,6 +89,10 @@ namespace Enchanter_Fashion.inventory.UserControls
             else if(companyNameTb.Text == "")
             {
                 MessageBox.Show("Please Enter the suplier name", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if(emailTb.Text == "")
+            {
+                MessageBox.Show("Please Enter the e-mailaddress", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else if (addressTb.Text == "")
             {
@@ -97,7 +109,7 @@ namespace Enchanter_Fashion.inventory.UserControls
                     dbSetSuppliers edit = new dbSetSuppliers();
                     if (edit.checkItem(supplierIdTb.Text) == true)
                     {
-                        edit.editData(supplierIdTb.Text, companyNameTb.Text, addressTb.Text, telephoneTb.Text);
+                        edit.editData(supplierIdTb.Text, companyNameTb.Text, addressTb.Text, telephoneTb.Text,emailTb.Text);
                     }
                     else
                     {
@@ -122,18 +134,19 @@ namespace Enchanter_Fashion.inventory.UserControls
                 MessageBox.Show("Please enter the supplier name", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }*/
 
-
+            display(null, null);
             supplierIdTb.Text = "";
             companyNameTb.Text = "";
             addressTb.Text = "";
             telephoneTb.Text = "";
+            emailTb.Text = "";
         }
 
         private void removeBtn_Click(object sender, EventArgs e)
         {
             if (supplierIdTb.Text == "")
             {
-                MessageBox.Show("Enter NIC number", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Enter supplier id ", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
             else
@@ -141,18 +154,85 @@ namespace Enchanter_Fashion.inventory.UserControls
                 dbSetSuppliers remove = new dbSetSuppliers();
                 if (remove.checkItem(supplierIdTb.Text) == true)
                 {
-                    remove.deleteData(supplierIdTb.Text, companyNameTb.Text, addressTb.Text, telephoneTb.Text);
+                    remove.deleteData(supplierIdTb.Text, companyNameTb.Text, addressTb.Text, telephoneTb.Text,emailTb.Text);
                 }
                 else
                 {
                     MessageBox.Show("Please enter correct supplier id.", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-
+            display(null, null);
             supplierIdTb.Text = "";
             companyNameTb.Text = "";
             addressTb.Text = "";
             telephoneTb.Text = "";
+            emailTb.Text = "";
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MySqlConnection con = DBConection.getconnection();
+                string query = "SELECT * FROM suppliers WHERE sup_id LIKE '%" + supplierIdTb.Text + "%'";
+                Console.WriteLine(query);
+                MySqlCommand mycmd = new MySqlCommand(query, con);
+                con.Open();
+                MySqlDataAdapter myadpter = new MySqlDataAdapter();
+                myadpter.SelectCommand = mycmd;
+                DataTable dTable = new DataTable();
+                myadpter.Fill(dTable);
+                table.DataSource = dTable;
+                con.Close();
+            }
+            catch (MySqlException exp)
+            {
+                MessageBox.Show(exp.Message);
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MySqlConnection con = DBConection.getconnection();
+                string query = "SELECT * FROM suppliers WHERE sup_name LIKE '%" + companyNameTb.Text + "%'";
+                Console.WriteLine(query);
+                MySqlCommand mycmd = new MySqlCommand(query, con);
+                con.Open();
+                MySqlDataAdapter myadpter = new MySqlDataAdapter();
+                myadpter.SelectCommand = mycmd;
+                DataTable dTable = new DataTable();
+                myadpter.Fill(dTable);
+                table.DataSource = dTable;
+                con.Close();
+            }
+            catch (MySqlException exp)
+            {
+                MessageBox.Show(exp.Message);
+            }
+        }
+
+        private void display(object sender, EventArgs e)
+        {
+            try
+            {
+                MySqlConnection con = DBConection.getconnection();
+                string query = "SELECT* FROM suppliers";
+                Console.WriteLine(query);
+                MySqlCommand mycmd = new MySqlCommand(query, con);
+                con.Open();
+                MySqlDataAdapter myadpter = new MySqlDataAdapter();
+                myadpter.SelectCommand = mycmd;
+                DataTable dTable = new DataTable();
+                myadpter.Fill(dTable);
+                table.DataSource = dTable;  
+                con.Close();
+            }
+            catch (MySqlException exp)
+            {
+                MessageBox.Show(exp.Message);
+            }
         }
     }
 }

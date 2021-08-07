@@ -75,14 +75,14 @@ namespace Enchanter_Fashion.inventory.UserControls
             }
         }
 
-        public void insertData(string name, string address, string phone)
+        public void insertData(string name, string address, string phone,string email)
         {
             string supplierId = autoGenerateId();
             //sql_query = "INSERT into suppliers(sup_id,sup_name,sup_city,sup_mobile)  values('" + supId + "','" + name + "','" + address + "','" + phone + "')";
             try
             {
                 MySqlConnection conn = DBConection.getconnection();
-                sql_query = "INSERT into suppliers(sup_id,sup_name,sup_city,sup_mobile)  values('" + supplierId + "','" + name + "','" + address + "','"+phone+"')";
+                sql_query = "INSERT into suppliers(sup_id,sup_name,sup_email,sup_city,sup_mobile)  values('" + supplierId + "','" + name + "','"+email+"','" + address + "','"+phone+"')";
 
                 MySqlCommand myCommand = new MySqlCommand(sql_query, conn);
                 MySqlDataReader MyReader2;
@@ -100,13 +100,13 @@ namespace Enchanter_Fashion.inventory.UserControls
             }
         }
 
-        public void editData(string id,string name, string address, string phone)
+        public void editData(string id,string name, string address, string phone,string email)
         {
             //sql_query = "UPDATE suppliers SET sup_name = '" + name + "',sup_city = '" + address + "',sup_mobile = '" + phone + "' WHERE sup_id = '" + id + "' ;";
             try
             {
                 MySqlConnection conn = DBConection.getconnection();
-                sql_query = "UPDATE suppliers SET sup_name = '" + name + "',sup_city = '" + address + "',sup_mobile = '" + phone + "' WHERE sup_id = '"+id+"' ;";
+                sql_query = "UPDATE suppliers SET sup_name = '" + name + "',sup_city = '" + address + "',sup_mobile = '" + phone + "',sup_email='"+email+"' WHERE sup_id = '"+id+"' ;";
 
                 MySqlCommand myCommand = new MySqlCommand(sql_query,conn);
                 MySqlDataReader myReader;
@@ -125,7 +125,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             }
         }
 
-        public void deleteData(string id, string name, string address, string phone)
+        public void deleteData(string id, string name, string address, string phone, string email)
         {
             try
             {
@@ -148,6 +148,8 @@ namespace Enchanter_Fashion.inventory.UserControls
             }
 
         }
+
+     
     }
         
     

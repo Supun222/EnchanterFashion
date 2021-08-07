@@ -120,6 +120,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             {
                 MessageBox.Show("Please enter a valid Id number", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }*/
+            viewBtn_Click(null, null);
             nicTb.Text = "";
             userNameTb.Text = "";
             pwTb.Text = "";
@@ -144,8 +145,8 @@ namespace Enchanter_Fashion.inventory.UserControls
                 {
                     MessageBox.Show("Please enter correct NIC number",this.Text,MessageBoxButtons.OK,MessageBoxIcon.Error);
                 }
-            }    
-
+            }
+             viewBtn_Click(null, null);
              nicTb.Text = "";
              userNameTb.Text = "";
              pwTb.Text = "";

@@ -17,5 +17,10 @@ namespace Enchanter_Fashion.inventory.UserControls
             InitializeComponent();
             //bunifuButton6.TextAlign = ContentAlignment.TopCenter;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if()
+        }
     }
 }

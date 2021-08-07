@@ -49,6 +49,10 @@ namespace Enchanter_Fashion.inventory.UserControls
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.companyName = new Bunifu.UI.WinForms.BunifuLabel();
@@ -63,6 +67,8 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.editBtn = new System.Windows.Forms.Button();
             this.saveBtn = new System.Windows.Forms.Button();
             this.table = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.emailTb = new Bunifu.UI.WinForms.BunifuTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.table)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,24 +77,26 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Image = global::Enchanter_Fashion.Properties.Resources.icons8_search_24px1;
-            this.button5.Location = new System.Drawing.Point(476, 42);
+            this.button5.Location = new System.Drawing.Point(206, 88);
             this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(47, 38);
             this.button5.TabIndex = 35;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button4.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Image = global::Enchanter_Fashion.Properties.Resources.icons8_search_24px1;
-            this.button4.Location = new System.Drawing.Point(200, 42);
+            this.button4.Location = new System.Drawing.Point(341, 25);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(47, 38);
             this.button4.TabIndex = 36;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // companyName
             // 
@@ -96,7 +104,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.companyName.AutoEllipsis = false;
             this.companyName.CursorType = null;
             this.companyName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.companyName.Location = new System.Drawing.Point(313, 25);
+            this.companyName.Location = new System.Drawing.Point(43, 71);
             this.companyName.Margin = new System.Windows.Forms.Padding(4);
             this.companyName.Name = "companyName";
             this.companyName.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -113,7 +121,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuLabel5.AutoEllipsis = false;
             this.bunifuLabel5.CursorType = null;
             this.bunifuLabel5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel5.Location = new System.Drawing.Point(313, 91);
+            this.bunifuLabel5.Location = new System.Drawing.Point(319, 147);
             this.bunifuLabel5.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -129,7 +137,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuLabel3.AutoEllipsis = false;
             this.bunifuLabel3.CursorType = null;
             this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel3.Location = new System.Drawing.Point(32, 85);
+            this.bunifuLabel3.Location = new System.Drawing.Point(38, 141);
             this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -145,7 +153,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.CursorType = null;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel1.Location = new System.Drawing.Point(36, 25);
+            this.bunifuLabel1.Location = new System.Drawing.Point(177, 8);
             this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -182,7 +190,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.telephoneTb.IconRight = null;
             this.telephoneTb.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.telephoneTb.Lines = new string[0];
-            this.telephoneTb.Location = new System.Drawing.Point(307, 110);
+            this.telephoneTb.Location = new System.Drawing.Point(313, 166);
             this.telephoneTb.Margin = new System.Windows.Forms.Padding(4);
             this.telephoneTb.MaxLength = 32767;
             this.telephoneTb.MinimumSize = new System.Drawing.Size(2, 2);
@@ -257,7 +265,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.addressTb.IconRight = null;
             this.addressTb.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.addressTb.Lines = new string[0];
-            this.addressTb.Location = new System.Drawing.Point(31, 110);
+            this.addressTb.Location = new System.Drawing.Point(37, 166);
             this.addressTb.Margin = new System.Windows.Forms.Padding(4);
             this.addressTb.MaxLength = 32767;
             this.addressTb.MinimumSize = new System.Drawing.Size(2, 2);
@@ -332,7 +340,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.companyNameTb.IconRight = null;
             this.companyNameTb.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.companyNameTb.Lines = new string[0];
-            this.companyNameTb.Location = new System.Drawing.Point(307, 44);
+            this.companyNameTb.Location = new System.Drawing.Point(37, 90);
             this.companyNameTb.Margin = new System.Windows.Forms.Padding(4);
             this.companyNameTb.MaxLength = 32767;
             this.companyNameTb.MinimumSize = new System.Drawing.Size(2, 2);
@@ -407,7 +415,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.supplierIdTb.IconRight = null;
             this.supplierIdTb.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.supplierIdTb.Lines = new string[0];
-            this.supplierIdTb.Location = new System.Drawing.Point(31, 44);
+            this.supplierIdTb.Location = new System.Drawing.Point(172, 27);
             this.supplierIdTb.Margin = new System.Windows.Forms.Padding(4);
             this.supplierIdTb.MaxLength = 32767;
             this.supplierIdTb.MinimumSize = new System.Drawing.Size(2, 2);
@@ -459,7 +467,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             // 
             this.removeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.removeBtn.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.removeBtn.Location = new System.Drawing.Point(394, 166);
+            this.removeBtn.Location = new System.Drawing.Point(371, 220);
             this.removeBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.removeBtn.Name = "removeBtn";
             this.removeBtn.Size = new System.Drawing.Size(123, 38);
@@ -472,7 +480,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             // 
             this.editBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.editBtn.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editBtn.Location = new System.Drawing.Point(214, 166);
+            this.editBtn.Location = new System.Drawing.Point(200, 220);
             this.editBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.editBtn.Name = "editBtn";
             this.editBtn.Size = new System.Drawing.Size(123, 38);
@@ -485,7 +493,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             // 
             this.saveBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.saveBtn.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveBtn.Location = new System.Drawing.Point(32, 166);
+            this.saveBtn.Location = new System.Drawing.Point(32, 220);
             this.saveBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.saveBtn.Name = "saveBtn";
             this.saveBtn.Size = new System.Drawing.Size(123, 38);
@@ -544,7 +552,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.table.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.table.HeaderBgColor = System.Drawing.Color.Empty;
             this.table.HeaderForeColor = System.Drawing.Color.White;
-            this.table.Location = new System.Drawing.Point(31, 216);
+            this.table.Location = new System.Drawing.Point(30, 284);
             this.table.Margin = new System.Windows.Forms.Padding(4);
             this.table.Name = "table";
             this.table.RowHeadersVisible = false;
@@ -555,11 +563,104 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.table.TabIndex = 37;
             this.table.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
+            // bunifuLabel2
+            // 
+            this.bunifuLabel2.AllowParentOverrides = false;
+            this.bunifuLabel2.AutoEllipsis = false;
+            this.bunifuLabel2.CursorType = null;
+            this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuLabel2.Location = new System.Drawing.Point(318, 73);
+            this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuLabel2.Name = "bunifuLabel2";
+            this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel2.Size = new System.Drawing.Size(96, 20);
+            this.bunifuLabel2.TabIndex = 42;
+            this.bunifuLabel2.Text = "Supplier Email";
+            this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // emailTb
+            // 
+            this.emailTb.AcceptsReturn = false;
+            this.emailTb.AcceptsTab = false;
+            this.emailTb.AnimationSpeed = 200;
+            this.emailTb.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.emailTb.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.emailTb.BackColor = System.Drawing.Color.Transparent;
+            this.emailTb.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("emailTb.BackgroundImage")));
+            this.emailTb.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.emailTb.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.emailTb.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.emailTb.BorderColorIdle = System.Drawing.Color.Silver;
+            this.emailTb.BorderRadius = 1;
+            this.emailTb.BorderThickness = 1;
+            this.emailTb.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.emailTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.emailTb.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.emailTb.DefaultText = "";
+            this.emailTb.FillColor = System.Drawing.Color.White;
+            this.emailTb.HideSelection = true;
+            this.emailTb.IconLeft = null;
+            this.emailTb.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.emailTb.IconPadding = 10;
+            this.emailTb.IconRight = null;
+            this.emailTb.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.emailTb.Lines = new string[0];
+            this.emailTb.Location = new System.Drawing.Point(313, 92);
+            this.emailTb.Margin = new System.Windows.Forms.Padding(4);
+            this.emailTb.MaxLength = 32767;
+            this.emailTb.MinimumSize = new System.Drawing.Size(2, 2);
+            this.emailTb.Modified = false;
+            this.emailTb.Multiline = false;
+            this.emailTb.Name = "emailTb";
+            stateProperties17.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties17.FillColor = System.Drawing.Color.Empty;
+            stateProperties17.ForeColor = System.Drawing.Color.Empty;
+            stateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.emailTb.OnActiveState = stateProperties17;
+            stateProperties18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties18.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.emailTb.OnDisabledState = stateProperties18;
+            stateProperties19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties19.FillColor = System.Drawing.Color.Empty;
+            stateProperties19.ForeColor = System.Drawing.Color.Empty;
+            stateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.emailTb.OnHoverState = stateProperties19;
+            stateProperties20.BorderColor = System.Drawing.Color.Silver;
+            stateProperties20.FillColor = System.Drawing.Color.White;
+            stateProperties20.ForeColor = System.Drawing.Color.Empty;
+            stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.emailTb.OnIdleState = stateProperties20;
+            this.emailTb.Padding = new System.Windows.Forms.Padding(4);
+            this.emailTb.PasswordChar = '\0';
+            this.emailTb.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.emailTb.PlaceholderText = "Enter text";
+            this.emailTb.ReadOnly = false;
+            this.emailTb.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.emailTb.SelectedText = "";
+            this.emailTb.SelectionLength = 0;
+            this.emailTb.SelectionStart = 0;
+            this.emailTb.ShortcutsEnabled = true;
+            this.emailTb.Size = new System.Drawing.Size(163, 34);
+            this.emailTb.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.emailTb.TabIndex = 41;
+            this.emailTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.emailTb.TextMarginBottom = 0;
+            this.emailTb.TextMarginLeft = 3;
+            this.emailTb.TextMarginTop = 0;
+            this.emailTb.TextPlaceholder = "Enter text";
+            this.emailTb.UseSystemPasswordChar = false;
+            this.emailTb.WordWrap = true;
+            // 
             // uc_suppliers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.bunifuLabel2);
+            this.Controls.Add(this.emailTb);
             this.Controls.Add(this.removeBtn);
             this.Controls.Add(this.editBtn);
             this.Controls.Add(this.saveBtn);
@@ -599,5 +700,7 @@ namespace Enchanter_Fashion.inventory.UserControls
         private System.Windows.Forms.Button editBtn;
         private System.Windows.Forms.Button saveBtn;
         private Bunifu.UI.WinForms.BunifuDataGridView table;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
+        private Bunifu.UI.WinForms.BunifuTextBox emailTb;
     }
 }
