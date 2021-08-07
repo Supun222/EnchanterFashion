@@ -466,6 +466,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.removeBtn.TabIndex = 38;
             this.removeBtn.Text = "REMOVE";
             this.removeBtn.UseVisualStyleBackColor = false;
+            this.removeBtn.Click += new System.EventHandler(this.removeBtn_Click);
             // 
             // editBtn
             // 

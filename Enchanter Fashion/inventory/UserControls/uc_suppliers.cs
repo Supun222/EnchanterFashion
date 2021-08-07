@@ -34,7 +34,19 @@ namespace Enchanter_Fashion.inventory.UserControls
             }
             else if(telephoneTb.Text == "")
             {
-
+                MessageBox.Show("Please enter the telephone number");
+            }
+            else
+            {
+                if(telephoneTb.Text.Length == 10)
+                {
+                    dbSetSuppliers saveItems = new dbSetSuppliers();
+                    saveItems.insertData(companyNameTb.Text, addressTb.Text, telephoneTb.Text);
+                }
+                else
+                {
+                    MessageBox.Show("Please enter the correct phone number", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             /*if(companyNameTb.Text != "")
             {
@@ -62,7 +74,38 @@ namespace Enchanter_Fashion.inventory.UserControls
 
         private void editBtn_Click(object sender, EventArgs e)
         {
-            if (companyNameTb.Text != "")
+            if (supplierIdTb.Text == "")
+            {
+                MessageBox.Show("Please Enter the suplier id", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if(companyNameTb.Text == "")
+            {
+                MessageBox.Show("Please Enter the suplier name", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (addressTb.Text == "")
+            {
+                MessageBox.Show("Please Enter the suplier adderess", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if(telephoneTb.Text == "")
+            {
+                MessageBox.Show("Please Enter the suplier telephone number", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                if(telephoneTb.Text.Length == 10)
+                {
+                    dbSetSuppliers edit = new dbSetSuppliers();
+                    if (edit.checkItem(supplierIdTb.Text) == true)
+                    {
+                        edit.editData(supplierIdTb.Text, companyNameTb.Text, addressTb.Text, telephoneTb.Text);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Please Enter the correct supplier id.", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            /*if (companyNameTb.Text != "")
             {
                 if (telephoneTb.Text.Length == 10)
                 {
@@ -77,8 +120,34 @@ namespace Enchanter_Fashion.inventory.UserControls
             else
             {
                 MessageBox.Show("Please enter the supplier name", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            }*/
 
+
+            supplierIdTb.Text = "";
+            companyNameTb.Text = "";
+            addressTb.Text = "";
+            telephoneTb.Text = "";
+        }
+
+        private void removeBtn_Click(object sender, EventArgs e)
+        {
+            if (supplierIdTb.Text == "")
+            {
+                MessageBox.Show("Enter NIC number", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            else
+            {
+                dbSetSuppliers remove = new dbSetSuppliers();
+                if (remove.checkItem(supplierIdTb.Text) == true)
+                {
+                    remove.deleteData(supplierIdTb.Text, companyNameTb.Text, addressTb.Text, telephoneTb.Text);
+                }
+                else
+                {
+                    MessageBox.Show("Please enter correct supplier id.", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
 
             supplierIdTb.Text = "";
             companyNameTb.Text = "";

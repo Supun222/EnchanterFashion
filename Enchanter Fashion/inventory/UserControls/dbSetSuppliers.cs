@@ -16,6 +16,39 @@ namespace Enchanter_Fashion.inventory.UserControls
         string sql_query;
         string supId = "sup";
 
+        public bool checkItem(string id)
+        {
+            int count = 0;
+
+            try
+            {
+                MySqlConnection conn = DBConection.getconnection();
+                sql_query = "SELECT COUNT(sup_id) AS count FROM suppliers WHERE sup_id = '" + id + "'";
+                Console.WriteLine(sql_query);
+                MySqlCommand mycommand = new MySqlCommand(sql_query, conn);
+                conn.Open();
+                MySqlDataReader myreader = mycommand.ExecuteReader();
+                while (myreader.Read())
+                {
+                    count = myreader.GetInt32("count");
+                }
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            if (count == 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         public string autoGenerateId()
         {
             try
@@ -69,11 +102,11 @@ namespace Enchanter_Fashion.inventory.UserControls
 
         public void editData(string id,string name, string address, string phone)
         {
-            sql_query = "UPDATE suppliers SET sup_name = '" + name + "',sup_city = '" + address + "',sup_mobile = '" + phone + "' WHERE sup_id = '" + id + "' ;";
+            //sql_query = "UPDATE suppliers SET sup_name = '" + name + "',sup_city = '" + address + "',sup_mobile = '" + phone + "' WHERE sup_id = '" + id + "' ;";
             try
             {
                 MySqlConnection conn = DBConection.getconnection();
-                //sql_query = "UPDATE suppliers SET sup_name = '" + name + "',sup_city = '" + address + "',sup_mobile = '" + phone + "' WHERE sup_id = '"+id+"' ;";
+                sql_query = "UPDATE suppliers SET sup_name = '" + name + "',sup_city = '" + address + "',sup_mobile = '" + phone + "' WHERE sup_id = '"+id+"' ;";
 
                 MySqlCommand myCommand = new MySqlCommand(sql_query,conn);
                 MySqlDataReader myReader;
@@ -90,6 +123,30 @@ namespace Enchanter_Fashion.inventory.UserControls
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        public void deleteData(string id, string name, string address, string phone)
+        {
+            try
+            {
+                MySqlConnection conn = DBConection.getconnection();
+                sql_query = "DELETE from suppliers where sup_id='" +id+ "';";
+
+                MySqlCommand myCommand = new MySqlCommand(sql_query, conn);
+                MySqlDataReader MyReader;
+                conn.Open();
+                MyReader = myCommand.ExecuteReader();     // Here our query will be executed and data saved into the database.  
+                MessageBox.Show("Data Deleted");
+                while (MyReader.Read())
+                {
+                }
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
     }
         
