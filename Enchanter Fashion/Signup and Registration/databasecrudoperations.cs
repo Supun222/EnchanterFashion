@@ -238,7 +238,7 @@ namespace Enchanter_Fashion.Signup_and_Registration
 
             }
 
-            if(username == this.username || email == username)
+            if(username == this.username || email == this.username)
             {
                 return true;
             }
