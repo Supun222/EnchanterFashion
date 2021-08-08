@@ -248,6 +248,82 @@ namespace Enchanter_Fashion.inventory.UserControls
 
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
 
+
+            try
+            {
+                if (txt_bill.Text == "" || txt_item.Text == "" || txt_name.Text == "" || txt_price.Text == "" || txt_qty.Text == "")
+                {
+                    MessageBox.Show("Please , Insert all Information ... ", "Try Again", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+                else
+                {
+                    // SqlConnection con = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Users\hp\documents\visual studio 2010\Projects\Inventory Managment System in csharp\Inventory Managment System in csharp\IMS.mdf;Integrated Security=True;User Instance=True");
+
+                    conn.Open();
+
+                    String str = "Update sales Set item_id = '" + txt_item.Text + "',item_name = '" + txt_name.Text + "',unit_price = '" + txt_price.Text + "',quantity = '" + txt_qty.Text + "' Where bill_no = '" + txt_bill.Text + "'";
+
+                    MySqlCommand cmd = new MySqlCommand(str, conn);
+
+                    cmd.ExecuteNonQuery();
+
+                    String str2 = "Select max(bill_no) From sales";
+
+                    MySqlCommand cmd2 = new MySqlCommand(str2, conn);
+
+                    MySqlDataReader dr = cmd2.ExecuteReader();
+
+                    if (dr.Read())
+                    {
+                        // showdata();
+
+                        MessageBox.Show("Customers Updated Successfull ....", "Thank You", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        clear();
+
+                        //  auto();
+
+                        conn.Close();
+
+                    }
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
+
+
+
+
+
+
+
+
+        }
+
+        private void bunifuButton2_Click(object sender, EventArgs e)
+        {
+
+
+           
+
+
+
+
+        }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
