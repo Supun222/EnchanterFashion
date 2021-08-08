@@ -139,6 +139,39 @@ namespace Enchanter_Fashion.Signup_and_Registration
             return false;
         }
 
+        public bool checkpassword(string password, string username)
+        {
+            try
+            {
+                int count = 0;
+                MySqlConnection con = DBConection.getconnection();
+                string query = "SELECT COUNT(password) AS count FROM registration WHERE username = '" + this.username + "' AND password = '" + password + "';";
+                Console.WriteLine(query);
+                MySqlCommand mycmd = new MySqlCommand(query, con);
+                con.Open();
+                MySqlDataReader dr = mycmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    count = dr.GetInt32("count");
+                }
+                con.Close();
+                if (count == 1)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception exp)
+            {
+
+            }
+            return false;
+            return true;
+        }
+
         public void registeringcompleting(string username, string email, string name, int phonenumber, string password, string gender, string bookname, string school) 
         {
             try
