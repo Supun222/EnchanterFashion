@@ -325,5 +325,51 @@ namespace Enchanter_Fashion.inventory.UserControls
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                if (txt_bill.Text == "" || txt_item.Text == "" || txt_name.Text == "" || txt_price.Text == "" || txt_qty.Text == "")
+                {
+                    MessageBox.Show("Please , Insert all Information ... ", "Try Again", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+                else
+                {
+                  //  MySqlConnection conn = new MySqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Users\hp\documents\visual studio 2010\Projects\Inventory Managment System in csharp\Inventory Managment System in csharp\IMS.mdf;Integrated Security=True;User Instance=True");
+
+                    conn.Open();
+
+                    String str = "Delete From sales Where bill_no = '" + txt_bill.Text + "'";
+
+                    MySqlCommand cmd = new MySqlCommand(str, conn);
+
+                    cmd.ExecuteNonQuery();
+
+                    //showdata();
+
+                    MessageBox.Show("User Delete Successfull ....", "Thank You", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    clear();
+
+                  //  auto();
+
+                    conn.Close();
+
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
+
+
+        }
     }
 }
