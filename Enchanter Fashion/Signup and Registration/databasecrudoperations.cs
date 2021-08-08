@@ -253,10 +253,10 @@ namespace Enchanter_Fashion.Signup_and_Registration
             var input = password;
             errormaages = string.Empty;
 
-            if (string.IsNullOrWhiteSpace(input))
-            {
-                throw new Exception("Password should not be empty");
-            }
+            //if (string.IsNullOrWhiteSpace(input))
+            //{
+            //    throw new Exception("Password should not be empty");
+            //}
 
             var hasNumber = new Regex(@"[0-9]+");
             var hasUpperChar = new Regex(@"[A-Z]+");
