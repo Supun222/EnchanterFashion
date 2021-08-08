@@ -82,7 +82,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             try
             {
                 MySqlConnection conn = DBConection.getconnection();
-                sql_query = "INSERT into suppliers(sup_id,sup_name,sup_email,sup_city,sup_mobile)  values('" + supplierId + "','" + name + "','"+email+"','" + address + "','"+phone+"')";
+                sql_query = "INSERT into suppliers(sup_id,sup_name,sup_email,sup_address,sup_mobile)  values('" + supplierId + "','" + name + "','"+email+"','" + address + "','"+phone+"')";
 
                 MySqlCommand myCommand = new MySqlCommand(sql_query, conn);
                 MySqlDataReader MyReader2;
@@ -106,7 +106,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             try
             {
                 MySqlConnection conn = DBConection.getconnection();
-                sql_query = "UPDATE suppliers SET sup_name = '" + name + "',sup_city = '" + address + "',sup_mobile = '" + phone + "',sup_email='"+email+"' WHERE sup_id = '"+id+"' ;";
+                sql_query = "UPDATE suppliers SET sup_name = '" + name + "',sup_address = '" + address + "',sup_mobile = '" + phone + "',sup_email='"+email+"' WHERE sup_id = '"+id+"' ;";
 
                 MySqlCommand myCommand = new MySqlCommand(sql_query,conn);
                 MySqlDataReader myReader;

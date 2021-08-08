@@ -54,7 +54,7 @@ namespace Enchanter_Fashion.inventory.UserControls
 
         public void userInsert_value(string nic, string userName, string pw)
         {
-            sql_query = "INSERT into users (nic,userName,password) values('" + nic + "','" + userName + "','" + pw + "')";
+            sql_query = "INSERT into users (nic,name,password) values('" + nic + "','" + userName + "','" + pw + "')";
 
             try
             {
