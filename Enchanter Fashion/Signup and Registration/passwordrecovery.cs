@@ -23,7 +23,7 @@ namespace Enchanter_Fashion.Signup_and_Registration
         }
 
         public string username, password;
-        databasecrudoperations dbset = new databasecrudoperations();
+        databasecrudoperations dbset;
 
         private void firstrcvy_back_butn_Click(object sender, EventArgs e)
         {
@@ -47,9 +47,11 @@ namespace Enchanter_Fashion.Signup_and_Registration
             }
             else
             {
-                if(dbset.checkemail(first_recovery.email_or_username.Text) == true || dbset.checkusername(first_recovery.email_or_username.Text) == true)
+                dbset = new databasecrudoperations();
+                if (dbset.checkemail(first_recovery.email_or_username.Text) == true || dbset.checkusername(first_recovery.email_or_username.Text) == true)
                 {
                     this.username = first_recovery.email_or_username.Text;
+                    dbset = new databasecrudoperations(this.username);
                     first_recovery.SendToBack();
                     third_recovery.SendToBack();
                     second_recovery.BringToFront();
@@ -108,7 +110,7 @@ namespace Enchanter_Fashion.Signup_and_Registration
                     this.password = third_recovery.new_pswd.Text;
                     dbset.updatepassword(this.password);
                 }
-                if (MessageBox.Show("Hello.. " + dbset.username + ". your new password has updated. please dont forget your password again.", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
+                if (MessageBox.Show("Hello.. " + dbset.username + ". your new password has successfully updated.", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
                 {
                     this.Hide();
                     Form1 signup = new Form1();
