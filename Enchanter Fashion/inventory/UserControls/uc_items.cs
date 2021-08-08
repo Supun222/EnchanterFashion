@@ -207,7 +207,7 @@ namespace Enchanter_Fashion.inventory.UserControls
 
                     if (dr.Read())
                     {
-                      //  showdata();
+                        //LoadUser();
 
                         MessageBox.Show("Customers Created Successfull ....", "Thank You", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -218,6 +218,7 @@ namespace Enchanter_Fashion.inventory.UserControls
                         conn.Close();
 
                     }
+                    LoadUser();
 
                 }
 
@@ -279,7 +280,7 @@ namespace Enchanter_Fashion.inventory.UserControls
 
                     if (dr.Read())
                     {
-                        // showdata();
+                        //LoadUser();
 
                         MessageBox.Show("Customers Updated Successfull ....", "Thank You", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -290,6 +291,7 @@ namespace Enchanter_Fashion.inventory.UserControls
                         conn.Close();
 
                     }
+                    LoadUser();
 
                 }
 
@@ -348,7 +350,7 @@ namespace Enchanter_Fashion.inventory.UserControls
 
                     cmd.ExecuteNonQuery();
 
-                    //showdata();
+                   // LoadUser();
 
                     MessageBox.Show("User Delete Successfull ....", "Thank You", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -367,6 +369,7 @@ namespace Enchanter_Fashion.inventory.UserControls
                 MessageBox.Show(ex.Message);
             }
 
+            LoadUser();
 
 
 
