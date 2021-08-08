@@ -101,27 +101,6 @@ namespace Enchanter_Fashion.inventory.UserControls
             }
 
         }
-        /*public void displayTable()
-        {
-            try
-            {
-                MySqlConnection conn = DBConection.getconnection();
-                sql_query = "SELECT * FROM enchanterfashion.users";
-
-                MySqlCommand myCommand = new MySqlCommand(sql_query, conn);
-                MySqlDataAdapter myAdapter = new MySqlDataAdapter();
-                myAdapter.SelectCommand = myCommand;
-                DataTable dtable = new DataTable();
-                myAdapter.Fill(dtable);
-                
-               // conn.Close();
-
-            }
-            catch(Exception ex)
-            {
-
-            }
-        }*/
-
+      
     }
 }

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Enchanter_Fashion.DBConnection;
 using MySql.Data.MySqlClient;
+using System.Text.RegularExpressions;
 
 namespace Enchanter_Fashion.inventory.UserControls
 {
@@ -20,11 +21,18 @@ namespace Enchanter_Fashion.inventory.UserControls
             display(null, null);
         }
 
-        private void bunifuLabel2_Click(object sender, EventArgs e)
-        {
-
+        private bool validateEmail(string email){
+            Regex regx = new Regex (@"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z");
+            Match match = regx.Match(email);
+            if (match.Success)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
-
         private void saveBtn_Click(object sender, EventArgs e)
         {
             if(companyNameTb.Text == "")
@@ -44,16 +52,24 @@ namespace Enchanter_Fashion.inventory.UserControls
                 MessageBox.Show("Please enter the telephone number");
             }
             else
-            {
-                if(telephoneTb.Text.Length == 10)
-                {
+            { 
+               if (validateEmail(emailTb.Text) == true)
+               {
+                  if (telephoneTb.Text.Length == 10)
+                  {
                     dbSetSuppliers saveItems = new dbSetSuppliers();
-                    saveItems.insertData(companyNameTb.Text, addressTb.Text, telephoneTb.Text,emailTb.Text);
-                }
+                    saveItems.insertData(companyNameTb.Text, addressTb.Text, telephoneTb.Text, emailTb.Text);
+                  }
+                  else
+                  {
+                     MessageBox.Show("Please enter the correct phone number", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                  }
+               }
                 else
                 {
-                    MessageBox.Show("Please enter the correct phone number", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Please enter the correct e-mail address", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+                  
             }
             /*if(companyNameTb.Text != "")
             {
@@ -117,22 +133,6 @@ namespace Enchanter_Fashion.inventory.UserControls
                     }
                 }
             }
-            /*if (companyNameTb.Text != "")
-            {
-                if (telephoneTb.Text.Length == 10)
-                {
-                    dbSetSuppliers editItems = new dbSetSuppliers();
-                    editItems.editData(supplierIdTb.Text, companyNameTb.Text, addressTb.Text, telephoneTb.Text);
-                }
-                else
-                {
-                    MessageBox.Show("Please enter a correct phone number", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Please enter the supplier name", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }*/
 
             display(null, null);
             supplierIdTb.Text = "";

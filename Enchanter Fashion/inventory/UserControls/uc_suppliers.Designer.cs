@@ -113,7 +113,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.companyName.Text = "Supplier Name";
             this.companyName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.companyName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.companyName.Click += new System.EventHandler(this.bunifuLabel2_Click);
+
             // 
             // bunifuLabel5
             // 

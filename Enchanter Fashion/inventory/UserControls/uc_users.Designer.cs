@@ -512,7 +512,6 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.table.Size = new System.Drawing.Size(560, 319);
             this.table.TabIndex = 4;
             this.table.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
-
             // 
             // insertBtn
             // 
@@ -543,8 +542,8 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.insertBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.insertBtn.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.insertBtn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.insertBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.insertBtn.ForeColor = System.Drawing.Color.White;
+            this.insertBtn.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.insertBtn.ForeColor = System.Drawing.Color.Black;
             this.insertBtn.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.insertBtn.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.insertBtn.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
@@ -585,7 +584,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.insertBtn.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.insertBtn.OnIdleState.BorderThickness = 1;
             this.insertBtn.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.insertBtn.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.insertBtn.OnIdleState.ForeColor = System.Drawing.Color.Black;
             this.insertBtn.OnIdleState.IconLeftImage = null;
             this.insertBtn.OnIdleState.IconRightImage = null;
             this.insertBtn.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
@@ -634,8 +633,8 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.removeBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.removeBtn.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.removeBtn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.removeBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.removeBtn.ForeColor = System.Drawing.Color.White;
+            this.removeBtn.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removeBtn.ForeColor = System.Drawing.Color.Black;
             this.removeBtn.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.removeBtn.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.removeBtn.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
@@ -676,7 +675,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.removeBtn.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.removeBtn.OnIdleState.BorderThickness = 1;
             this.removeBtn.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.removeBtn.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.removeBtn.OnIdleState.ForeColor = System.Drawing.Color.Black;
             this.removeBtn.OnIdleState.IconLeftImage = null;
             this.removeBtn.OnIdleState.IconRightImage = null;
             this.removeBtn.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
@@ -725,8 +724,8 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.viewBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.viewBtn.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.viewBtn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.viewBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.viewBtn.ForeColor = System.Drawing.Color.White;
+            this.viewBtn.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewBtn.ForeColor = System.Drawing.Color.Black;
             this.viewBtn.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.viewBtn.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.viewBtn.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
@@ -767,7 +766,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.viewBtn.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.viewBtn.OnIdleState.BorderThickness = 1;
             this.viewBtn.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.viewBtn.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.viewBtn.OnIdleState.ForeColor = System.Drawing.Color.Black;
             this.viewBtn.OnIdleState.IconLeftImage = null;
             this.viewBtn.OnIdleState.IconRightImage = null;
             this.viewBtn.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
