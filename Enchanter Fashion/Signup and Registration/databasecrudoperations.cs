@@ -11,8 +11,18 @@ namespace Enchanter_Fashion.Signup_and_Registration
 {
     public class databasecrudoperations
     {
+        public databasecrudoperations()
+        {
+
+        }
+
+        public databasecrudoperations(string username)
+        {
+            this.username = username;
+        }
+
         public string errormaages;
-        public string username;
+        public string username, password;
 
         public bool checklogin(string username, string password)
         {
@@ -59,6 +69,7 @@ namespace Enchanter_Fashion.Signup_and_Registration
                         this.username = dr.GetString("name").ToString();
                     }
                     con.Close();
+                    this.password = password;
                     return true;
                 }
                 else
@@ -169,7 +180,6 @@ namespace Enchanter_Fashion.Signup_and_Registration
 
             }
             return false;
-            return true;
         }
 
         public void registeringcompleting(string username, string email, string name, int phonenumber, string password, string gender, string bookname, string school) 
@@ -189,7 +199,7 @@ namespace Enchanter_Fashion.Signup_and_Registration
                 }
                 con.Close();
                 int new_empnum = empnum + 1;
-                query = "insert into registration(username, password, email, gender, phone_no, name, emp_no, question_1, question_2) values('" + username + "','" + password + "','" + email + "','" + gender + "','" + phonenumber + "','" + name + "','" + new_empnum + "','" + bookname + "','" + school + "')";
+                query = "insert into registration(username, password, email, gender, phone_no, name, emp_no, question_2, question_1) values('" + username + "','" + password + "','" + email + "','" + gender + "','" + phonenumber + "','" + name + "','" + new_empnum + "','" + bookname + "','" + school + "')";
                 Console.WriteLine(query);
                 mycmd = new MySqlCommand(query, con);
                 con.Open();
@@ -243,10 +253,10 @@ namespace Enchanter_Fashion.Signup_and_Registration
             var input = password;
             errormaages = string.Empty;
 
-            if (string.IsNullOrWhiteSpace(input))
-            {
-                throw new Exception("Password should not be empty");
-            }
+            //if (string.IsNullOrWhiteSpace(input))
+            //{
+            //    throw new Exception("Password should not be empty");
+            //}
 
             var hasNumber = new Regex(@"[0-9]+");
             var hasUpperChar = new Regex(@"[A-Z]+");

@@ -20,14 +20,15 @@ namespace Enchanter_Fashion.Massage
             displayandInventorymsg1.bunifuButton2.Click += inventymenubytton_click;
         }
 
-        string username;
+        public string username, password;
 
-        public DIMassage(string username)
+        public DIMassage(string username, string password)
         {
             InitializeComponent();
             displayandInventorymsg1.bunifuButton1.Click += loginmenubtn_click;
             displayandInventorymsg1.bunifuButton2.Click += inventymenubytton_click;
             this.username = username;
+            this.password = password;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -43,7 +44,7 @@ namespace Enchanter_Fashion.Massage
         private void loginmenubtn_click(object sender, EventArgs e)
         {
             this.Hide();
-            displaypanel ds = new displaypanel(username);
+            displaypanel ds = new displaypanel(username, password);
             this.Closed += (s, args) => this.Close();
             ds.Show();
         }

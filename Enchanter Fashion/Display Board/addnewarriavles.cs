@@ -96,6 +96,4 @@ namespace Enchanter_Fashion.Display_Board
             }
         }
     }
-
-
 }

@@ -36,7 +36,7 @@ namespace Enchanter_Fashion.Signup_and_Registration
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.username_lbl = new System.Windows.Forms.Label();
             this.confirm_btn = new MaterialSkin.Controls.MaterialFlatButton();
             this.bunifuPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -127,17 +127,17 @@ namespace Enchanter_Fashion.Signup_and_Registration
             this.label2.TabIndex = 0;
             this.label2.Text = "E n c h a n t e r   F a s h i o n ";
             // 
-            // label1
+            // username_lbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(32, 59);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 15);
-            this.label1.TabIndex = 104;
-            this.label1.Text = "Enter the password";
+            this.username_lbl.AutoSize = true;
+            this.username_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.username_lbl.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username_lbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.username_lbl.Location = new System.Drawing.Point(32, 59);
+            this.username_lbl.Name = "username_lbl";
+            this.username_lbl.Size = new System.Drawing.Size(127, 15);
+            this.username_lbl.TabIndex = 104;
+            this.username_lbl.Text = "Enter the password";
             // 
             // confirm_btn
             // 
@@ -153,9 +153,9 @@ namespace Enchanter_Fashion.Signup_and_Registration
             this.confirm_btn.MouseState = MaterialSkin.MouseState.HOVER;
             this.confirm_btn.Name = "confirm_btn";
             this.confirm_btn.Primary = false;
-            this.confirm_btn.Size = new System.Drawing.Size(74, 36);
+            this.confirm_btn.Size = new System.Drawing.Size(63, 36);
             this.confirm_btn.TabIndex = 105;
-            this.confirm_btn.Text = "Logout";
+            this.confirm_btn.Text = "Enter";
             this.confirm_btn.UseVisualStyleBackColor = false;
             this.confirm_btn.Click += new System.EventHandler(this.confirm_btn_Click);
             // 
@@ -165,7 +165,7 @@ namespace Enchanter_Fashion.Signup_and_Registration
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(387, 152);
             this.Controls.Add(this.confirm_btn);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.username_lbl);
             this.Controls.Add(this.bunifuPanel2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.paswd_txt);
@@ -189,6 +189,6 @@ namespace Enchanter_Fashion.Signup_and_Registration
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label2;
         public MaterialSkin.Controls.MaterialFlatButton confirm_btn;
-        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label username_lbl;
     }
 }
