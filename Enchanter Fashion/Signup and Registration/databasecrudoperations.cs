@@ -11,6 +11,16 @@ namespace Enchanter_Fashion.Signup_and_Registration
 {
     public class databasecrudoperations
     {
+        public databasecrudoperations()
+        {
+
+        }
+
+        public databasecrudoperations(string username)
+        {
+            this.username = username;
+        }
+
         public string errormaages;
         public string username, password;
 
@@ -189,7 +199,7 @@ namespace Enchanter_Fashion.Signup_and_Registration
                 }
                 con.Close();
                 int new_empnum = empnum + 1;
-                query = "insert into registration(username, password, email, gender, phone_no, name, emp_no, question_1, question_2) values('" + username + "','" + password + "','" + email + "','" + gender + "','" + phonenumber + "','" + name + "','" + new_empnum + "','" + bookname + "','" + school + "')";
+                query = "insert into registration(username, password, email, gender, phone_no, name, emp_no, question_2, question_1) values('" + username + "','" + password + "','" + email + "','" + gender + "','" + phonenumber + "','" + name + "','" + new_empnum + "','" + bookname + "','" + school + "')";
                 Console.WriteLine(query);
                 mycmd = new MySqlCommand(query, con);
                 con.Open();
