@@ -15,13 +15,21 @@ namespace Enchanter_Fashion.Display_Board
 {
     public partial class addarrivals : Form
     {
-        public addarrivals(string usernme)
+        public addarrivals()
+        {
+            InitializeComponent();
+            dataview_Click(null, null);
+        }
+
+        public addarrivals(string username, string password)
         {
             InitializeComponent();
             dataview_Click(null, null);
             this.username = username;
+            this.password = password;
         }
-        string picturefilepath, username;
+
+        string picturefilepath, username, password;
         private void upload_btn_Click(object sender, EventArgs e)
         {
             OpenFileDialog open = new OpenFileDialog();
@@ -90,6 +98,9 @@ namespace Enchanter_Fashion.Display_Board
                             addingdetails.updatingdisplay(itmname, flname, dsptn);
                             File.Copy(picturefilepath, Path.Combine( display.filedirectory , Path.GetFileName(picturefilepath)), true);
                             display.Close();
+                            item_name.Text = "";
+                            descrption_txt.Text = "";
+                            displaypicture.InitialImage = null;
                             if (MessageBox.Show("New item has added successfuly to the display.", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.Yes)
                             {
                                 this.Close();
@@ -226,7 +237,7 @@ namespace Enchanter_Fashion.Display_Board
             if (MessageBox.Show("Do you want to exit?", "Enchanter Fashion", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 this.Hide();
-                displaypanel ds = new displaypanel(username);
+                displaypanel ds = new displaypanel(this.username, this.password);
                 this.Closed += (s, args) => this.Close();
                 ds.Show();
             }

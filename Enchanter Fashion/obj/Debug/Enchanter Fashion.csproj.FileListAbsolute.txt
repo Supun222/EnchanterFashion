@@ -723,7 +723,6 @@ D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Signup_and_Registration
 D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Signup_and_Registration.passwordrecovery.resources
 D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Signup_and_Registration.second_recovery.resources
 D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Signup_and_Registration.third_recovery.resources
-D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter Fashion.csproj.AssemblyReference.cache
 D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-7\Enchanter Fashion\bin\Debug\Enchanter Fashion.exe.config
 D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-7\Enchanter Fashion\bin\Debug\Enchanter Fashion.exe
 D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-7\Enchanter Fashion\bin\Debug\Enchanter Fashion.pdb
@@ -840,3 +839,4 @@ D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-7\Enc
 D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-7\Enchanter Fashion\obj\Debug\Enchanter Fashion.csproj.CopyComplete
 D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-7\Enchanter Fashion\obj\Debug\Enchanter Fashion.exe
 D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-7\Enchanter Fashion\obj\Debug\Enchanter Fashion.pdb
+D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Signup_and_Registration.confirmlog_in_out.resources

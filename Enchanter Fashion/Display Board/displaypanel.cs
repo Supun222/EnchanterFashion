@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using BunifuAnimatorNS;
 using Enchanter_Fashion.Display_Board;
 using Enchanter_Fashion.Massage;
+using Enchanter_Fashion.Signup_and_Registration;
 
 namespace Enchanter_Fashion
 {
@@ -19,16 +20,18 @@ namespace Enchanter_Fashion
     {
         public displaypanel()
         {
-            //InitializeComponent();
-            //sideunderline_bar.Height = all_btn.Height;
+            InitializeComponent();
+            sideunderline_bar.Height = all_btn.Height;
+            button1_Click(null, null);
         }
-        public string username;
-        public displaypanel(string username)
+        public string username, password;
+        public displaypanel(string username, string password)
         {
             InitializeComponent();
             sideunderline_bar.Height = all_btn.Height;
             button1_Click(null, null);
             this.username = username;
+            this.password = password;
         }
 
         Dbquryset setqury = new Dbquryset();
@@ -466,19 +469,27 @@ namespace Enchanter_Fashion
 
         private void displaylogout_btn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form1 sgn = new Form1();
-            this.Closed += (s, args) => this.Close();
-            sgn.Show();
+            if (MessageBox.Show("Do you want to add a new item ?", "Enchanter Fashion", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                getvalue.claerarraylist();
+                this.Hide();
+                Form1 sgn = new Form1();
+                this.Closed += (s, args) => this.Close();
+                sgn.Show();
+            }
+            
         }
 
         private void addnewitems_btn_Click(object sender, EventArgs e)
         {
-            getvalue.claerarraylist();
-            this.Hide();
-            addarrivals adnewitms = new addarrivals(username);
-            this.Closed += (s, args) => this.Close();
-            adnewitms.Show();
+            if (MessageBox.Show("Do you want to add a new item ?", "Enchanter Fashion", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                getvalue.claerarraylist();
+                this.Hide();
+                confirmlog_in_out lgn = new confirmlog_in_out(this.username, this.password);
+                this.Closed += (s, args) => this.Close();
+                lgn.Show();
+            }  
         }
 
         private void goback_btn_Click(object sender, EventArgs e)
