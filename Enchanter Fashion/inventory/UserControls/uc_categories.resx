@@ -199,7 +199,7 @@
         xb3Wes5hVtjp+aYNRWN8CpRxvAF3Eb4AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="addressTb.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txt_type.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALcAAAAqCAYAAADxlsoCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACoSURBVHhe7dKxCcQwAARB9V+VhMr4MlyAjUDJt7DMwCUX
@@ -208,7 +208,7 @@
         xb3Wes5hVtjp+aYNRWN8CpRxvAF3Eb4AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="companyNameTb.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txt_name.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALcAAAAqCAYAAADxlsoCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACoSURBVHhe7dKxCcQwAARB9V+VhMr4MlyAjUDJt7DMwCUX
@@ -217,7 +217,7 @@
         xb3Wes5hVtjp+aYNRWN8CpRxvAF3Eb4AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="supplierIdTb.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txt_id.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALcAAAAqCAYAAADxlsoCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACoSURBVHhe7dKxCcQwAARB9V+VhMr4MlyAjUDJt7DMwCUX
