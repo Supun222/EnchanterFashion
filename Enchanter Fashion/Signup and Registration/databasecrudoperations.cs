@@ -12,7 +12,7 @@ namespace Enchanter_Fashion.Signup_and_Registration
     public class databasecrudoperations
     {
         public string errormaages;
-        public string username;
+        public string username, password;
 
         public bool checklogin(string username, string password)
         {
@@ -59,6 +59,7 @@ namespace Enchanter_Fashion.Signup_and_Registration
                         this.username = dr.GetString("name").ToString();
                     }
                     con.Close();
+                    this.password = password;
                     return true;
                 }
                 else
@@ -169,7 +170,6 @@ namespace Enchanter_Fashion.Signup_and_Registration
 
             }
             return false;
-            return true;
         }
 
         public void registeringcompleting(string username, string email, string name, int phonenumber, string password, string gender, string bookname, string school) 

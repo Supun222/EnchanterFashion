@@ -15,6 +15,13 @@ namespace Enchanter_Fashion.Signup_and_Registration
         public third_recovery()
         {
             InitializeComponent();
+            new_pswd.Text = "";
+            // The password character is an asterisk.
+            new_pswd.PasswordChar = '*';
+
+            confirm_pswd.Text = "";
+            // The password character is an asterisk.
+            confirm_pswd.PasswordChar = '*';
         }
 
         private void submit_btn_Click(object sender, EventArgs e)

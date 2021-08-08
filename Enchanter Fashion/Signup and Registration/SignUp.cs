@@ -62,7 +62,7 @@ namespace Enchanter_Fashion
 
         Termsandpolycies terms = new Termsandpolycies();
         databasecrudoperations dbset = new databasecrudoperations();
-        public string newusername, email, name, phonenumber, gender, bookname, schoolname, password;
+        public string newusername, email, name, phonenumber, gender, bookname, schoolname, password, errormaages;
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
@@ -307,23 +307,70 @@ namespace Enchanter_Fashion
             }
             else
             {
-                databasecrudoperations dbset = new databasecrudoperations();
-                if(dbset.checklogin(username, password) == true) 
+
+                if(ValidatePassword(regpanel1.reg1_paswd_txt.Text) == true)
                 {
-                    this.Hide();
-                    DIMassage msg = new DIMassage(username);
-                    this.Closed += (s, args) => this.Close();
-                    msg.displayandInventorymsg1.topic_lbl.Text = "Hello..!!  " + dbset.username + ". Please select an option.";
-                    msg.Show();
+                    databasecrudoperations dbset = new databasecrudoperations();
+                    if (dbset.checklogin(username, password) == true)
+                    {
+                        this.Hide();
+                        DIMassage msg = new DIMassage(username, password);
+                        this.Closed += (s, args) => this.Close();
+                        msg.displayandInventorymsg1.topic_lbl.Text = "Hello..!!  " + dbset.username + ". Please select an option.";
+                        msg.Show();
+                    }
+                    else
+                    {
+                        if (MessageBox.Show(this.errormaages, "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
+                        {
+
+                        }
+                    }
                 }
                 else
                 {
-                    if (MessageBox.Show("Username or password is incorrect. please try again", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
-                    {
-  
-                    }
+
                 }
+
+                
             }         
+        }
+
+        public bool ValidatePassword(string password)
+        {
+            var input = password;
+            errormaages = string.Empty;
+
+            if (string.IsNullOrWhiteSpace(input))
+            {
+                throw new Exception("Password should not be empty");
+            }
+
+            var hasNumber = new Regex(@"[0-9]+");
+            var hasUpperChar = new Regex(@"[A-Z]+");
+            var hasMiniMaxChars = new Regex(@".{8,15}");
+            var hasLowerChar = new Regex(@"[a-z]+");
+            var hasSymbols = new Regex(@"[!@#$%^&*()_+=\[{\]};:<>|./?,-]");
+
+            if (!hasUpperChar.IsMatch(input))
+            {
+                errormaages = "Password should contain At least one upper case letter";
+                return false;
+            }
+            else if (!hasNumber.IsMatch(input))
+            {
+                errormaages = "Password should contain At least one numeric value";
+                return false;
+            }
+            else if (!hasSymbols.IsMatch(input))
+            {
+                errormaages = "Password should contain At least one special case characters";
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
 
         private void termsandpolicies_btn_click(object sender, EventArgs e)
@@ -331,7 +378,7 @@ namespace Enchanter_Fashion
             if (terms.accepted_check.Checked == true)
             {
                 int ph_numb = Int32.Parse(phonenumber);
-                dbset.registeringcompleting(this.newusername, this.email, this.name, ph_numb, this.password, this.gender, this.bookname, this.schoolname);
+                dbset.registeringcompleting(this.newusername, this.email, this.name, ph_numb, this.password, this.gender, this.schoolname, this.bookname);
                 if (MessageBox.Show("Registration is successful.", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
                 {
                 }
