@@ -71,22 +71,7 @@ namespace Enchanter_Fashion.inventory.UserControls
                 }
                   
             }
-            /*if(companyNameTb.Text != "")
-            {
-                if(telephoneTb.Text.Length == 10)
-                {
-                    dbSetSuppliers saveItems = new dbSetSuppliers();
-                    saveItems.insertData(companyNameTb.Text, addressTb.Text, telephoneTb.Text);
-                }
-                else
-                {
-                    MessageBox.Show("Please enter a correct phone number", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Please enter the supplier name", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }*/
+      
 
             display(null, null);
             supplierIdTb.Text = "";
@@ -154,7 +139,10 @@ namespace Enchanter_Fashion.inventory.UserControls
                 dbSetSuppliers remove = new dbSetSuppliers();
                 if (remove.checkItem(supplierIdTb.Text) == true)
                 {
-                    remove.deleteData(supplierIdTb.Text, companyNameTb.Text, addressTb.Text, telephoneTb.Text,emailTb.Text);
+                    if (MessageBox.Show("Are you sure?", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        remove.deleteData(supplierIdTb.Text, companyNameTb.Text, addressTb.Text, telephoneTb.Text, emailTb.Text);
+                    }
                 }
                 else
                 {
@@ -189,6 +177,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             {
                 MessageBox.Show(exp.Message);
             }
+            supplierIdTb.Text = "";
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -211,6 +200,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             {
                 MessageBox.Show(exp.Message);
             }
+            companyNameTb.Text = "";
         }
 
         private void display(object sender, EventArgs e)

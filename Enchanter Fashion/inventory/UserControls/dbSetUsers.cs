@@ -13,9 +13,9 @@ namespace Enchanter_Fashion.inventory.UserControls
 {
     class dbSetUser
     {
-        //uc_users : UserControl 
+        
         string sql_query;
-        //uc_users user = new uc_users(); 
+       
 
         public bool checkItem(string nic)
         {

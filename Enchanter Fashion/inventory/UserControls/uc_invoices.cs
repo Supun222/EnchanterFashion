@@ -46,7 +46,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             else
             {
                 dbSetInvoice save = new dbSetInvoice();
-                save.insertData(Convert.ToInt32(itemIdTb.Text), supplierIdTb.Text, nameTb.Text, Convert.ToInt32(quantityTb.Text), float.Parse(priceTb.Text));
+                save.insertData(billNoTb.Text,Convert.ToInt32(itemIdTb.Text), supplierIdTb.Text, nameTb.Text, Convert.ToInt32(quantityTb.Text), float.Parse(priceTb.Text));
             }
             display(null, null);
             billNoTb.Text = "";
@@ -88,7 +88,7 @@ namespace Enchanter_Fashion.inventory.UserControls
                 dbSetInvoice edit = new dbSetInvoice();
                 if (edit.checkItem(billNoTb.Text) == true)
                 {
-                    edit.editData(Convert.ToInt32(billNoTb.Text), Convert.ToInt32(itemIdTb.Text), supplierIdTb.Text, nameTb.Text, Convert.ToInt32(quantityTb.Text), float.Parse(priceTb.Text));
+                    edit.editData(billNoTb.Text, Convert.ToInt32(itemIdTb.Text), supplierIdTb.Text, nameTb.Text, Convert.ToInt32(quantityTb.Text), float.Parse(priceTb.Text));
                 }
                 else
                 {
@@ -117,7 +117,17 @@ namespace Enchanter_Fashion.inventory.UserControls
                 else
                 {
                     dbSetInvoice delete = new dbSetInvoice();
-                    delete.deleteData(Convert.ToInt32(billNoTb.Text));
+                    if (delete.checkItem(billNoTb.Text) == true)
+                    {
+                        if(MessageBox.Show("Are you sure?", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question)== DialogResult.Yes)
+                        {
+                            delete.deleteData(billNoTb.Text);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Please enter the correct bill number.", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
 
             }
@@ -156,6 +166,8 @@ namespace Enchanter_Fashion.inventory.UserControls
             {
                 MessageBox.Show(exp.Message);
             }
+            billNoTb.Text = "";
+           
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -178,6 +190,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             {
                 MessageBox.Show(exp.Message);
             }
+            itemIdTb.Text = "";
         }
 
         private void display(object sender, EventArgs e)
@@ -200,6 +213,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             {
                 MessageBox.Show(exp.Message);
             }
+
         }
     }
 }

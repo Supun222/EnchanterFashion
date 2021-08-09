@@ -14,7 +14,7 @@ namespace Enchanter_Fashion.inventory.UserControls
     class dbSetInvoice
     {
         string sql_query;
-        //string supId = "sup";
+        
 
         public bool checkItem(string billNo)
         {
@@ -23,7 +23,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             try
             {
                 MySqlConnection conn = DBConection.getconnection();
-                sql_query = "SELECT COUNT(bill_no) AS count FROM invoice WHERE bill_no = '" + billNo + "'";
+                sql_query = "SELECT COUNT(bill_no) AS count FROM inventory WHERE bill_no = '" + billNo + "'";
                 Console.WriteLine(sql_query);
                 MySqlCommand mycommand = new MySqlCommand(sql_query, conn);
                 conn.Open();
@@ -49,36 +49,10 @@ namespace Enchanter_Fashion.inventory.UserControls
             }
         }
 
-        public int autoGenerateBillNo()
+      
+
+        public void insertData(string billNo, int itemId, string supId, string itemName, int quantity,float price)
         {
-            try
-            {
-                MySqlConnection conn = DBConection.getconnection();
-                conn.Open();
-                sql_query = ("SELECT COUNT(bill_no) FROM enchanterfashion.inventory");
-                //conn.Open();
-                MySqlCommand myCommand = new MySqlCommand(sql_query, conn);
-                int i = Convert.ToInt32(myCommand.ExecuteScalar());
-                conn.Close();
-                i++;
-                int billNo = i;
-                return billNo;
-
-                //MySqlDataReader myReader;
-                //myReader = myCommand.ExecuteReader();
-
-                //string sup_id = 
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
-
-        public void insertData(int itemId, string supId, string itemName, int quantity,float price)
-        {
-            int billNo = autoGenerateBillNo();
-            //sql_query = "INSERT into suppliers(sup_id,sup_name,sup_city,sup_mobile)  values('" + supId + "','" + name + "','" + address + "','" + phone + "')";
             try
             {
                 MySqlConnection conn = DBConection.getconnection();
@@ -100,9 +74,9 @@ namespace Enchanter_Fashion.inventory.UserControls
             }
         }
 
-        public void editData(int billNo, int itemId, string supId, string itemName, int quantity, float price)
+        public void editData(string billNo, int itemId, string supId, string itemName, int quantity, float price)
         {
-            //sql_query = "UPDATE suppliers SET sup_name = '" + name + "',sup_city = '" + address + "',sup_mobile = '" + phone + "' WHERE sup_id = '" + id + "' ;";
+            
             try
             {
                 MySqlConnection conn = DBConection.getconnection();
@@ -125,7 +99,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             }
         }
 
-        public void deleteData(int billNo)
+        public void deleteData(string billNo)
         {
             try
             {

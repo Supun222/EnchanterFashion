@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Enchanter_Fashion.DBConnection;
 using MySql.Data.MySqlClient;
+using System.Text.RegularExpressions;
 
 namespace Enchanter_Fashion.inventory.UserControls
 {
@@ -18,6 +19,20 @@ namespace Enchanter_Fashion.inventory.UserControls
         {
             InitializeComponent();
             viewBtn_Click(null, null);
+        }
+
+        private bool checkNic(string nic)
+        {
+            Regex regx = new Regex("^([0-9]{9}[x|X|v|V]|[0-9]{12})$");
+            Match match = regx.Match(nic);
+            if (match.Success)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         public static string encodePwToBase64 (string password){
             try
@@ -86,7 +101,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             }
             else
             {
-                if (nicTb.Text.Length == 10 || nicTb.Text.Length == 11)
+                if (checkNic(nicTb.Text)==true)
                 {
                     if (decodedPw == decodedConfirmPw)
                     {
@@ -104,22 +119,7 @@ namespace Enchanter_Fashion.inventory.UserControls
                 }
             }
 
-            /*if (nicTb.Text.Length == 10 || nicTb.Text.Length == 11)
-            {
-                if (decodedPw == decodedConfirmPw)
-                {
-                    dbSetUser add = new dbSetUser();
-                    add.userInsert_value(nicTb.Text, userNameTb.Text, encodedPw);
-                }
-                else
-                {
-                    MessageBox.Show("Password does not match", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Please enter a valid Id number", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }*/
+          
             viewBtn_Click(null, null);
             nicTb.Text = "";
             userNameTb.Text = "";
@@ -139,7 +139,10 @@ namespace Enchanter_Fashion.inventory.UserControls
                 dbSetUser remove = new dbSetUser();
                 if (remove.checkItem(nicTb.Text) == true)
                 {
-                    remove.userDelete_value(nicTb.Text, userNameTb.Text, pwTb.Text);
+                    if (MessageBox.Show("Are you sure?", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        remove.userDelete_value(nicTb.Text, userNameTb.Text, pwTb.Text);
+                    }
                 }
                 else
                 {
@@ -162,7 +165,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             try
             {
                 MySqlConnection con = DBConection.getconnection();
-                string query = "SELECT* FROM users";
+                string query = "SELECT nic,name FROM users";
                 Console.WriteLine(query);
                 MySqlCommand mycmd = new MySqlCommand(query, con);
                 con.Open();

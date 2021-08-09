@@ -21,11 +21,11 @@ namespace Enchanter_Fashion
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //hellow
-            Application.Run(new Form1());
+            //Application.Run(new Form1());
             //displaypanel
             //Application.Run(new displaypanel());
             //Application.Run(new form_dashboard());
-            //Application.Run(new testing());
+            Application.Run(new testing());
             //Application.Run(new DIMassage());
             //Application.Run(new addarrivals());
             //Application.Run(new passwordrecovery());
