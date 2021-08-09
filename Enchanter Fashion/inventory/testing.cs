@@ -145,7 +145,7 @@ namespace Enchanter_Fashion.inventory
 
                 this.Close();
                 Form1 nf = new Form1();
-                nf.
+                nf.ShowDialog();
                 //Form1.open
             
             }

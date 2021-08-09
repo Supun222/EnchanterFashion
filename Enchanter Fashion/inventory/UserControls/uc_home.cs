@@ -18,6 +18,9 @@ namespace Enchanter_Fashion.inventory.UserControls
         {
             InitializeComponent();
             supcount();
+            purcount();
+            invoicecount();
+            salescount()
         }
 
         public void supcount() {
@@ -58,6 +61,116 @@ namespace Enchanter_Fashion.inventory.UserControls
 
         }
 
-        
+
+
+        public void purcount() {
+
+
+            try
+            {
+                
+                MySqlConnection conn = DBConection.getconnection();
+                conn.Open();
+
+                MySqlCommand cmd = conn.CreateCommand();
+
+                cmd.CommandType = CommandType.Text;
+
+                cmd.CommandText = "Select Count(bill_no) From sales";
+
+                Int32 rows_count = Convert.ToInt32(cmd.ExecuteScalar());
+
+                conn.Close();
+
+                bunifuLabel3.Text = rows_count.ToString();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
+
+
+
+
+        }
+
+
+
+        public void invoicecount()
+        {
+
+
+            try
+            {
+
+                MySqlConnection conn = DBConection.getconnection();
+                conn.Open();
+
+                MySqlCommand cmd = conn.CreateCommand();
+
+                cmd.CommandType = CommandType.Text;
+
+                cmd.CommandText = "Select Count(bill_no) From inventory";
+
+                Int32 rows_count = Convert.ToInt32(cmd.ExecuteScalar());
+
+                conn.Close();
+
+                bunifuLabel5.Text = rows_count.ToString();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
+
+
+
+
+        }
+
+
+        public void salescount()
+        {
+
+
+            try
+            {
+
+                MySqlConnection conn = DBConection.getconnection();
+                conn.Open();
+
+                MySqlCommand cmd = conn.CreateCommand();
+
+                cmd.CommandType = CommandType.Text;
+
+                cmd.CommandText = "SELECT SUM(unit_price*quantity) AS Tot FROM sales";
+
+                Int32 rows_count = Convert.ToInt32(cmd.ExecuteScalar());
+
+                conn.Close();
+
+                bunifuLabel2.Text = rows_count.ToString();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
+
+
+
+
+        }
+
+
+
     }
 }
