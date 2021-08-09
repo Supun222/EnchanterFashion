@@ -78,7 +78,7 @@ namespace Enchanter_Fashion.inventory.UserControls
         public void insertData(string name, string address, string phone,string email)
         {
             string supplierId = autoGenerateId();
-            //sql_query = "INSERT into suppliers(sup_id,sup_name,sup_city,sup_mobile)  values('" + supId + "','" + name + "','" + address + "','" + phone + "')";
+            
             try
             {
                 MySqlConnection conn = DBConection.getconnection();
@@ -102,7 +102,7 @@ namespace Enchanter_Fashion.inventory.UserControls
 
         public void editData(string id,string name, string address, string phone,string email)
         {
-            //sql_query = "UPDATE suppliers SET sup_name = '" + name + "',sup_city = '" + address + "',sup_mobile = '" + phone + "' WHERE sup_id = '" + id + "' ;";
+            
             try
             {
                 MySqlConnection conn = DBConection.getconnection();

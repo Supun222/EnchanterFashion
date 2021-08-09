@@ -103,7 +103,7 @@ namespace Enchanter_Fashion.inventory.UserControls
                 }
 
                 conn.Close();
-
+                //MessageBox.Show("Find Record Founded !!", "Student Details System", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
 
@@ -111,10 +111,11 @@ namespace Enchanter_Fashion.inventory.UserControls
             {
 
                 MessageBox.Show(ex.Message);
+               // MessageBox.Show("Record Not Found : " + ex.Message, "Student Details System", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 
-
+            finally { conn.Close(); }
 
 
         }
@@ -219,6 +220,7 @@ namespace Enchanter_Fashion.inventory.UserControls
 
                     }
                     LoadUser();
+                    conn.Close();
 
                 }
 
@@ -229,7 +231,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             }
 
 
-
+            finally { conn.Close(); }
 
 
 
@@ -342,13 +344,7 @@ namespace Enchanter_Fashion.inventory.UserControls
                 //Check the Responce
                 if (dirRes == DialogResult.Yes)
                 {
-                    //Call the Connection Open Method
-                    //db.sqlConn();
-                    //Call the New Record Method
-                    // db.record("delete from Stud where StID='" + txtSID.Text + "'");
-                    //Display Message
-                    //MessageBox.Show("Record deleted successfully !!", "Student Details System", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                    
                     //=========================================
 
                     if (txt_bill.Text == "" || txt_item.Text == "" || txt_name.Text == "" || txt_price.Text == "" || txt_qty.Text == "")
@@ -399,7 +395,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             {
                 MessageBox.Show(ex.Message);
             }
-
+            LoadUser();
 
         }
 
@@ -410,6 +406,6 @@ namespace Enchanter_Fashion.inventory.UserControls
         
     
         
-        //LoadUser();
+       
     
 

@@ -841,120 +841,121 @@ D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-7\Enc
 D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-7\Enchanter Fashion\obj\Debug\Enchanter Fashion.pdb
 D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Signup_and_Registration.confirmlog_in_out.resources
 D:\Projrct\Enchanter Fashion\obj\Debug\Enchanter Fashion.csproj.AssemblyReference.cache
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Enchanter Fashion.exe.config
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Enchanter Fashion.exe
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Enchanter Fashion.pdb
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.Licensing.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuRating.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.Deprecated.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\MaterialSkin.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Google.Protobuf.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Zstandard.Net.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\K4os.Compression.LZ4.Streams.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\BouncyCastle.Crypto.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Ubiety.Dns.Core.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\System.Memory.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\System.Buffers.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\K4os.Compression.LZ4.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\K4os.Hash.xxHash.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\System.Numerics.Vectors.dll
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuPages.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuRating.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\bin\Debug\MySql.Data.xml
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter Fashion.csproj.AssemblyReference.cache
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Display_Board.addarrivals.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Display_Board.kidsbackground.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.menbackground.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Display_Board.Shoes.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.inventory.form_dashboard.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.inventory.testing.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.inventory.UserControls.uc_categories.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.inventory.UserControls.uc_home.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.inventory.UserControls.uc_invoices.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.inventory.UserControls.uc_items.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.inventory.UserControls.uc_orders.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.inventory.UserControls.uc_suppliers.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.inventory.UserControls.uc_users.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Massage.DisplayandInventorymsg.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Massage.DIMassage.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Massage.filenotfound.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Signup_and_Registration.confirmlog_in_out.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Signup_and_Registration.first_recovery.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Login.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Signup_and_Registration.passwordrecovery.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Regpanel1.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Regpanel2.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Signup_and_Registration.second_recovery.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Termsandpolycies.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Form1.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Properties.Resources.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.termsnpolicy.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.displaypanel.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.womanbackground1.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Signup_and_Registration.third_recovery.resources
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter Fashion.csproj.GenerateResource.cache
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter Fashion.exe.licenses
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter Fashion.csproj.CoreCompileInputs.cache
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter Fashion.csproj.CopyComplete
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter Fashion.exe
-D:\MIT 2 YR 1 SEM\INTE 21223 - Interactive Application Development\project-8\Enchanter Fashion\obj\Debug\Enchanter Fashion.pdb
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Enchanter Fashion.exe.config
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Enchanter Fashion.exe
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Enchanter Fashion.pdb
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.Licensing.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuRating.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.Deprecated.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\MaterialSkin.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\MySql.Data.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Google.Protobuf.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Zstandard.Net.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\BouncyCastle.Crypto.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Ubiety.Dns.Core.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\System.Memory.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\System.Buffers.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\K4os.Compression.LZ4.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\K4os.Hash.xxHash.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\System.Numerics.Vectors.dll
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuPages.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuRating.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\bin\Debug\MySql.Data.xml
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter Fashion.csprojAssemblyReference.cache
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Display_Board.addarrivals.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Display_Board.kidsbackground.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.menbackground.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Display_Board.Shoes.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.inventory.form_dashboard.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.inventory.testing.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.inventory.UserControls.uc_categories.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.inventory.UserControls.uc_home.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.inventory.UserControls.uc_invoices.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.inventory.UserControls.uc_items.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.inventory.UserControls.uc_orders.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.inventory.UserControls.uc_suppliers.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.inventory.UserControls.uc_users.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Massage.DisplayandInventorymsg.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Massage.DIMassage.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Massage.filenotfound.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Signup_and_Registration.confirmlog_in_out.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Signup_and_Registration.first_recovery.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Login.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Signup_and_Registration.passwordrecovery.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Regpanel1.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Regpanel2.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Signup_and_Registration.second_recovery.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Termsandpolycies.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Form1.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Properties.Resources.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.termsnpolicy.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.displaypanel.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.womanbackground1.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter_Fashion.Signup_and_Registration.third_recovery.resources
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter Fashion.csproj.GenerateResource.cache
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter Fashion.exe.licenses
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter Fashion.csproj.CoreCompileInputs.cache
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter Fashion.csproj.CopyComplete
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter Fashion.exe
+D:\UOK\2nd YEAR\1st sem\Interactive Application Development\Project\Project New\Enchanter Fashion\obj\Debug\Enchanter Fashion.pdb
