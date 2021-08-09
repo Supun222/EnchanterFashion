@@ -49,9 +49,9 @@ namespace Enchanter_Fashion.Massage
             this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(187, 101);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(150, 16);
+            this.label2.Size = new System.Drawing.Size(152, 16);
             this.label2.TabIndex = 13;
-            this.label2.Text = "Oops..! File is not found.";
+            this.label2.Text = "Oops..! No item available";
             // 
             // bunifuLabel1
             // 
@@ -64,9 +64,9 @@ namespace Enchanter_Fashion.Massage
             this.bunifuLabel1.Location = new System.Drawing.Point(35, 51);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(109, 21);
+            this.bunifuLabel1.Size = new System.Drawing.Size(107, 21);
             this.bunifuLabel1.TabIndex = 12;
-            this.bunifuLabel1.Text = "Error Maasage";
+            this.bunifuLabel1.Text = "Error Message";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 

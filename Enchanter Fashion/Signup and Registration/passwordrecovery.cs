@@ -22,6 +22,8 @@ namespace Enchanter_Fashion.Signup_and_Registration
             third_recovery.submit_btn.Click += thirdtrcvy_next_btn_Click;
         }
 
+
+
         public string username, password;
         databasecrudoperations dbset;
 
@@ -82,7 +84,7 @@ namespace Enchanter_Fashion.Signup_and_Registration
             }
             else
             {
-                if(dbset.check_answers(second_recovery.school_name.Text, second_recovery.book_name.Text) == true)
+                if(dbset.check_answers(second_recovery.school_name.Text, second_recovery.book_name.Text, first_recovery.email_or_username.Text) == true)
                 {
 
                     if (MessageBox.Show("Answers are correct.", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)

@@ -469,7 +469,7 @@ namespace Enchanter_Fashion
 
         private void displaylogout_btn_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Do you want to add a new item ?", "Enchanter Fashion", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("Do you want to log out ?", "Enchanter Fashion", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 getvalue.claerarraylist();
                 this.Hide();
@@ -482,7 +482,7 @@ namespace Enchanter_Fashion
 
         private void addnewitems_btn_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Do you want to add a new item ?", "Enchanter Fashion", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("Do you want to add new item.?", "Enchanter Fashion", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 getvalue.claerarraylist();
                 this.Hide();

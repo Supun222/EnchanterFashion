@@ -215,7 +215,7 @@ namespace Enchanter_Fashion.Signup_and_Registration
             }
         }
 
-        public bool check_answers(string schoolname, string bookname)
+        public bool check_answers(string schoolname, string bookname, string text)
         {
             string username = "", email = "";
             try
@@ -237,8 +237,9 @@ namespace Enchanter_Fashion.Signup_and_Registration
             {
 
             }
-
-            if(username == this.username || email == this.username)
+            Console.WriteLine(text);
+            Console.WriteLine(username);
+            if (username.Equals(text, StringComparison.InvariantCultureIgnoreCase) || email.Equals(text, StringComparison.InvariantCultureIgnoreCase))
             {
                 return true;
             }
