@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Enchanter_Fashion.inventory.UserControls;
+using Enchanter_Fashion.Signup_and_Registration;
 
 namespace Enchanter_Fashion.inventory
 {
@@ -135,7 +136,21 @@ namespace Enchanter_Fashion.inventory
 
         private void btnexit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-        }
+            //Application.Exit();
+
+            DialogResult dirRes = MessageBox.Show("Do you want to Exit ?", "Enchanter Fashion", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            //Check the Responce
+            if (dirRes == DialogResult.Yes)
+            {
+
+                this.Close();
+                Form1 nf = new Form1();
+                nf.ShowDialog();
+                //Form1.open
+            
+            }
+
+
+            }
     }
 }

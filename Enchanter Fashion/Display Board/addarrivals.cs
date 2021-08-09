@@ -100,7 +100,7 @@ namespace Enchanter_Fashion.Display_Board
                             display.Close();
                             item_name.Text = "";
                             descrption_txt.Text = "";
-                            displaypicture.InitialImage = null;
+                            displaypicture.Image = null;
                             if (MessageBox.Show("New item has added successfuly to the display.", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.Yes)
                             {
                                 this.Close();

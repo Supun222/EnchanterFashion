@@ -374,7 +374,7 @@ namespace Enchanter_Fashion
             if (terms.accepted_check.Checked == true)
             {
                 int ph_numb = Int32.Parse(phonenumber);
-                dbset.registeringcompleting(this.newusername, this.email, this.name, ph_numb, this.password, this.gender, this.schoolname, this.bookname);
+                dbset.registeringcompleting(this.newusername, this.email, this.name, ph_numb, this.password, this.gender, this.bookname, this.schoolname);
                 if (MessageBox.Show("Registration is successful.", "Enchanter Fashion", MessageBoxButtons.OK) == DialogResult.OK)
                 {
                 }

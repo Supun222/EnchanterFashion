@@ -143,7 +143,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuPictureBox1.AutoSizeHeight = true;
             this.bunifuPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.bunifuPictureBox1.BorderRadius = 43;
-            this.bunifuPictureBox1.Image = global::Enchanter_Fashion.Properties.Resources.icons8_truck_24px;
+            this.bunifuPictureBox1.Image = global::Enchanter_Fashion.Properties.Resources.icons8_checkout_30px;
             this.bunifuPictureBox1.IsCircle = true;
             this.bunifuPictureBox1.Location = new System.Drawing.Point(42, 44);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
@@ -207,7 +207,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuPictureBox2.AutoSizeHeight = true;
             this.bunifuPictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.bunifuPictureBox2.BorderRadius = 43;
-            this.bunifuPictureBox2.Image = global::Enchanter_Fashion.Properties.Resources.icons8_truck_24px;
+            this.bunifuPictureBox2.Image = global::Enchanter_Fashion.Properties.Resources.icons8_card_payment_32px;
             this.bunifuPictureBox2.IsCircle = true;
             this.bunifuPictureBox2.Location = new System.Drawing.Point(42, 44);
             this.bunifuPictureBox2.Name = "bunifuPictureBox2";
@@ -287,7 +287,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuPictureBox3.AutoSizeHeight = true;
             this.bunifuPictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.bunifuPictureBox3.BorderRadius = 43;
-            this.bunifuPictureBox3.Image = global::Enchanter_Fashion.Properties.Resources.icons8_truck_24px;
+            this.bunifuPictureBox3.Image = global::Enchanter_Fashion.Properties.Resources.icons8_invoice_16px;
             this.bunifuPictureBox3.IsCircle = true;
             this.bunifuPictureBox3.Location = new System.Drawing.Point(42, 44);
             this.bunifuPictureBox3.Name = "bunifuPictureBox3";
@@ -447,7 +447,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             this.bunifuPictureBox5.AutoSizeHeight = true;
             this.bunifuPictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.bunifuPictureBox5.BorderRadius = 43;
-            this.bunifuPictureBox5.Image = global::Enchanter_Fashion.Properties.Resources.icons8_truck_24px;
+            this.bunifuPictureBox5.Image = global::Enchanter_Fashion.Properties.Resources.icons8_money_bag_26px;
             this.bunifuPictureBox5.IsCircle = true;
             this.bunifuPictureBox5.Location = new System.Drawing.Point(42, 44);
             this.bunifuPictureBox5.Name = "bunifuPictureBox5";

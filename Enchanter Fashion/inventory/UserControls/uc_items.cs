@@ -99,11 +99,11 @@ namespace Enchanter_Fashion.inventory.UserControls
 
                     txt_qty.Text = dr.GetValue(4).ToString();
 
-                   
+
                 }
 
                 conn.Close();
-
+                //MessageBox.Show("Find Record Founded !!", "Student Details System", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
 
@@ -111,10 +111,11 @@ namespace Enchanter_Fashion.inventory.UserControls
             {
 
                 MessageBox.Show(ex.Message);
+               // MessageBox.Show("Record Not Found : " + ex.Message, "Student Details System", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 
-
+            finally { conn.Close(); }
 
 
         }
@@ -182,7 +183,7 @@ namespace Enchanter_Fashion.inventory.UserControls
 
             try
             {
-                if (txt_bill.Text == "" || txt_item.Text == "" || txt_name.Text == "" || txt_price.Text == "" || txt_qty.Text=="")
+                if (txt_bill.Text == "" || txt_item.Text == "" || txt_name.Text == "" || txt_price.Text == "" || txt_qty.Text == "")
                 {
                     MessageBox.Show("Please , Insert all Information ... ", "Try Again", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
@@ -213,12 +214,13 @@ namespace Enchanter_Fashion.inventory.UserControls
 
                         clear();
 
-                       // auto();
+                        // auto();
 
                         conn.Close();
 
                     }
                     LoadUser();
+                    conn.Close();
 
                 }
 
@@ -229,7 +231,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             }
 
 
-
+            finally { conn.Close(); }
 
 
 
@@ -245,7 +247,7 @@ namespace Enchanter_Fashion.inventory.UserControls
 
             txt_qty.Text = "";
 
-            
+
 
         }
 
@@ -255,6 +257,8 @@ namespace Enchanter_Fashion.inventory.UserControls
 
             try
             {
+
+
                 if (txt_bill.Text == "" || txt_item.Text == "" || txt_name.Text == "" || txt_price.Text == "" || txt_qty.Text == "")
                 {
                     MessageBox.Show("Please , Insert all Information ... ", "Try Again", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -316,7 +320,7 @@ namespace Enchanter_Fashion.inventory.UserControls
         {
 
 
-           
+
 
 
 
@@ -333,46 +337,75 @@ namespace Enchanter_Fashion.inventory.UserControls
 
             try
             {
-                if (txt_bill.Text == "" || txt_item.Text == "" || txt_name.Text == "" || txt_price.Text == "" || txt_qty.Text == "")
-                {
-                    MessageBox.Show("Please , Insert all Information ... ", "Try Again", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-                }
+                //==========================================
+
+                DialogResult dirRes = MessageBox.Show("Do you want to delete this record ?", "Student Details System", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                //Check the Responce
+                if (dirRes == DialogResult.Yes)
+                {
+                    
+                    //=========================================
+
+                    if (txt_bill.Text == "" || txt_item.Text == "" || txt_name.Text == "" || txt_price.Text == "" || txt_qty.Text == "")
+                    {
+                        MessageBox.Show("Please , Insert all Information ... ", "Try Again", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    }
+                    else
+                    {
+                        //  MySqlConnection conn = new MySqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Users\hp\documents\visual studio 2010\Projects\Inventory Managment System in csharp\Inventory Managment System in csharp\IMS.mdf;Integrated Security=True;User Instance=True");
+
+                        conn.Open();
+
+                        String str = "Delete From sales Where bill_no = '" + txt_bill.Text + "'";
+
+                        MySqlCommand cmd = new MySqlCommand(str, conn);
+
+                        cmd.ExecuteNonQuery();
+
+                        // LoadUser();
+
+                        MessageBox.Show("User Delete Successfull ....", "Thank You", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        clear();
+
+                        //  auto();
+
+                        conn.Close();
+
+                    } }
+
+
                 else
                 {
-                  //  MySqlConnection conn = new MySqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Users\hp\documents\visual studio 2010\Projects\Inventory Managment System in csharp\Inventory Managment System in csharp\IMS.mdf;Integrated Security=True;User Instance=True");
-
-                    conn.Open();
-
-                    String str = "Delete From sales Where bill_no = '" + txt_bill.Text + "'";
-
-                    MySqlCommand cmd = new MySqlCommand(str, conn);
-
-                    cmd.ExecuteNonQuery();
-
-                   // LoadUser();
-
-                    MessageBox.Show("User Delete Successfull ....", "Thank You", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    clear();
-
-                  //  auto();
-
-                    conn.Close();
-
-
+                    //Display Message
+                    MessageBox.Show("Action canceled !!", "Student Details System", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
 
+
+
             }
+
+            //===============================================
+
+
+
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-
             LoadUser();
 
-
-
         }
-    }
-}
+
+     
+
+}}
+            
+        
+    
+        
+       
+    
+
