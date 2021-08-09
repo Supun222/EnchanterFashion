@@ -20,7 +20,7 @@ namespace Enchanter_Fashion.inventory.UserControls
             supcount();
             purcount();
             invoicecount();
-            salescount()
+            salescount();
         }
 
         public void supcount() {
