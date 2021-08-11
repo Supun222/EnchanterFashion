@@ -138,6 +138,7 @@ namespace Enchanter_Fashion.inventory
         {
             //Application.Exit();
 
+
             DialogResult dirRes = MessageBox.Show("Do you want to Exit ?", "Enchanter Fashion", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             //Check the Responce
             if (dirRes == DialogResult.Yes)
